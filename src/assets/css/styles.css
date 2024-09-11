@@ -1,0 +1,13 @@
+@import url ('./_variable.css');
+@import url ('./common.css');
+
+body {
+  @apply overflow-x-hidden;
+}
+body::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.wrapper {
+  @apply relative mx-auto max-w-[1440px];
+}

@@ -1,0 +1,16 @@
+:root {
+	--color-black : #000;
+	--color-pink : #FF64AE;
+	--color-white: #FFFFFF;
+	--color-text-default: #8B8B8B;
+	--color-text-title:#091156;
+	--color-text-hover:#FF64AE;
+	--color-box-shadow: #F7F7FF;
+	--color-transparent: transparent;
+	--color-border-text : #D9DDFE;
+	--color-text-input: #C5C5C5;
+	--color-bgr-footer: #0D165C;
+	--color-box-header: #80808070;
+	--color-slider-btn: #EEEEEE;
+	--color-slider-btn-active: #414880;
+}

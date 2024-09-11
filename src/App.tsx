@@ -2,9 +2,12 @@ import './App.css'
 
 function App() {
   return (
-    <h1 className='text-6xl font-poppins'>Khoa Dev</h1>
-      
+    <div>
+      <Header />
+      <Container />
+      <Footer />
+    </div>
   )
 }
 
-export default App
+export default App;
