@@ -1,12 +1,11 @@
-import './App.css'
+import './App.css';
+import HeaderComponent from './views/components/Header/HeaderComponent';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Container />
-      <Footer />
-    </div>
+    <>
+      <HeaderComponent />
+    </>
   )
 }
 

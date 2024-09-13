@@ -3,3 +3,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text-default);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a.active {
+	color: var(--color-text-title) !important;
+	font-weight: 700 !important;
+}
+
+a.active:hover {
+	color: var(--color-text-hover) !important;
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
