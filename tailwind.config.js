@@ -10,12 +10,16 @@ export default {
         poppins: ['Poppins', 'sans-serif']
       },
       colors: {
-        'pink-btn': ' #FF64AE',
-        'white-btn': '#FFFFFF',
-        'hover-btn': '#091156'
+        'color-pink': ' #FF64AE',
+        'color-white': '#FFFFFF',
+        'hover-btn': '#091156',
+        'color-title': '#091156'
       },
       maxWidth: {
         '1140': '1140px'
+      },
+      backgroundImage: {
+        'slider-background': "url('./src/assets/images/home1/Slide_Background.png ')"
       }
     },
   plugins: [],
