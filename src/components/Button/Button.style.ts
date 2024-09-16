@@ -2,7 +2,7 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 
 const Button = styled.button`
-  ${tw`font-semibold text-base cursor-pointer 
+  ${tw`font-semibold text-16 cursor-pointer 
   bg-color-pink text-color-white tracking-widest 
   rounded-full transition-all border-none 
   hover:bg-hover-btn active:translate-y-2`}

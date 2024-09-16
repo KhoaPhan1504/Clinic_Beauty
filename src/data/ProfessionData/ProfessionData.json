@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "cardImage": "/src/assets/images/home1/unsplash_pTrhfmj2jDA.png",
+    "cardInfoTitle": "Surgeon",
+    "cardInfoName": "Briyan Nevalli",
+    "cardInfoDescribe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit",
+    "cardContactTwitter": "/src/assets/images/home1/Twitter.png",
+    "cardContactFB": "/src/assets/images/home1/FB_Circle.svg",
+    "cardContactInsta": "/src/assets/images/home1/Insta_Circle.svg"
+  },
+  {
+    "id": 2,
+    "cardImage": "/src/assets/images/home1/unsplash_FVh_yqLR9eA.png",
+    "cardInfoTitle": "Dermatologist",
+    "cardInfoName": "Bella sebastian",
+    "cardInfoDescribe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit",
+    "cardContactTwitter": "/src/assets/images/home1/Twitter_Circle.svg",
+    "cardContactFB": "/src/assets/images/home1/FB_Circle.svg",
+    "cardContactInsta": "/src/assets/images/home1/Insta_Circle.svg"
+  },
+  {
+    "id": 3,
+    "cardImage": "/src/assets/images/home1/unsplash_mEZ3PoFGs_k.png",
+    "cardInfoTitle": "Stylist expert",
+    "cardInfoName": "Lilly Adams",
+    "cardInfoDescribe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit",
+    "cardContactTwitter": "/src/assets/images/home1/Twitter_Circle.svg",
+    "cardContactFB": "/src/assets/images/home1/FB_Circle.svg",
+    "cardContactInsta": "/src/assets/images/home1/Insta_Circle.svg"
+  }
+]

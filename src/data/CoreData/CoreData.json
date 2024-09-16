@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "cardImage": "/src/assets/images/home1/Core_Left.svg",
+    "cardInfoName": "Beauty consultation",
+    "cardInfoDescribe": "Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."
+  },
+  {
+    "id": 2,
+    "cardImage": "/src/assets/images/home1/Core_Center.svg",
+    "cardInfoName": "Skin treatments",
+    "cardInfoDescribe": "Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."
+  },
+  {
+    "id": 3,
+    "cardImage": "/src/assets/images/home1/Core_Right.svg",
+    "cardInfoName": "Beauty product",
+    "cardInfoDescribe": "Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."
+  }
+]

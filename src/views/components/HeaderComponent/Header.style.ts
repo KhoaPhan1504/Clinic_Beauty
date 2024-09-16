@@ -33,23 +33,23 @@ export const MenuItem = styled.li `
   ${tw`float-left list-none`}
 
   &:nth-child(1) {
-    ${tw`mr-[9px]`}
+    ${tw`mr-[5px]`}
   }
 
   &:nth-child(2) {
-    ${tw`mr-[13px]`}
+    ${tw`mr-[9px]`}
   }
 
   &:nth-child(3) {
-    ${tw`mr-[14px]`}
+    ${tw`mr-[10px]`}
   }
   &:nth-child(4) {
-    ${tw`mr-[16px]`}
+    ${tw`mr-[12px]`}
   }
 `;
 
 export const MenuLink = styled.a `
-  ${tw`not-italic font-light text-base tracking-widest text-[#8B8B8B] px-[16px]`}
+  ${tw`not-italic font-light text-16 tracking-wide text-[#8B8B8B] px-[16px]`}
 
   &.active {
     ${tw`font-semibold text-color-title`}
