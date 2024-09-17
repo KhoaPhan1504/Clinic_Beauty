@@ -17,14 +17,21 @@ export default {
         'slider-btn': '#EEEEEE',
         'slider-btn-active': '#414880',
         'color-default': '#8B8B8B',
-        'transparent': 'transparent'
+        'transparent': 'transparent',
+        'color-border': '#D9DDFE',
+        'color-text-input': '#C5C5C5',
+        'color-bgr-footer' : ' #0D165C',
+        'footer-text': '#D7DBFF'
       },
       maxWidth: {
         '1140': '1140px'
       },
       backgroundImage: {
         'slider-background': "url('./src/assets/images/home1/Slide_Background.png ')",
-        'about-background': "url('./src/assets/images/home1/Background Bubble.png')"
+        'about-background': "url('./src/assets/images/home1/Background Bubble.png')",
+        'contact-background': "url('./src/assets/images/home1/Background BubbleLeft.png')",
+        'footer-2-background' : "url('./src/assets/images/home1/Footer BG 2.png')",
+        'footer-1-background' : "url('./src/assets/images/home1/Footer BG 1.png')"
       },
       fontSize: {
         '14': '14px',
@@ -48,6 +55,7 @@ export default {
         '21': '21px',
         '20': '20px',
         '22.5': '22.5px',
+        '27': '27px',
         '45': '45px'
       }
     },

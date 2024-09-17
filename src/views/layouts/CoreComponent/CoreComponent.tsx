@@ -4,9 +4,13 @@ import {
 	InfoDescribe, InfoTip, 
 	InfoTitle, TitleDesc 
 } from './Core.style';
-// import CardComponent from '../../../components/Card/CardComponent';
 import cardsData from './../../../data/CoreData/CoreData.json';
-import { CardDescribe, CardImage, CardImg, CardInfo, CardItem, CardName, CardWrapper } from '../../../components/Card/Card.style';
+import { 
+	CardDescribe, CardImage, 
+	CardImg, CardInfo, 
+	CardItem, CardName, 
+	CardWrapper 
+} from '../../../components/Card/Card.style';
 
 interface CoreProps {
   id: number;
@@ -15,7 +19,7 @@ interface CoreProps {
   cardInfoDescribe: string;
 }
 
-const CoreComponent:React.FC<CoreProps> = () => {
+const CoreComponent:React.FC = () => {
 	const [cores, setCores] = useState<CoreProps[]>([]);
 
   useEffect(() => {
@@ -37,7 +41,7 @@ const CoreComponent:React.FC<CoreProps> = () => {
 								<CardWrapper>
 									<CardItem>
 										<CardImage>
-											<CardImg src={core.cardImage} alt="" />
+											<CardImg src={core.cardImage} alt={core.cardInfoName} />
 										</CardImage>
 										<CardInfo>
 											<CardName>{core.cardInfoName}</CardName>

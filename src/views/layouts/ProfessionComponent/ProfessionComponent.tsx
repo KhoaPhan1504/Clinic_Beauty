@@ -1,18 +1,13 @@
-import React , {useEffect, useState} from 'react';
+import React , {useEffect, useState, useRef} from 'react';
 import { 
-  CardContactImg,
-  CardContactItem,
-  CardContactPro,
-  CardImagePro,
-  CardImgPro,
-  CardInfoDescribe,
-  CardInfoName,
-  CardInfoPro,
-  CardInfoTitle,
-  CardProfessional,
+  CardContactImg, CardContactItem,
+  CardContactPro, CardImagePro,
+  CardImgPro, CardInfoDescribe,
+  CardInfoName, CardInfoPro,
+  CardInfoTitle, CardProfessional,
   CardWrapperPro,
   Profession, ProfessionDesc, 
-  ProfessionWrapper, ProInfoDescibe, 
+  ProfessionWrapper, ProInfoDescribe, 
   ProInfoTip, ProInfoTitle, 
   ProItem, ProItemRow, ProItemWrapper 
 } from './Profession.style';
@@ -29,18 +24,43 @@ interface ProProps {
 	cardContactInsta: string;
 }
 
-const ProfessionComponent:React.FC<ProProps> = () => {
+const ProfessionComponent:React.FC = () => {
   const [pros, setPros] = useState<ProProps[]>([]);
 
-  // const proItemRowRef = useRef<HTMLDivElement[]>([]);
+  const proItemRowRef = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
     setPros(prosData);
   }, []);
 
-  // useEffect(() => {
-  //   const proItemRows = proItemRowRef.current;
-  // })
+  useEffect(() => {
+    const proItemRows = proItemRowRef.current;
+
+    proItemRows.forEach((item, index, arr) => {
+      if(item) {
+        item.addEventListener('mouseenter', () => {
+          proItemRows.forEach((i) => {
+            if(i) {
+              i.classList.remove('Card');
+              i.classList.add ('not-hovered');
+              if(i != item) {
+                i.style.backgroundColor = 'transparent';
+              }
+            }
+          });
+          item.classList.add('Card');
+          item.classList.remove('not-hovered');
+          item.style.backgroundColor = '#FF64AE';
+
+          if (index === 0) {
+            item.classList.add('ProfessionCardAfter');
+          } else if (index === arr.length - 1) {
+            item.classList.add('ProfessionCardBefore');
+          }
+        })
+      }
+    })
+  })
 
   return (
     <Profession>
@@ -48,12 +68,21 @@ const ProfessionComponent:React.FC<ProProps> = () => {
 				<ProfessionDesc>
 					<ProInfoTip>Professional Teams</ProInfoTip>
 					<ProInfoTitle>The Professional expert</ProInfoTitle>
-					<ProInfoDescibe>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</ProInfoDescibe>
+					<ProInfoDescribe>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</ProInfoDescribe>
 				</ProfessionDesc>
 				<ProItem>
 					<ProItemWrapper>
-						{pros.map((pro) => (
-              <ProItemRow key={pro.id}>
+						{pros.map((pro, index) => (
+              <ProItemRow 
+                key={pro.id}
+                className= {
+                  index === 0
+                    ? 'ProfessionCardAfter'
+                    : index === pros.length -1
+                    ? 'ProfessionCardBefore'
+                    : ''
+                }
+              >
 							  <CardProfessional>
 								  <CardWrapperPro>
 									  <CardImagePro>

@@ -21,7 +21,7 @@ export const ProInfoTitle = styled.h2 `
   ${tw`w-[732px] h-[53px] my-[15px] text-center leading-45 text-color-title font-semibold text-36`}
 `;
 
-export const ProInfoDescibe = styled.p `
+export const ProInfoDescribe = styled.p `
   ${tw`w-[848px] h-[51px] text-center text-color-default tracking-widest leading-24 mt-[2px] font-normal text-16`}
 `;
 

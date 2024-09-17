@@ -7,10 +7,11 @@ export const About = styled.div `
 `;
 
 export const AboutWrapper = styled.div `
-  ${tw`flex items-center max-w-[1440px] m-auto pt-[134px] h-full`}
+  ${tw`relative flex items-center max-w-[1440px] m-auto pt-[134px] h-full`}
 
   &::after {
-    ${tw`bg-about-background bg-no-repeat`}
+    ${tw`absolute inset-0 bg-about-background bg-no-repeat w-full h-full -z-1 bg-right-top translate-y-[-220px]`}
+    content: '';
   }
 `;
 
