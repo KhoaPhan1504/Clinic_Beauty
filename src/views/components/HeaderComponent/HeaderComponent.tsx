@@ -4,21 +4,24 @@ import {
   Header, HeaderWrapper, WrapperImage, WrapperImageStyle,
   HeaderMore,HeaderMenu, HeaderMenuChildren,
   MenuItem, MenuLink,
-  HeaderContact
+  HeaderContact,
 } from './Header.style';
 import ButtonComponent from '../../../components/Button/ButtonComponent';
+import NavbarComponent from '../NavbarComponent/NavbarComponent';
+
 
 const HeaderComponent: React.FC = () => {
   return (
     <Header>
       <HeaderWrapper>
-        
+        <NavbarComponent />
         <WrapperImage>
           <WrapperImageStyle src={Logo_Header} alt='Beautice - Clinic & Beauty'/>
         </WrapperImage>
         <HeaderMore>
           <HeaderMenu>
             <HeaderMenuChildren>
+              {/* <MenuItem className="_menuItem"><MenuLink className="active" href="#">Home<IconActive icon="fa-sharp fa-light fa-plus" /></MenuLink></MenuItem> */}
               <MenuItem className="_menuItem"><MenuLink className="active" href="#">Home +</MenuLink></MenuItem>
               <MenuItem className="_menuItem"><MenuLink href="#">About</MenuLink></MenuItem>
               <MenuItem className="_menuItem"><MenuLink href="#">Service</MenuLink></MenuItem>

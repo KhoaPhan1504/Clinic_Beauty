@@ -3,15 +3,15 @@ import styled from "styled-components";
 import ButtonComponent from "../../../../components/Button/ButtonComponent";
 
 export const Slider = styled.div `
-  ${tw`h-[743px] w-full`}
+  ${tw`h-[743px] w-auto max-[1024px]:(h-auto w-full) max-[768px]:h-auto`}
 `;
 
 export const SliderWrapper = styled.div `
-  ${tw`flex items-center max-w-[1440px] m-auto pt-[185px] h-full bg-slider-background bg-no-repeat`}
+  ${tw`flex items-center max-w-[1440px] m-auto pt-[185px] h-full bg-slider-background bg-no-repeat max-[1024px]:(h-auto w-full flex-col justify-center items-center)`}
 `;
 
 export const SliderWrapperText = styled.div `
-  ${tw`flex justify-center items-center flex-col h-full w-[700px]`}
+  ${tw`flex justify-center items-center flex-col h-full w-[700px]`} 
 `;
 
 export const SliderMainChild = styled.div `

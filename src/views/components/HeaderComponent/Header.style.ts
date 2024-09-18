@@ -61,5 +61,5 @@ export const MenuLink = styled.a `
 `;
 
 export const HeaderContact = styled.div `
-  ${tw`absolute top-[21px] left-[982px] translate-y-[-50%]`}
+  ${tw`absolute top-[21px] left-[982px] translate-y-[-50%] bg-color-pink rounded-full`}
 `;

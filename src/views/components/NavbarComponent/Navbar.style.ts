@@ -32,8 +32,7 @@ export const HeaderTog = styled.label `
 `;
 
 export const HeaderSidebar = styled.label `
-  ${tw`fixed top-0 left-0 right-0 bottom-0 z-[100] bg-[#0000007a]`}
-  display: none;
+  ${tw`hidden fixed top-0 left-0 right-0 bottom-0 z-[100] bg-[#0000007a]`}
 `;
 
 export const CheckBox = styled.input.attrs({ type: 'checkbox'}) `
