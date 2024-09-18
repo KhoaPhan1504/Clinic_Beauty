@@ -1,5 +1,6 @@
 import tw from "twin.macro";
 import styled from "styled-components";
+import { Card } from "../../../../components/Card/Card.style";
 
 export const Profession = styled.div `
   ${tw`w-full h-[861px] ml-[3px] mt-[144px]`}
@@ -26,7 +27,7 @@ export const ProInfoDescribe = styled.p `
 `;
 
 export const ProItem = styled.div `
-  ${tw`flex justify-center items-center w-full mt-[89px]`}
+  ${tw`flex justify-center items-center w-full mt-[15px]`}
 `;
 
 export const ProItemWrapper = styled.div `
@@ -36,25 +37,29 @@ export const ProItemWrapper = styled.div `
 export const ProItemRow = styled.div `
   ${tw`flex-1 min-h-[400px] transition-all bg-transparent`}
 
-  &.not-hovered {
-    ${tw`translate-x-[20px] opacity-40`}
+  &.active {
+    ${tw`opacity-35`}
   }
 
-  &.Card {
-    ${tw`w-[424px] h-[626px] mt-[3px] translate-y-[-3px] bg-color-white`}
-  }
-
-  &:not(.Card) {
-    ${tw`flex-grow h-full bg-transparent`}
+  &:not(.active) {
+    ${tw``}
   }
 `;
 
-export const CardProfessional = styled.div `
+export const CardProfessional = styled(Card) `
   ${tw`w-[424px] h-[626px]`}
 `;
 
 export const CardWrapperPro = styled.div `
   ${tw`flex flex-col items-center h-full`}
+  
+  &[data-id="1"] {
+    ${tw`pl-[34px]`}
+  }
+
+  &[data-id="3"] {
+    ${tw`pr-[34px]`}
+  }
 `;
 
 export const CardImagePro = styled.div `

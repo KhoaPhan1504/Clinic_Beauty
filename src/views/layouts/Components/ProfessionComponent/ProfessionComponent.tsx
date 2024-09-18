@@ -1,4 +1,4 @@
-import React , {useEffect, useState, useRef} from 'react';
+import React , {useEffect, useState} from 'react';
 import { 
   CardContactImg, CardContactItem,
   CardContactPro, CardImagePro,
@@ -11,7 +11,7 @@ import {
   ProInfoTip, ProInfoTitle, 
   ProItem, ProItemRow, ProItemWrapper 
 } from './Profession.style';
-import prosData from '../../../data/ProfessionData/ProfessionData.json';
+import prosData from '../../../../data/ProfessionData/ProfessionData.json';
 
 interface ProProps {
   id: number;
@@ -27,40 +27,19 @@ interface ProProps {
 const ProfessionComponent:React.FC = () => {
   const [pros, setPros] = useState<ProProps[]>([]);
 
-  const proItemRowRef = useRef<HTMLDivElement[]>([]);
+  const [activeCard, setActiveCard] = useState<number>(2);
 
+  const handleMouseEnter = (id: number) => {
+    setActiveCard(id);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveCard(2);
+  };
+ 
   useEffect(() => {
     setPros(prosData);
   }, []);
-
-  useEffect(() => {
-    const proItemRows = proItemRowRef.current;
-
-    proItemRows.forEach((item, index, arr) => {
-      if(item) {
-        item.addEventListener('mouseenter', () => {
-          proItemRows.forEach((i) => {
-            if(i) {
-              i.classList.remove('Card');
-              i.classList.add ('not-hovered');
-              if(i != item) {
-                i.style.backgroundColor = 'transparent';
-              }
-            }
-          });
-          item.classList.add('Card');
-          item.classList.remove('not-hovered');
-          item.style.backgroundColor = '#FF64AE';
-
-          if (index === 0) {
-            item.classList.add('ProfessionCardAfter');
-          } else if (index === arr.length - 1) {
-            item.classList.add('ProfessionCardBefore');
-          }
-        })
-      }
-    })
-  })
 
   return (
     <Profession>
@@ -72,19 +51,15 @@ const ProfessionComponent:React.FC = () => {
 				</ProfessionDesc>
 				<ProItem>
 					<ProItemWrapper>
-						{pros.map((pro, index) => (
+						{pros.map((pro) => (
               <ProItemRow 
                 key={pro.id}
-                className= {
-                  index === 0
-                    ? 'ProfessionCardAfter'
-                    : index === pros.length -1
-                    ? 'ProfessionCardBefore'
-                    : ''
-                }
+                onMouseEnter={() => handleMouseEnter(pro.id)}
+                onMouseLeave={handleMouseLeave}
+                className={pro.id !== activeCard ? 'active' : ''}
               >
 							  <CardProfessional>
-								  <CardWrapperPro>
+								  <CardWrapperPro data-id={pro.id}>
 									  <CardImagePro>
 										  <CardImgPro src={pro.cardImage} alt="" />
 									  </CardImagePro>

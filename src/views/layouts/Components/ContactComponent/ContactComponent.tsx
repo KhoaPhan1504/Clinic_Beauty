@@ -1,5 +1,5 @@
 import React from 'react';
-import contact_image from "../../../assets/images/home1/Contact.svg"
+import contact_image from "../../../../assets/images/home1/Contact.svg"
 import { 
   Contact, ContactDescribe, ContactFormInfo, 
 	ContactFormWrapper, ContactImage, 
@@ -11,7 +11,7 @@ import {
 	ContactColInput, ContactRowname, 
 	FormButton, FormControl, 
 	FormGroup, TextArea 
-} from '../../../components/Form/Form.style';
+} from '../../../../components/Form/Form.style';
 
 const ContactComponent:React.FC = () => {
   return (

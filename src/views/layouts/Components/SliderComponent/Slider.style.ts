@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 import styled from "styled-components";
-import ButtonComponent from "../../../components/Button/ButtonComponent";
+import ButtonComponent from "../../../../components/Button/ButtonComponent";
 
 export const Slider = styled.div `
   ${tw`h-[743px] w-full`}

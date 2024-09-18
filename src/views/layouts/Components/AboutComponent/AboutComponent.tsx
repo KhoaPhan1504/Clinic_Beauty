@@ -8,9 +8,9 @@ import {
   AboutTitleDesc, AboutWatch, AboutWatchImg, AboutWatchText, AboutWrapper, 
   BtnLearnMore
 } from './About.style';
-import WatchVideo from '../../../assets/images/home1/AboutWatch.svg';
-import AboutImage from '../../../assets/images/home1/Image_About.png';
-import about_bg from '../../../assets/images/home1/Background Bubble.png'
+import WatchVideo from '../../../../assets/images/home1/AboutWatch.svg';
+import AboutImage from '../../../../assets/images/home1/Image_About.png';
+import about_bg from '../../../../assets/images/home1/Background Bubble.png'
 
 const AboutComponent = () => {
   return (

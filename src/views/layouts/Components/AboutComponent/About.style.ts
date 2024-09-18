@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 import styled from "styled-components";
-import ButtonComponent from "../../../components/Button/ButtonComponent";
+import ButtonComponent from "../../../../components/Button/ButtonComponent";
 
 export const About = styled.div `
   ${tw`w-full h-auto bg-transparent`}
