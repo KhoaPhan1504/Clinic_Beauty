@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from "styled-components";
 import tw from "twin.macro";
 
@@ -23,7 +24,7 @@ export const FooterContainer = styled.div `
 `;
 
 export const FooterColumn = styled.div `
-  ${tw`flex-col`}
+  ${tw`flex`}
 `;
 
 export const FooterCol = styled.div `
@@ -46,7 +47,11 @@ export const FooterInfoDescibes = styled.div `
   ${tw`mt-[33px] ml-[31px] text-color-border text-16 tracking-widest`}
 `;
 
-export const FooterInfoDescibe = styled.p `
+export const FooterInfoDescibeWrap = styled.p `
+  ${tw`leading-24 tracking-widest w-[461px] h-[21px] text-16 font-normal`}
+`;
+
+export const FooterInfoDescibe = styled.strong `
   ${tw`leading-24 tracking-widest w-[461px] h-[21px] text-16 font-bold`}
 `;
 
@@ -67,7 +72,7 @@ export const FooterInfoEmail = styled.span `
 `;
 
 export const FooterInfoEmailItem = styled.a `
-  ${tw`w-[190px] h-[23px] italic leading-21 ml-[42px] tracking-1.4 no-underline text-footer-text cursor-pointer font-medium text-14`}
+  ${tw`w-[190px] h-[23px] italic leading-21 ml-[42px] tracking-1.4 text-footer-text cursor-pointer font-medium text-14 underline`}
 `;
 
 export const FooterMore = styled.div `
@@ -93,6 +98,10 @@ export const FooterMoreChildrenItems = styled.ul `
 export const FooterMoreItem = styled.li `
   ${tw`text-16 my-[11px] transition-[0.5s] cursor-pointer leading-24 tracking-widest font-normal`}
 `;
+
+export const IconLinkMenu = styled(FontAwesomeIcon) `
+  ${tw`mr-[6px]`}
+`
 
 export const FooterBottom = styled.div `
   ${tw`mt-[80px] flex`}

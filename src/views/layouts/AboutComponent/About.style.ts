@@ -6,13 +6,13 @@ export const About = styled.div `
   ${tw`w-full h-auto bg-transparent`}
 `;
 
-export const AboutWrapper = styled.div `
-  ${tw`relative flex items-center max-w-[1440px] m-auto pt-[134px] h-full`}
+export const AboutBackground = styled.img `
+  ${tw`absolute right-0 translate-y-[-220px]`}
+  content: '';
+`;
 
-  &::after {
-    ${tw`absolute inset-0 bg-about-background bg-no-repeat w-full h-full -z-1 bg-right-top translate-y-[-220px]`}
-    content: '';
-  }
+export const AboutWrapper = styled.div `
+  ${tw`relative flex items-center max-w-[1440px] m-auto pt-[134px]`}
 `;
 
 export const AboutContainer = styled.div `

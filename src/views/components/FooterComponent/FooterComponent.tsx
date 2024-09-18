@@ -6,12 +6,14 @@ import {
   FooterIcon, 
   FooterInfo, FooterInfoAddress, FooterInfoContact, 
   FooterInfoDescibe, FooterInfoDescibes, 
+  FooterInfoDescibeWrap, 
   FooterInfoEmail, FooterInfoEmailItem, FooterInfoLogo, 
   FooterInfoPhone, FooterInternet, FooterLogoImg, 
   FooterMore,  FooterMoreChildrenItems, 
    FooterMoreInformation,  FooterMoreItem,  
    FooterMorePage,  FooterMoreTitle, FooterWrapper, 
   IconImg,
+  IconLinkMenu,
 } from './Footer.style';
 import footer_logo from "../../../assets/images/home1/Footer Logo.png";
 import fb_logo from '../../../assets/images/home1/facebook-f.png';
@@ -20,6 +22,7 @@ import lin_logo from '../../../assets/images/home1/linkedin-in.png';
 import you_logo from '../../../assets/images/home1/youtube.png';
 import insta_logo from '../../../assets/images/home1/instagram (1).png';
 import ScrollTopComponent from '../../../components/ScrollTop/ScrollTopComponent';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const FooterComponent:React.FC = () => {
@@ -35,9 +38,9 @@ const FooterComponent:React.FC = () => {
                     <FooterLogoImg src={footer_logo} alt="img" />
                   </FooterInfoLogo>
                   <FooterInfoDescibes>
-                    <FooterInfoDescibe>
-                      <strong>Beautice</strong> is a Beauty Clinic WordPress Theme.
-                    </FooterInfoDescibe>
+                    <FooterInfoDescibeWrap>
+                      <FooterInfoDescibe>Beautice</FooterInfoDescibe> is a Beauty Clinic WordPress Theme.
+                    </FooterInfoDescibeWrap>
                     <br/>
                     <FooterInfoAddress>
                       <i>Baker Steet 101, NY, United States.</i>
@@ -56,20 +59,20 @@ const FooterComponent:React.FC = () => {
                   <FooterMorePage>
                     <FooterMoreTitle>Pages</FooterMoreTitle>
                     <FooterMoreChildrenItems>
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>Home</FooterMoreItem>
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>About</FooterMoreItem>
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>Services</FooterMoreItem>
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>Gallery</FooterMoreItem>
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>Team</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/> Home</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/> About</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/> Services</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/> Gallery</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/>  Team</FooterMoreItem>
                     </FooterMoreChildrenItems>
                   </FooterMorePage>
                   <FooterMoreInformation>
                     <FooterMoreTitle>Informations</FooterMoreTitle>
                     <FooterMoreChildrenItems>    									
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>Terms & conditions</FooterMoreItem>
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>Privacy policy</FooterMoreItem>
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>Blog</FooterMoreItem>
-                      <FooterMoreItem><i className="fa-solid fa-caret-right"></i>Contact</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/> Terms & conditions</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/> Privacy policy</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/> Blog</FooterMoreItem>
+                      <FooterMoreItem><IconLinkMenu icon={faCaretRight}/> Contact</FooterMoreItem>
                     </FooterMoreChildrenItems>
                   </FooterMoreInformation>
                 </FooterMore>
@@ -98,9 +101,7 @@ const FooterComponent:React.FC = () => {
                 </FooterInternet>
               </FooterCol>
               <FooterCol>
-                <FooterCertification>
-                  <i>© AltDesain Studio 2021 - All right reserved.</i>
-                </FooterCertification>
+                <FooterCertification>© AltDesain Studio 2021 - All right reserved.</FooterCertification>
               </FooterCol>
             </FooterBottom>
           </FooterContainer>

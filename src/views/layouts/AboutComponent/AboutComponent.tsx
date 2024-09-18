@@ -1,6 +1,6 @@
 
 import { 
-  About, AboutBtnGroup, AboutBtnLeft, AboutBtnRight, AboutContainer, 
+  About, AboutBackground, AboutBtnGroup, AboutBtnLeft, AboutBtnRight, AboutContainer, 
   AboutContainerImage, 
   AboutContainerText, AboutDescribe, 
   AboutImg, 
@@ -10,10 +10,12 @@ import {
 } from './About.style';
 import WatchVideo from '../../../assets/images/home1/AboutWatch.svg';
 import AboutImage from '../../../assets/images/home1/Image_About.png';
+import about_bg from '../../../assets/images/home1/Background Bubble.png'
 
 const AboutComponent = () => {
   return (
     <About>
+			<AboutBackground src={about_bg} alt='Background About'/>
 			<AboutWrapper>
 				<AboutContainer>
 					<AboutContainerText>
