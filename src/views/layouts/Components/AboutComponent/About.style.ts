@@ -3,28 +3,28 @@ import styled from "styled-components";
 import ButtonComponent from "../../../../components/Button/ButtonComponent";
 
 export const About = styled.div `
-  ${tw`w-screen h-auto bg-transparent`}
+  ${tw`w-screen h-auto bg-transparent md:mt-[420px] lg:mt-0 xl:mt-0`}
 `;
 
 export const AboutBackground = styled.img `
-  ${tw`absolute right-0 translate-y-[-220px]`}
+  ${tw`absolute -z-10 right-0  md:translate-y-0 xl:translate-y-[-220px]`}
   content: '';
 `;
 
 export const AboutWrapper = styled.div `
-  ${tw`relative flex items-center max-w-[1440px] m-auto pt-[134px]`}
+  ${tw`flex items-center max-w-[1440px] m-auto md:(pt-[110px]) xl:pt-[134px]`}
 `;
 
 export const AboutContainer = styled.div `
-  ${tw`flex w-full h-auto`}
+  ${tw`flex w-full h-auto  md:(flex-col text-center) xl:(flex-row text-start)`}
 `;
 
 export const AboutContainerText = styled.div `
-  ${tw`w-[51.5%] mt-[1px]`}
+  ${tw`md:(w-full flex justify-center) xl:(justify-start)`}
 `;
 
 export const AboutTitleDesc = styled.div `
-  ${tw`w-[664px] h-[292px] flex flex-col items-start ml-[150px]`}
+  ${tw`w-[664px] h-[292px] flex flex-col items-start md:(ml-0 items-center) xl:(ml-[150px] items-start)`}
 `;
 
 export const AboutTip = styled.span `
@@ -72,7 +72,7 @@ export const AboutWatchText = styled.span `
 `;
 
 export const AboutContainerImage = styled.div `
-  ${tw`w-full h-full pt-[44px] pl-[72px] rounded-[50px]`}
+  ${tw`w-full h-full pt-[44px] pl-[72px] rounded-[50px] md:(mt-[120px] flex justify-center pl-0) xl:(m-0 pr-[148px])`}
 `;
 
 export const AboutImg = styled.img `

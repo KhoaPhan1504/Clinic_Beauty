@@ -9,13 +9,13 @@ import ContactComponent from '../layouts/Components/ContactComponent/ContactComp
 const Home1 = () => {
   return (
     <>
-      <HeaderComponent /> 
+      <HeaderComponent />   
       <SliderComponent />
       <CoreComponent />
       <AboutComponent />
       <ProfessionComponent />
-      <ContactComponent />
-      <FooterComponent />
+      {/* <ContactComponent /> */}
+      {/* <FooterComponent /> */}
     </>
   )
 }

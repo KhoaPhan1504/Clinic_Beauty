@@ -7,7 +7,7 @@ export const MobileMenuButton = styled.button`
 `;
 
 export const MobileNavWrapper = styled.div`
-  ${tw`absolute top-[40px] right-0 bg-color-white w-[40vw] h-screen flex flex-col items-center justify-center`}
+  ${tw`absolute top-0 right-0 bg-color-white w-[40vw] h-screen flex flex-col items-center justify-center`}
   
   & ul {
     ${tw`flex flex-col items-center`}
@@ -19,5 +19,5 @@ export const MobileNavWrapper = styled.div`
 `;
 
 export const NavbarIcon = styled(FontAwesomeIcon) `
-  ${tw`text-[40px] text-color-pink ml-[100vh]`}
+  ${tw`text-[40px] text-color-pink `}
 `;

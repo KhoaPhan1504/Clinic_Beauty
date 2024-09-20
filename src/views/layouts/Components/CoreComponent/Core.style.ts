@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { Card } from "../../../../components/Card/Card.style";
 
 export const Core = styled.div `
-  ${tw`relative w-screen max-w-1140 h-[732px] rounded-[42px] mt-[193px] ml-[150px] text-center z-1`}
+  ${tw`w-screen max-w-1140 h-[732px] rounded-[42px] text-center`}
+  ${tw`md:(mx-auto mt-[300px])`}
+  ${tw`lg:(mt-[300px] ) xl:(mt-[193px])`}
 `;
 
 export const CoreWrapper = styled.div `
@@ -12,6 +14,7 @@ export const CoreWrapper = styled.div `
 
 export const TitleDesc = styled.div `
   ${tw`w-full max-w-[848px] flex flex-col items-center`}
+  ${tw`md:(max-w-[700px] text-center) lg:(max-w-[600px]) xl:(max-w-[550px])`}
 `;
 
 export const InfoTip = styled.span `
@@ -20,10 +23,12 @@ export const InfoTip = styled.span `
 
 export const InfoTitle = styled.h2 `
   ${tw`max-w-[417px] h-[97px] leading-[45px] text-center pt-[12px] text-color-title font-semibold text-36`}
+  ${tw`md:(leading-[40px]) lg:(leading-[42px]) xl:(leading-[44px])`}
 `;
 
 export const InfoDescribe = styled.p `
   ${tw`w-full max-w-[848px] h-[51px] leading-24 tracking-widest text-center pt-6 text-color-default font-normal text-16`}
+  ${tw`md:(max-w-[700px]) lg:(max-w-[600px]) xl:(max-w-[550px])`}
 `;
 
 export const CoreItem = styled.div `
@@ -31,7 +36,9 @@ export const CoreItem = styled.div `
 `;
 
 export const CoreCol = styled.div `
-  ${tw`flex justify-between items-center w-full my-[20px]`}
+  ${tw`flex justify-between items-center w-full my-[20px] md:(flex-wrap justify-center)`}
+  ${tw`md:(flex-wrap justify-center)`}
+  ${tw`lg:(justify-around)`}
 `
 
 export const CoreItemCard = styled(Card) `
@@ -42,5 +49,7 @@ export const CoreItemCard = styled(Card) `
     ${tw`translate-y-[10px]`}
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+
+  ${tw`md:(w-[300px] h-[400px]) lg:(w-[320px] h-[420px]) xl:(w-[340px] h-[458px])`}
 `;
 

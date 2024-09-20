@@ -8,7 +8,8 @@ export const Slider = styled.div `
 `;
 
 export const SliderWrapper = styled.div `
-  ${tw`flex items-center w-screen m-auto pt-[185px] h-full bg-no-repeat max-[1280px]:(flex-col)`}
+  ${tw`flex items-center w-screen m-auto pt-[185px] h-full bg-no-repeat`}
+  ${tw`md:(flex-col h-auto) xl:(flex-row h-full) `}
   background-image: url(${Images.sliderBG});
 `;
 
@@ -37,15 +38,15 @@ export const Button = styled(ButtonComponent) `
 `;
 
 export const SliderWrapperImage = styled.div `
-  ${tw`w-screen h-full pt-[75px] pl-[22px] max-[1280px]:(flex justify-center items-center)`}
+  ${tw`xl:(w-[60%] pb-[7px] pr-[132px]) md:(flex justify-center)`}
 `;
 
 export const SliderImage = styled.img `
-  ${tw``}
+  ${tw`w-auto h-auto`}
 `;
 
 export const SliderButtonGroup = styled.div `
-  ${tw`flex justify-center mt-[54px]`}
+  ${tw`flex justify-center mt-[54px] max-[1280px]:(mt-[70px])`}
 `;
 
 export const SliderBtn = styled(ButtonComponent) `

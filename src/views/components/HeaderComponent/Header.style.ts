@@ -2,16 +2,16 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  ${tw`w-screen px-[20px]`}
+  ${tw`relative w-screen px-[20px]`}
 `;
 
 export const HeaderWrapper = styled.div `
-  ${tw`w-screen h-[63px] mt-[50px] ml-[126px] flex`}
+  ${tw` h-[63px] mt-[50px] ml-[126px] flex`}
 `;
 
 //Image - Logo
 export const WrapperImage = styled.div `
-  ${tw`mt-[-9px] `}
+  ${tw`mt-[-9px] md:(mr-[50px]) lg:(mr-0)`}
 `;
 
 export const WrapperImageStyle = styled.img ` 

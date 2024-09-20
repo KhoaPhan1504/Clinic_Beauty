@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import { Images } from '../../../data/ComponentData/Images';
 
 export const Footer = styled.div `
-  ${tw`w-screen h-[705.34px] overflow-hidden`}
+  ${tw`w-screen h-[705.34px] overflow-hidden mt-[11px]`}
 `;
 
 export const FooterWrapper = styled.div `
