@@ -11,7 +11,7 @@ import {
   ProInfoTip, ProInfoTitle, 
   ProItem, ProItemRow, ProItemWrapper 
 } from './Profession.style';
-import prosData from '../../../../data/ProfessionData/ProfessionData.json';
+import { proData } from '../../../../data/ProfessionData/ProfessionData';
 
 interface ProProps {
   id: number;
@@ -38,7 +38,7 @@ const ProfessionComponent:React.FC = () => {
   };
  
   useEffect(() => {
-    setPros(prosData);
+    setPros(proData);
   }, []);
 
   return (

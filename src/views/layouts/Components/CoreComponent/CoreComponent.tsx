@@ -4,7 +4,7 @@ import {
 	InfoDescribe, InfoTip, 
 	InfoTitle, TitleDesc 
 } from './Core.style';
-import cardsData from './../../../../data/CoreData/CoreData.json';
+import { coreData } from '../../../../data/CoreData/CoreData';
 import { 
 	CardDescribe, CardImage, 
 	CardImg, CardInfo, 
@@ -23,7 +23,7 @@ const CoreComponent:React.FC = () => {
 	const [cores, setCores] = useState<CoreProps[]>([]);
 
   useEffect(() => {
-    setCores(cardsData);
+    setCores(coreData);
   }, []);
 
   return (

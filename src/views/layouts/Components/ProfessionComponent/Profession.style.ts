@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Card } from "../../../../components/Card/Card.style";
 
 export const Profession = styled.div `
-  ${tw`w-full h-[861px] ml-[3px] mt-[144px]`}
+  ${tw`w-screen h-[861px] ml-[3px] mt-[144px]`}
 `;
 
 export const ProfessionWrapper = styled.div `

@@ -1,13 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from "styled-components";
 import tw from "twin.macro";
+import { Images } from '../../../data/ComponentData/Images';
 
 export const Footer = styled.div `
-  ${tw`w-full h-[705.34px] translate-y-[11px] overflow-hidden`}
+  ${tw`w-screen h-[705.34px] overflow-hidden`}
 `;
 
 export const FooterWrapper = styled.div `
-  ${tw`relative flex max-w-[1540px] m-0 bg-footer-2-background bg-no-repeat h-[704.37px] bg-cover z-0`}
+  ${tw`relative flex max-w-[1540px] m-0 bg-no-repeat h-[704.37px] bg-cover z-0`}
+  background-image: url(${Images.footer2Background});
 
   &::after {
     ${tw`absolute -z-1 w-full h-[125px] bg-color-bgr-footer bottom-0`}
@@ -16,7 +18,8 @@ export const FooterWrapper = styled.div `
 `;
 
 export const FooterContainerFluid = styled.div `
-  ${tw`w-full h-[704.37px] bg-footer-1-background bg-no-repeat bg-cover`}
+  ${tw`w-full h-[704.37px] bg-no-repeat bg-cover`}
+  background-image: url(${Images.footer1Background});
 `;
 
 export const FooterContainer = styled.div `

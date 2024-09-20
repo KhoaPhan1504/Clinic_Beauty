@@ -10,12 +10,11 @@ import {
 } from './About.style';
 import WatchVideo from '../../../../assets/images/home1/AboutWatch.svg';
 import AboutImage from '../../../../assets/images/home1/Image_About.png';
-import about_bg from '../../../../assets/images/home1/Background Bubble.png'
-
+import { Images } from '../../../../data/ComponentData/Images';
 const AboutComponent = () => {
   return (
     <About>
-			<AboutBackground src={about_bg} alt='Background About'/>
+			<AboutBackground src={Images.aboutBG} alt='Background About'/>
 			<AboutWrapper>
 				<AboutContainer>
 					<AboutContainerText>

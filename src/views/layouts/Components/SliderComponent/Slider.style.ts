@@ -1,13 +1,15 @@
 import tw from "twin.macro";
 import styled from "styled-components";
 import ButtonComponent from "../../../../components/Button/ButtonComponent";
+import { Images } from "../../../../data/ComponentData/Images";
 
 export const Slider = styled.div `
-  ${tw`h-[743px] w-auto max-[1024px]:(h-auto w-full) max-[768px]:h-auto`}
+  ${tw`h-[743px] w-screen mt-[-113px]`}
 `;
 
 export const SliderWrapper = styled.div `
-  ${tw`flex items-center max-w-[1440px] m-auto pt-[185px] h-full bg-slider-background bg-no-repeat max-[1024px]:(h-auto w-full flex-col justify-center items-center)`}
+  ${tw`flex items-center w-screen m-auto pt-[185px] h-full bg-no-repeat max-[1280px]:(flex-col)`}
+  background-image: url(${Images.sliderBG});
 `;
 
 export const SliderWrapperText = styled.div `
@@ -15,7 +17,7 @@ export const SliderWrapperText = styled.div `
 `;
 
 export const SliderMainChild = styled.div `
-  ${tw`pl-[189px] pb-[27px]`}
+  ${tw`pl-[189px] pb-[27px] max-[1280px]:(pl-[70px])`}
 `;
 
 export const SliderMainTitle = styled.h1 `
@@ -35,7 +37,7 @@ export const Button = styled(ButtonComponent) `
 `;
 
 export const SliderWrapperImage = styled.div `
-  ${tw`w-full h-full pt-[75px] pl-[22px]`}
+  ${tw`w-screen h-full pt-[75px] pl-[22px] max-[1280px]:(flex justify-center items-center)`}
 `;
 
 export const SliderImage = styled.img `

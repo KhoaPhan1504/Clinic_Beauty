@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import tw from "twin.macro";
+import { Images } from "../../../../data/ComponentData/Images";
 
 export const Contact = styled.div `
-  ${tw`w-auto h-[1072px]`}
+  ${tw`w-screen h-[1072px]`}
 `;
 
 export const ContactWrapper = styled.div `
-  ${tw`flex items-center max-w-[1440px] m-auto pt-[353px] h-full bg-contact-background bg-no-repeat translate-y-[-59px]`}
+  ${tw`flex items-center max-w-[1440px] m-auto pt-[353px] h-full bg-no-repeat translate-y-[-59px]`}
+  background-image: url(${Images.contactBG});
 `;
 
 export const ContactMain = styled.div `

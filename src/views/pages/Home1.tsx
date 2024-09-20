@@ -1,5 +1,4 @@
 import HeaderComponent from '../components/HeaderComponent/HeaderComponent';
-import NavbarComponent from '../components/NavbarComponent/NavbarComponent';
 import FooterComponent from '../components/FooterComponent/FooterComponent';
 import SliderComponent from '../layouts/Components/SliderComponent/SliderComponent';
 import CoreComponent from '../layouts/Components/CoreComponent/CoreComponent';
@@ -10,8 +9,7 @@ import ContactComponent from '../layouts/Components/ContactComponent/ContactComp
 const Home1 = () => {
   return (
     <>
-      <HeaderComponent />
-      <NavbarComponent />
+      <HeaderComponent /> 
       <SliderComponent />
       <CoreComponent />
       <AboutComponent />

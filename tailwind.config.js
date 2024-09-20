@@ -27,13 +27,6 @@ export default {
     maxWidth: {
       '1140': '1140px'
     },
-    backgroundImage: {
-      'slider-background': "url('./src/assets/images/home1/Slide_Background.png ')",
-      'about-background': "url('./src/assets/images/home1/Background Bubble.png')",
-      'contact-background': "url('./src/assets/images/home1/Background BubbleLeft.png')",
-      'footer-2-background' : "url('./src/assets/images/home1/Footer BG 2.png')",
-      'footer-1-background' : "url('./src/assets/images/home1/Footer BG 1.png')"
-    },
     fontSize: {
       '14': '14px',
       '16': '16px',
@@ -59,11 +52,6 @@ export default {
       '27': '27px',
       '45': '45px'
     },
-    // screens: {
-    //   'tablet': '640px',
-    //   'laptop': '1024px',
-    //   'desktop': '1280px'
-    // }
   },
   plugins: [],
 }

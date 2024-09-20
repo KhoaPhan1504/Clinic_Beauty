@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ButtonComponent from "../../../../components/Button/ButtonComponent";
 
 export const About = styled.div `
-  ${tw`w-full h-auto bg-transparent`}
+  ${tw`w-screen h-auto bg-transparent`}
 `;
 
 export const AboutBackground = styled.img `

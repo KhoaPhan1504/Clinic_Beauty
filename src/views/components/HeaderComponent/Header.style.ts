@@ -2,38 +2,40 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  ${tw`absolute top-[40px] z-50 w-full px-[20px] bg-opacity-0`}
+  ${tw`w-screen px-[20px]`}
 `;
 
 export const HeaderWrapper = styled.div `
-  ${tw`relative max-w-1140 h-[63px] my-[10px] ml-[130px] flex`}
+  ${tw`w-screen h-[63px] mt-[50px] ml-[126px] flex`}
 `;
 
+//Image - Logo
 export const WrapperImage = styled.div `
-  ${tw`relative bottom-[0.55rem] right-[0.26rem]`}
+  ${tw`mt-[-9px] `}
 `;
 
-export const WrapperImageStyle = styled.img `
+export const WrapperImageStyle = styled.img ` 
   ${tw``}
 `;
 
+//Menu
 export const HeaderMore = styled.div `
-  ${tw`w-[481px] h-[25px] flex justify-between items-center`}
+  ${tw`w-auto h-full flex justify-between items-center ml-[171px] pb-[21px] max-[1140px]:hidden xl:ml-[171px] lg:ml-[50px] md:ml-[20px] sm:ml-[10px]`}
 `;
 
 export const HeaderMenu = styled.div `
-  ${tw`absolute top-[9px] left-[432px] block`}
+  ${tw`max-[1140px]:hidden`}
 `;
 
 export const HeaderMenuChildren = styled.div `
-  ${tw`flex m-0 p-0`}
+  ${tw`flex m-0 pl-[4px] max-[1140px]:flex-col`}
 `;
 
 export const MenuItem = styled.li `
   ${tw`float-left list-none`}
 
   &:nth-child(1) {
-    ${tw`mr-[5px]`}
+    ${tw`mr-[4px]`}
   }
 
   &:nth-child(2) {
@@ -43,8 +45,13 @@ export const MenuItem = styled.li `
   &:nth-child(3) {
     ${tw`mr-[10px]`}
   }
+
   &:nth-child(4) {
     ${tw`mr-[12px]`}
+  }
+
+  &:nth-child(5) {
+    ${tw`mr-[35px]`}
   }
 `;
 
@@ -60,6 +67,7 @@ export const MenuLink = styled.a `
   }
 `;
 
+// Button
 export const HeaderContact = styled.div `
-  ${tw`absolute top-[21px] left-[982px] translate-y-[-50%] bg-color-pink rounded-full`}
+  ${tw`bg-color-pink rounded-full`}
 `;
