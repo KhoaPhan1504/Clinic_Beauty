@@ -20,7 +20,7 @@ export const WrapperImageStyle = styled.img `
 
 //Menu
 export const HeaderMore = styled.div `
-  ${tw`w-auto h-full flex justify-between items-center ml-[171px] pb-[21px] max-[1140px]:hidden xl:ml-[171px] lg:ml-[50px] md:ml-[20px] sm:ml-[10px]`}
+  ${tw`w-auto h-full flex justify-between items-center pb-[21px] max-[1140px]:hidden sm:ml-[10px] md:ml-[20px] lg:ml-[50px] xl:ml-[171px]`}
 `;
 
 export const HeaderMenu = styled.div `

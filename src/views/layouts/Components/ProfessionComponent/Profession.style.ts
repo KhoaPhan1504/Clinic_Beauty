@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { Card } from "../../../../components/Card/Card.style";
 
 export const Profession = styled.div `
-  ${tw`w-screen h-[861px] ml-[3px] mt-[144px]`}
+  ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[144px])`}
 `;
 
 export const ProfessionWrapper = styled.div `
-  ${tw`flex items-center flex-col max-w-1140 h-full ml-[147px]`}
+  ${tw`flex items-center flex-col max-w-1140 h-full md:ml-0 xl:ml-[68px] x:ml-[147px]`}
 `;
 
 export const ProfessionDesc = styled.div `
@@ -19,11 +19,13 @@ export const ProInfoTip = styled.span `
 `;
 
 export const ProInfoTitle = styled.h2 `
-  ${tw`w-[732px] h-[53px] my-[15px] text-center leading-45 text-color-title font-semibold text-36`}
+  ${tw`h-[53px] my-[15px] text-center leading-45 text-color-title font-semibold text-36`}
+  ${tw`md:(w-auto) xl:w-[732px]`}
 `;
 
 export const ProInfoDescribe = styled.p `
-  ${tw`w-[848px] h-[51px] text-center text-color-default tracking-widest leading-24 mt-[2px] font-normal text-16`}
+  ${tw`h-[51px] text-center text-color-default tracking-widest leading-24 mt-[2px] font-normal text-16`}
+  ${tw`md:(w-auto) xl:w-[848px]`}
 `;
 
 export const ProItem = styled.div `
@@ -31,14 +33,15 @@ export const ProItem = styled.div `
 `;
 
 export const ProItemWrapper = styled.div `
-  ${tw`flex justify-between transition-all`}
+  ${tw`flex transition-all md:(flex-wrap flex-col) lg:(flex-wrap flex-row justify-center) xl:(flex-nowrap justify-between)`}
 `;
 
 export const ProItemRow = styled.div `
   ${tw`flex-1 min-h-[400px] transition-all bg-transparent`}
 
   &.active {
-    ${tw`opacity-35`}
+    ${tw`md:opacity-100 lg:opacity-35 xl:opacity-35`}
+
   }
 
   &:not(.active) {
@@ -47,18 +50,18 @@ export const ProItemRow = styled.div `
 `;
 
 export const CardProfessional = styled(Card) `
-  ${tw`w-[424px] h-[626px]`}
+  ${tw`md:(w-[596px] h-[595px]) xl:(w-[424px] h-[626px])`}
 `;
 
 export const CardWrapperPro = styled.div `
   ${tw`flex flex-col items-center h-full`}
   
   &[data-id="1"] {
-    ${tw`pl-[34px]`}
+    ${tw`md:pl-0 xl:pl-[34px]`}
   }
 
   &[data-id="3"] {
-    ${tw`pr-[34px]`}
+    ${tw`md:pr-0 xl:pr-[34px]`}
   }
 `;
 

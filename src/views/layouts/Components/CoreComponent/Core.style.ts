@@ -13,8 +13,8 @@ export const CoreWrapper = styled.div `
 `;
 
 export const TitleDesc = styled.div `
-  ${tw`w-full max-w-[848px] flex flex-col items-center`}
-  ${tw`md:(max-w-[700px] text-center) lg:(max-w-[600px]) xl:(max-w-[550px])`}
+  ${tw`w-full flex flex-col items-center`}
+  ${tw`md:(max-w-[700px] text-center) lg:(max-w-[600px]) xl:(max-w-[848px])`}
 `;
 
 export const InfoTip = styled.span `
@@ -27,8 +27,8 @@ export const InfoTitle = styled.h2 `
 `;
 
 export const InfoDescribe = styled.p `
-  ${tw`w-full max-w-[848px] h-[51px] leading-24 tracking-widest text-center pt-6 text-color-default font-normal text-16`}
-  ${tw`md:(max-w-[700px]) lg:(max-w-[600px]) xl:(max-w-[550px])`}
+  ${tw`w-full h-[51px] leading-24 tracking-widest text-center pt-6 text-color-default font-normal text-16`}
+  ${tw`md:(max-w-[700px]) lg:(max-w-[600px]) xl:(max-w-[848px])`}
 `;
 
 export const CoreItem = styled.div `
@@ -36,9 +36,8 @@ export const CoreItem = styled.div `
 `;
 
 export const CoreCol = styled.div `
-  ${tw`flex justify-between items-center w-full my-[20px] md:(flex-wrap justify-center)`}
-  ${tw`md:(flex-wrap justify-center)`}
-  ${tw`lg:(justify-around)`}
+  ${tw`flex justify-between items-center w-full my-[20px]`}
+  ${tw`md:(flex-wrap justify-center) lg:() xl:justify-between`}
 `
 
 export const CoreItemCard = styled(Card) `
@@ -48,6 +47,14 @@ export const CoreItemCard = styled(Card) `
   &:hover {
     ${tw`translate-y-[10px]`}
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &[data-id="1"] {
+    ${tw`xl:mr-[37px]`}
+  }
+
+  &[data-id="3"] {
+    ${tw`xl:ml-[37px]`}
   }
 
   ${tw`md:(w-[300px] h-[400px]) lg:(w-[320px] h-[420px]) xl:(w-[340px] h-[458px])`}

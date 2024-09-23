@@ -37,9 +37,9 @@ const CoreComponent:React.FC = () => {
 				<CoreItem>
 					<CoreCol>
 						{cores.map((core) => (
-							<CoreItemCard key={core.id}>
+							<CoreItemCard key={core.id}  data-id={core.id}>
 								<CardWrapper>
-									<CardItem data-id={core.id}>
+									<CardItem>
 										<CardImage>
 											<CardImg src={core.cardImage} alt={core.cardInfoName} />
 										</CardImage>

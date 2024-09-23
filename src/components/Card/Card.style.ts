@@ -8,6 +8,7 @@ export const Card = styled.div `
 
 export const CardWrapper = styled.div `
   ${tw`flex justify-center items-center w-[343px] h-[458px]`}
+
 `;
 
 export const CardItem = styled.div `

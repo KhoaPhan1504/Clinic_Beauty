@@ -5,7 +5,10 @@ export default {
     extend: {
       borderRadius: {
         circle: "50%"
-      }
+      },
+      screens: {
+        'x': '1400px',
+      },
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif']

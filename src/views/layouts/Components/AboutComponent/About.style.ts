@@ -36,7 +36,7 @@ export const AboutTitle = styled.h2 `
 `;
 
 export const AboutDescribe = styled.p `
-  ${tw`font-normal text-16 w-[483px] h-[196px] leading-24 tracking-widest text-color-default mt-[19px]`}
+  ${tw`font-normal text-16 h-[196px] leading-24 tracking-widest text-color-default mt-[19px] md:w-[483px] lg:w-full xl:w-[483px]`}
 `;
 
 export const AboutBtnGroup = styled.div `
