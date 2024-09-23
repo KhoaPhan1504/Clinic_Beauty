@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Logo_Header from '../../../assets/images/home1/Main Logo Header.png'
+import Logo_Header from '../../../assets/images/home1/Logo_Blue.png'
 import { 
   Header, HeaderWrapper, WrapperImage, WrapperImageStyle,
   HeaderMore,HeaderMenu, HeaderMenuChildren,

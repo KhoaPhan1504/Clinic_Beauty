@@ -15,7 +15,7 @@ import {
   IconImg,
   IconLinkMenu,
 } from './Footer.style';
-import footer_logo from "../../../assets/images/home1/Footer Logo.png";
+import footer_logo from "../../../assets/images/home1/Logo_White.png";
 import fb_logo from '../../../assets/images/home1/facebook-f.png';
 import tw_logo from '../../../assets/images/home1/twitter (1).png';
 import lin_logo from '../../../assets/images/home1/linkedin-in.png';
