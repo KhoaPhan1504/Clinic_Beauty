@@ -56,7 +56,7 @@ const ProfessionComponent:React.FC = () => {
                 key={pro.id}
                 onMouseEnter={() => handleMouseEnter(pro.id)}
                 onMouseLeave={handleMouseLeave}
-                className={pro.id !== activeCard ? 'active' : ''}
+                className={pro.id === activeCard ? 'active' : ''}
               >
 							  <CardProfessional>
 								  <CardWrapperPro data-id={pro.id}>
@@ -69,9 +69,9 @@ const ProfessionComponent:React.FC = () => {
                       <CardInfoDescribe>{pro.cardInfoDescribe}</CardInfoDescribe>
                     </CardInfoPro>
                     <CardContactPro>
-                      <CardContactItem href="#"><CardContactImg src={pro.cardContactTwitter} /></CardContactItem>
-                      <CardContactItem href="#"><CardContactImg src={pro.cardContactFB} /></CardContactItem>
-                      <CardContactItem href="#"><CardContactImg src={pro.cardContactInsta} /></CardContactItem>
+                      <CardContactItem href=""><CardContactImg src={pro.cardContactTwitter} /></CardContactItem>
+                      <CardContactItem href=""><CardContactImg src={pro.cardContactFB} /></CardContactItem>
+                      <CardContactItem href=""><CardContactImg src={pro.cardContactInsta} /></CardContactItem>
                     </CardContactPro>
 								  </CardWrapperPro>	
 							  </CardProfessional>

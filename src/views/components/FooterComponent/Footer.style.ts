@@ -4,11 +4,11 @@ import tw from "twin.macro";
 import { Images } from '../../../data/ComponentData/Images';
 
 export const Footer = styled.div `
-  ${tw`w-screen h-[705.34px] overflow-hidden md:mt-[470px] xl:mt-[50px] x:mt-[11px]`}
+  ${tw`w-full h-[705.34px] overflow-hidden md:mt-[470px] xl:mt-[50px] x:mt-[11px]`}
 `;
 
 export const FooterWrapper = styled.div `
-  ${tw`relative flex max-w-[1540px] m-0 bg-no-repeat h-[704.37px] bg-cover z-0`}
+  ${tw`relative flex m-0 bg-no-repeat h-[704.37px] bg-cover z-0`}
   background-image: url(${Images.footer2Background});
 
   &::after {

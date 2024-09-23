@@ -1,7 +1,7 @@
 import React from 'react'
 import { 
   Button,
-  Slider, SliderBtn, SliderBtnActive, SliderButton, SliderButtonGroup, SliderImage, SliderMainChild, 
+  Slider, SliderBackground, SliderBtn, SliderBtnActive, SliderButton, SliderButtonGroup, SliderImage, SliderMainChild, 
   SliderMainDescribe, SliderMainTitle, SliderWrapper, 
   SliderWrapperImage, 
   SliderWrapperText,
@@ -11,6 +11,7 @@ import Slider_Image from '../../../../assets/images/home1/Slider.svg';
 const SliderComponent:React.FC = () => {
   return (
     <Slider>
+			<SliderBackground/>
       <SliderWrapper>
 				<SliderWrapperText>
 					<SliderMainChild>

@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { Card } from "../../../../components/Card/Card.style";
 
 export const Profession = styled.div `
-  ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px]`}
+  ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
 `;
 
 export const ProfessionWrapper = styled.div `
-  ${tw`flex items-center flex-col max-w-1140 h-full md:ml-0 xl:ml-[68px] x:ml-[147px]`}
+  ${tw`flex items-center flex-col max-w-1140 h-full md:ml-0 xl:ml-[68px] x:ml-[147px] 2xl:(ml-0)`}
 `;
 
 export const ProfessionDesc = styled.div `
@@ -29,39 +29,46 @@ export const ProInfoDescribe = styled.p `
 `;
 
 export const ProItem = styled.div `
-  ${tw`flex justify-center items-center w-full mt-[15px]`}
+  ${tw`flex justify-center items-center w-full mt-[89px]`}
 `;
 
 export const ProItemWrapper = styled.div `
-  ${tw`flex transition-all md:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
+  ${tw`flex gap-1 transition-all md:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
 `;
 
 export const ProItemRow = styled.div `
-  ${tw`flex-1 min-h-[400px] transition-all bg-transparent`}
+  ${tw`flex-1 transition-all bg-transparent relative rounded-[42px]`}
 
   &.active {
-    ${tw`md:opacity-100 xl:opacity-35`}
-
-  }
+    ${tw`bg-color-white`}
+    box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
+  } 
 
   &:not(.active) {
-    ${tw``}
+    ${tw`bg-transparent shadow-none`}
+  }
+
+  &:hover {
+    ${tw`bg-color-white`}
+    box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
   }
 `;
 
 export const CardProfessional = styled(Card) `
-  ${tw`md:(w-[596px] h-[595px]) xl:(w-[424px] h-[626px])`}
+  ${tw`md:(w-[596px] h-[595px]) xl:(w-[424px] h-[626px]) x:mt-0 `}
+  border-radius: 42px;
+  box-shadow:none;
 `;
 
 export const CardWrapperPro = styled.div `
   ${tw`flex flex-col items-center h-full`}
   
   &[data-id="1"] {
-    ${tw`md:pl-0 xl:pl-[34px]`}
+    ${tw`pl-[40px]`}
   }
 
   &[data-id="3"] {
-    ${tw`md:pr-0 xl:pr-[34px]`}
+    ${tw`pr-[41px]`}
   }
 `;
 

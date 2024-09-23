@@ -4,13 +4,18 @@ import ButtonComponent from "../../../../components/Button/ButtonComponent";
 import { Images } from "../../../../data/ComponentData/Images";
 
 export const Slider = styled.div `
-  ${tw`h-[743px] w-screen mt-[-113px]`}
+  ${tw`h-auto w-full mt-[-113px] x:(flex justify-center flex-col)`}
 `;
 
-export const SliderWrapper = styled.div `
-  ${tw`flex items-center w-screen m-auto pt-[185px] h-full bg-no-repeat`}
-  ${tw`md:(flex-col h-auto) xl:(flex-row h-full) `}
+export const SliderBackground = styled.div `
+  ${tw`absolute -z-10 left-0 bg-no-repeat 2xl:bg-cover`}
+  content: '';
   background-image: url(${Images.sliderBG});
+`
+
+export const SliderWrapper = styled.div `
+  ${tw`flex items-center w-full m-auto pt-[185px] h-full  2xl:(justify-center flex-col pl-[40px] bg-cover)`}
+  ${tw`md:(flex-col h-auto) xl:(flex-row h-full) `}
 `;
 
 export const SliderWrapperText = styled.div `
@@ -38,7 +43,7 @@ export const Button = styled(ButtonComponent) `
 `;
 
 export const SliderWrapperImage = styled.div `
-  ${tw`xl:(w-[60%] pb-[7px] pr-[132px]) md:(flex justify-center)`}
+  ${tw`xl:(w-[60%] pb-[7px] pr-[132px]) md:(flex justify-center) 2xl:(w-[45%] pr-0)`}
 `;
 
 export const SliderImage = styled.img `

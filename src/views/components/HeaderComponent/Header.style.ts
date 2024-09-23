@@ -2,11 +2,11 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  ${tw`relative w-screen px-[20px]`}
+  ${tw`relative w-screen px-[20px] x:(flex justify-center)`}
 `;
 
 export const HeaderWrapper = styled.div `
-  ${tw` h-[63px] mt-[50px] ml-[126px] flex`}
+  ${tw` h-[63px] mt-[50px] ml-[126px] flex 2xl:(ml-0 flex justify-center)`}
 `;
 
 //Image - Logo
