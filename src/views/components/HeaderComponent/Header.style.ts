@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.div `
 
 //Image - Logo
 export const WrapperImage = styled.div `
-  ${tw`mt-[-9px] md:(mr-[50px]) lg:(mr-0)`}
+  ${tw`mt-[-9px] md:mr-[230px] lg:mr-[450px] xl:mr-[-34px] x:mr-0`}
 `;
 
 export const WrapperImageStyle = styled.img ` 

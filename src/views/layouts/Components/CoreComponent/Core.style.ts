@@ -37,7 +37,7 @@ export const CoreItem = styled.div `
 
 export const CoreCol = styled.div `
   ${tw`flex justify-between items-center w-full my-[20px]`}
-  ${tw`md:(flex-wrap justify-center) lg:() xl:justify-between`}
+  ${tw`md:(flex-wrap justify-center gap-[10px]) lg:() xl:justify-between`}
 `
 
 export const CoreItemCard = styled(Card) `

@@ -56,5 +56,6 @@ export default {
       '45': '45px'
     },
   },
+  important:true,
   plugins: [],
 }

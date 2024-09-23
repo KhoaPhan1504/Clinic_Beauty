@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Card } from "../../../../components/Card/Card.style";
 
 export const Profession = styled.div `
-  ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[144px])`}
+  ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px]`}
 `;
 
 export const ProfessionWrapper = styled.div `
@@ -33,14 +33,14 @@ export const ProItem = styled.div `
 `;
 
 export const ProItemWrapper = styled.div `
-  ${tw`flex transition-all md:(flex-wrap flex-col) lg:(flex-wrap flex-row justify-center) xl:(flex-nowrap justify-between)`}
+  ${tw`flex transition-all md:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
 `;
 
 export const ProItemRow = styled.div `
   ${tw`flex-1 min-h-[400px] transition-all bg-transparent`}
 
   &.active {
-    ${tw`md:opacity-100 lg:opacity-35 xl:opacity-35`}
+    ${tw`md:opacity-100 xl:opacity-35`}
 
   }
 

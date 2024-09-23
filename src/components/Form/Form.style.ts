@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import ButtonComponent from "../Button/ButtonComponent";
 
 export const FormGroup = styled.div `
-  ${tw`w-full my-[38px] mx-auto`}
+  ${tw`w-[520px] my-[38px] mx-auto md:text-center x:text-left`}
 `;
 
 export const ContactRowname = styled.div `

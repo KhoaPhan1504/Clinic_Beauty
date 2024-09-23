@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import { Images } from '../../../data/ComponentData/Images';
 
 export const Footer = styled.div `
-  ${tw`w-screen h-[705.34px] overflow-hidden mt-[11px]`}
+  ${tw`w-screen h-[705.34px] overflow-hidden md:mt-[470px] xl:mt-[50px] x:mt-[11px]`}
 `;
 
 export const FooterWrapper = styled.div `
@@ -23,11 +23,11 @@ export const FooterContainerFluid = styled.div `
 `;
 
 export const FooterContainer = styled.div `
-  ${tw`w-full mt-[226px] pl-[150px]`}
+  ${tw`w-full md:(mt-[43px] ml-[80px]) xl:mt-[190px] x:(mt-[226px] pl-[150px]) x:pl-[70px]`}
 `;
 
 export const FooterColumn = styled.div `
-  ${tw`flex`}
+  ${tw`flex md:flex-col xl:flex-row`}
 `;
 
 export const FooterCol = styled.div `
@@ -79,7 +79,7 @@ export const FooterInfoEmailItem = styled.a `
 `;
 
 export const FooterMore = styled.div `
-  ${tw`flex justify-around w-[730px] text-color-border tracking-widest leading-27 pl-[130px]`}
+  ${tw`flex justify-around w-[730px] text-color-border tracking-widest leading-27 md:pl-0 xl:pl-[120px] x:pl-[130px]`}
 `;
 
 export const FooterMorePage  = styled.div `
@@ -107,11 +107,11 @@ export const IconLinkMenu = styled(FontAwesomeIcon) `
 `
 
 export const FooterBottom = styled.div `
-  ${tw`mt-[80px] flex`}
+  ${tw`mt-[80px] flex md:(mt-0 flex-col) lg:flex-row xl:mt-[90px] x:mt-[80px]`}
 `;
 
 export const FooterInternet = styled.div `
-  ${tw`w-[305px] h-[27.84px] flex`}
+  ${tw`w-[305px] h-[27.84px] flex md:justify-center`}
 `;
  
 export const FooterGroupIcon = styled.div `
@@ -131,5 +131,6 @@ export const IconImg = styled.img `
 `;
 
 export const FooterCertification = styled.p `
-  ${tw`w-[497px] h-[31.18px] text-color-border tracking-widest text-right leading-24 ml-[340px] font-normal text-16`}
+  ${tw`w-[497px] h-[31.18px] text-color-border tracking-widest text-right leading-24 font-normal text-16`}
+  ${tw`md:ml-0 xl:ml-[210px] x:ml-[340px]`}
 `;

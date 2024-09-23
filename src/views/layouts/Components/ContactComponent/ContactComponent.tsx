@@ -1,7 +1,7 @@
 import React from 'react';
 import contact_image from "../../../../assets/images/home1/Contact.svg"
 import { 
-  Contact, ContactDescribe, ContactFormInfo, 
+  Contact, ContactBackground, ContactDescribe, ContactFormInfo, 
 	ContactFormWrapper, ContactImage, 
   ContactImageItem, ContactImageWrapper, 
   ContactMain, ContactMainForm, ContactMainFormItem, 
@@ -12,10 +12,12 @@ import {
 	FormButton, FormControl, 
 	FormGroup, TextArea 
 } from '../../../../components/Form/Form.style';
+import { Images } from '../../../../data/ComponentData/Images';
 
 const ContactComponent:React.FC = () => {
   return (
     <Contact>
+			<ContactBackground src={Images.contactBG} alt='Background Contact' />
 			<ContactWrapper>
 				<ContactMain>
 					<ContactImageWrapper>

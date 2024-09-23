@@ -14,8 +14,8 @@ const Home1 = () => {
       <CoreComponent />
       <AboutComponent />
       <ProfessionComponent />
-      {/* <ContactComponent /> */}
-      {/* <FooterComponent /> */}
+      <ContactComponent />
+      <FooterComponent />
     </>
   )
 }
