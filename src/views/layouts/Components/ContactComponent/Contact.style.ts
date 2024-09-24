@@ -2,7 +2,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const Contact = styled.div `
-  ${tw`w-auto h-[1072px] md:mt-[160vh] xl:mt-0`}
+  ${tw`w-auto h-[1072px] md:mt-[220vh] xl:mt-0`}
 `;
 
 export const ContactBackground = styled.img `

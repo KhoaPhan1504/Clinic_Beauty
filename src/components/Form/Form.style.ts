@@ -52,4 +52,3 @@ export const FormButton = styled(ButtonComponent) `
   ${tw`w-[248px] h-[58px] mt-[12px]`}
   padding: 0 1px 3px 4px;
 `;
-

@@ -34,41 +34,50 @@ export const ProItem = styled.div `
 
 export const ProItemWrapper = styled.div `
   ${tw`flex gap-1 transition-all md:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
+  perspective: 1000px;
 `;
 
 export const ProItemRow = styled.div `
   ${tw`flex-1 transition-all bg-transparent relative rounded-[42px]`}
+  transform-style: preserve-3d;
+  transition: transform 0.3s, box-shadow 0.3;
 
   &.active {
-    ${tw`bg-color-white`}
-    box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
-  } 
+      ${tw`bg-color-white`}
+      transform: translateZ(20px);
+      box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
+      z-index: 10;
+    } 
 
   &:not(.active) {
-    ${tw`bg-transparent shadow-none`}
+    ${tw`xl:bg-transparent shadow-none`}
   }
 
-  &:hover {
-    ${tw`bg-color-white`}
-    box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
-  }
+  /* @media (min-width: 768px) {
+    &.active,
+    &:not(.active) {
+      ${tw`bg-color-white`}
+      box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
+    }
+  } */
 `;
 
 export const CardProfessional = styled(Card) `
-  ${tw`md:(w-[596px] h-[595px]) xl:(w-[424px] h-[626px]) x:mt-0 `}
+  ${tw`md:(w-[500px] h-[570px]) xl:(w-[424px] h-[626px]) x:mt-0 `}
   border-radius: 42px;
-  box-shadow:none;
+  box-shadow: none;
+  transition: all 0.3s;
 `;
 
 export const CardWrapperPro = styled.div `
   ${tw`flex flex-col items-center h-full`}
   
   &[data-id="1"] {
-    ${tw`pl-[40px]`}
+    ${tw`md:pl-0 x:pl-[40px]`}
   }
 
   &[data-id="3"] {
-    ${tw`pr-[41px]`}
+    ${tw`md:pr-0 x:pr-[41px]`}
   }
 `;
 
@@ -97,7 +106,7 @@ export const CardInfoDescribe = styled.p `
 `;
 
 export const CardContactPro = styled.div `
-  ${tw`mt-[56px] mr-[4px] flex`}
+  ${tw`mt-[51px] mr-[1px] flex`}
 `;
 
 export const CardContactItem = styled.a `

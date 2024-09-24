@@ -4,8 +4,8 @@ import { Card } from "../../../../components/Card/Card.style";
 
 export const Core = styled.div `
   ${tw`w-screen max-w-1140 h-[732px] rounded-[42px] text-center`}
-  ${tw`md:(mx-auto mt-[300px])`}
-  ${tw`lg:(mt-[300px] ) xl:(mt-[193px])`}
+  ${tw`md:(mx-auto mt-[120px])`}
+  ${tw`lg:(mt-[110px] ) xl:(mt-[132px])`}
 `;
 
 export const CoreWrapper = styled.div `
@@ -59,4 +59,3 @@ export const CoreItemCard = styled(Card) `
 
   ${tw`md:(w-[300px] h-[400px]) lg:(w-[320px] h-[420px]) xl:(w-[340px] h-[458px])`}
 `;
-

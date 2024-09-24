@@ -38,4 +38,3 @@ export const CardName = styled.h3 `
 export const CardDescribe = styled.p `
   ${tw`font-normal text-14 tracking-1.4 w-[274px] h-[80px] leading-21 mt-[4px]`}
 `;
-

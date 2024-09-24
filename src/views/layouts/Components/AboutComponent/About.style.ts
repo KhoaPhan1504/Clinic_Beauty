@@ -78,5 +78,3 @@ export const AboutContainerImage = styled.div `
 export const AboutImg = styled.img `
 
 `;
-
-

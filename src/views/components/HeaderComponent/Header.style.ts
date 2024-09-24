@@ -6,7 +6,7 @@ export const Header = styled.header`
 `;
 
 export const HeaderWrapper = styled.div `
-  ${tw` h-[63px] mt-[50px] ml-[126px] flex 2xl:(ml-0 flex justify-center)`}
+  ${tw`flex h-[63px] mt-[50px] md:justify-center 2xl:(ml-0 justify-center)`}
 `;
 
 //Image - Logo
