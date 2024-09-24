@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Logo_Header from '../../../assets/images/home1/Logo_Blue.png'
+import Logo_Header_Blue from '../../../assets/images/home1/Logo_Blue.png'
 import { 
-  Header, HeaderWrapper, WrapperImage, WrapperImageStyle,
+  Header, HeaderWrapper, WrapperImage,
   HeaderMore,HeaderMenu, HeaderMenuChildren,
   MenuItem, MenuLink,
   HeaderContact,
@@ -10,11 +10,13 @@ import ButtonComponent from '../../../components/Button/ButtonComponent';
 import NavbarComponent from '../NavbarComponent/NavbarComponent';
 import { MobileMenuButton, NavbarIcon } from '../NavbarComponent/Navbar.style';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import LogoComponent from '../../../components/Logo/LogoComponent';
 
 const HeaderComponent: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false); 
   const menuRef = useRef<HTMLDivElement>(null);
+  const altLogo = 'Beautice - Clinic & Beauty';
 
   const handleClickOutside = (event: MouseEvent) => {
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -53,7 +55,7 @@ const HeaderComponent: React.FC = () => {
     <Header>
       <HeaderWrapper>
         <WrapperImage>
-          <WrapperImageStyle src={Logo_Header} alt='Beautice - Clinic & Beauty'/>
+          <LogoComponent linkLogo={Logo_Header_Blue} altLogo={altLogo} />
         </WrapperImage>
         {isMobile ? (
           <>
