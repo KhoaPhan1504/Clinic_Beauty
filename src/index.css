@@ -20,8 +20,7 @@ body::-webkit-scrollbar {
 }
 
 a {
-	text-decoration: none;
-	color: var(--color-text-default);
+	text-decoration: none;;
 }
 
 a:hover {
@@ -34,7 +33,7 @@ ul {
 }
 
 a.active {
-	color: var(--color-text-title) !important;
+	color: var(--color-text-title);
 	font-weight: 700 !important;
 }
 

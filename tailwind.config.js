@@ -25,7 +25,9 @@ export default {
       'color-border': '#D9DDFE',
       'color-text-input': '#C5C5C5',
       'color-bgr-footer' : ' #0D165C',
-      'footer-text': '#D7DBFF'
+      'footer-text': '#D7DBFF',
+      'color-describe-2': 'rgba(216, 220, 255, 1)',
+      'color-rgb-white': 'rgba(255, 255, 255, 1)'
     },
     maxWidth: {
       '1140': '1140px'
@@ -35,7 +37,8 @@ export default {
       '16': '16px',
       '18': '18px',
       '36': '36px',
-      '48': '48px'
+      '48': '48px',
+      '50': '50px'
     },
     letterSpacing: {
       '1.4': '1.4px',
@@ -53,7 +56,8 @@ export default {
       '20': '20px',
       '22.5': '22.5px',
       '27': '27px',
-      '45': '45px'
+      '45': '45px',
+      '60': '60px'
     },
   },
   important:true,

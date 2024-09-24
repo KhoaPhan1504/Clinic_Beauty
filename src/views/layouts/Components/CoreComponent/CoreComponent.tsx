@@ -4,7 +4,7 @@ import {
 	InfoDescribe, InfoTip, 
 	InfoTitle, TitleDesc 
 } from './Core.style';
-import { coreData } from '../../../../data/CoreData/CoreData';
+import { coreData } from '../../../../data/Core1Data/Core1Data';
 import { 
 	CardDescribe, CardImage, 
 	CardImg, CardInfo, 
