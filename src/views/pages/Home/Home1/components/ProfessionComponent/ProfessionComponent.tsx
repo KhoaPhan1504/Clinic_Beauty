@@ -1,17 +1,14 @@
 import React , {useEffect, useState} from 'react';
 import { 
-  CardContactImg, CardContactItem,
-  CardContactPro, CardImagePro,
-  CardImgPro, CardInfoDescribe,
-  CardInfoName, CardInfoPro,
-  CardInfoTitle, CardProfessional,
-  CardWrapperPro,
-  Profession, ProfessionDesc, 
+  ContactIcon, ContactItem,
+  CardContactWrapper, ProfessionItemCard,
+  CardRole, Profession, ProfessionDesc, 
   ProfessionWrapper, ProInfoDescribe, 
   ProInfoTip, ProInfoTitle, 
-  ProItem, ProItemRow, ProItemWrapper 
+  ProItem, ProItemRow, ProItemWrapper, CardWrapperPro
 } from './Profession.style';
 import { proData } from '../../../../../../data/ProfessionData/ProfessionData';
+import { CardDescribe, CardImage, CardImg, CardInfo, CardItem, CardName } from '../../../../../../components/Card/Card.style';
 
 interface ProProps {
   id: number;
@@ -19,9 +16,9 @@ interface ProProps {
   cardInfoTitle: string;
   cardInfoName: string;
   cardInfoDescribe: string;
-	cardContactTwitter: string; 
-	cardContactFB: string;
-	cardContactInsta: string;
+	Twitter: string; 
+	Facebook: string;
+	Instagram: string;
 }
 
 const ProfessionComponent:React.FC = () => {
@@ -58,23 +55,25 @@ const ProfessionComponent:React.FC = () => {
                 onMouseLeave={handleMouseLeave}
                 className={pro.id === activeCard ? 'active' : ''}
               >
-							  <CardProfessional>
-								  <CardWrapperPro data-id={pro.id}>
-									  <CardImagePro>
-										  <CardImgPro src={pro.cardImage} alt="" />
-									  </CardImagePro>
-                    <CardInfoPro>
-                      <CardInfoTitle>{pro.cardInfoTitle}</CardInfoTitle>
-                      <CardInfoName>{pro.cardInfoName}</CardInfoName>
-                      <CardInfoDescribe>{pro.cardInfoDescribe}</CardInfoDescribe>
-                    </CardInfoPro>
-                    <CardContactPro>
-                      <CardContactItem href=""><CardContactImg src={pro.cardContactTwitter} /></CardContactItem>
-                      <CardContactItem href=""><CardContactImg src={pro.cardContactFB} /></CardContactItem>
-                      <CardContactItem href=""><CardContactImg src={pro.cardContactInsta} /></CardContactItem>
-                    </CardContactPro>
-								  </CardWrapperPro>	
-							  </CardProfessional>
+							  <ProfessionItemCard>
+                  <CardWrapperPro data-id={pro.id}>
+                    <CardItem>
+                      <CardImage>
+                        <CardImg src={pro.cardImage} alt=""/>
+                      </CardImage>
+                      <CardInfo>
+                        <CardRole>{pro.cardInfoTitle}</CardRole>
+                        <CardName>{pro.cardInfoName}</CardName>
+                        <CardDescribe>{pro.cardInfoDescribe}</CardDescribe>
+                      </CardInfo>
+                      <CardContactWrapper>
+                        <ContactItem href=""><ContactIcon src={pro.Twitter} /></ContactItem>
+                        <ContactItem href=""><ContactIcon src={pro.Facebook} /></ContactItem>
+                        <ContactItem href=""><ContactIcon src={pro.Instagram} /></ContactItem>
+                      </CardContactWrapper>
+                    </CardItem>
+                  </CardWrapperPro>
+							  </ProfessionItemCard>
 						  </ProItemRow>
             ))}
 					</ProItemWrapper>

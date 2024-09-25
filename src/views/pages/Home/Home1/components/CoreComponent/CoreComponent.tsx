@@ -2,14 +2,13 @@ import React, {useEffect, useState}  from 'react';
 import { 
 	Core, CoreCol, CoreItem, CoreItemCard, CoreWrapper, 
 	InfoDescribe, InfoTip, 
-	InfoTitle, TitleDesc 
+	InfoTitle, TitleDesc , CardWrapperCore
 } from './Core.style';
 import { coreData } from '../../../../../../data/Core1Data/Core1Data';
 import { 
 	CardDescribe, CardImage, 
 	CardImg, CardInfo,
-	CardItem, CardName, 
-	CardWrapper 
+	CardItem, CardName
 } from '../../../../../../components/Card/Card.style';
 
 interface CoreProps {
@@ -38,7 +37,7 @@ const CoreComponent:React.FC = () => {
 					<CoreCol>
 						{cores.map((core) => (
 							<CoreItemCard key={core.id}  data-id={core.id}>
-								<CardWrapper>
+								<CardWrapperCore>
 									<CardItem>
 										<CardImage>
 											<CardImg src={core.cardImage} alt={core.cardInfoName} />
@@ -48,7 +47,7 @@ const CoreComponent:React.FC = () => {
 											<CardDescribe>{core.cardInfoDescribe}</CardDescribe>
 										</CardInfo>
 									</CardItem>
-								</CardWrapper>
+								</CardWrapperCore>
 							</CoreItemCard>
 						))}
 					</CoreCol>

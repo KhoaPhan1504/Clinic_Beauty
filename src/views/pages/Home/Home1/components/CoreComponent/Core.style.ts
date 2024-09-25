@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 import styled from "styled-components";
-import { Card } from "../../../../../../components/Card/Card.style";
+import { Card, CardItem, CardWrapper } from "../../../../../../components/Card/Card.style";
 
 export const Core = styled.div `
   ${tw`w-screen max-w-1140 h-[732px] rounded-[42px] text-center`}
@@ -38,10 +38,10 @@ export const CoreItem = styled.div `
 export const CoreCol = styled.div `
   ${tw`flex justify-between items-center w-full my-[20px]`}
   ${tw`md:(flex-wrap justify-center gap-[10px]) lg:() xl:justify-between`}
-`
+`;
 
 export const CoreItemCard = styled(Card) `
-  ${tw`flex justify-center items-center w-[343px] h-[458px]`}
+  ${tw`flex justify-center items-center`}
   transition: all 0.7s ease;
 
   &:hover {
@@ -57,5 +57,9 @@ export const CoreItemCard = styled(Card) `
     ${tw`xl:ml-[37px]`}
   }
 
-  ${tw`md:(w-[300px] h-[400px]) lg:(w-[320px] h-[420px]) xl:(w-[340px] h-[458px])`}
+  ${tw`md:(w-[300px] h-[400px]) lg:(w-[320px] h-[420px]) xl:(w-[340px] h-[458px]) x:( w-[343px] h-[458px])`}
+`;
+
+export const CardWrapperCore = styled(CardWrapper) `
+  ${tw`w-[343px] h-[458px]`}
 `;

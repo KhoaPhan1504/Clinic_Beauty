@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 import styled from "styled-components";
-import { Card } from "../../../../../../components/Card/Card.style";
+import { Card, CardItem, CardWrapper } from "../../../../../../components/Card/Card.style";
 
 export const Profession = styled.div `
   ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
@@ -44,7 +44,6 @@ export const ProItemRow = styled.div `
 
   &.active {
       ${tw`bg-color-white`}
-      transform: translateZ(20px);
       box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
       z-index: 10;
     } 
@@ -52,67 +51,47 @@ export const ProItemRow = styled.div `
   &:not(.active) {
     ${tw`xl:bg-transparent shadow-none`}
   }
-
-  /* @media (min-width: 768px) {
-    &.active,
-    &:not(.active) {
-      ${tw`bg-color-white`}
-      box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
-    }
-  } */
 `;
 
-export const CardProfessional = styled(Card) `
-  ${tw`md:(w-[500px] h-[570px]) xl:(w-[424px] h-[626px]) x:mt-0 `}
+export const ProfessionItemCard = styled(Card) `
+  ${tw`md:(w-[500px] h-[570px]) xl:(w-[424px] h-[626px]) x:(mt-0 pt-[33px]) `}
   border-radius: 42px;
   box-shadow: none;
   transition: all 0.3s;
 `;
 
-export const CardWrapperPro = styled.div `
-  ${tw`flex flex-col items-center h-full`}
-  
+export const CardWrapperPro = styled(CardWrapper) `
+  ${tw`w-[424px] h-[626px]`}
+
   &[data-id="1"] {
-    ${tw`md:pl-0 x:pl-[40px]`}
+    ${tw`md:ml-0 xl:ml-[44px]`}
+
+    &:hover {
+      ${tw`ml-0`}
+    }
   }
 
   &[data-id="3"] {
-    ${tw`md:pr-0 x:pr-[41px]`}
+    ${tw`md:mr-0 xl:mr-[40px]`}
+    
+    &:hover {
+      ${tw`mr-0`}
+    }
   }
 `;
 
-export const CardImagePro = styled.div `
-  ${tw`w-[146px] h-[146px] mt-[93px]`}
+export const CardRole = styled.span `
+  ${tw`w-[117px] h-[20px] leading-20 text-center text-color-pink font-semibold text-16 mb-[10px]`}
 `;
 
-export const CardImgPro = styled.img `
-  ${tw``}
+export const CardContactWrapper = styled.div `
+  ${tw`mt-[39px] mr-[3px] flex`}
 `;
 
-export const CardInfoPro = styled.div `
-  ${tw`flex flex-col items-center mt-[54px]`}
-`;
-
-export const CardInfoTitle = styled.span `
-  ${tw`w-[117px] h-[20px] leading-20 text-center text-color-pink font-semibold text-16`}
-`;
-
-export const CardInfoName = styled.h3 `
-  ${tw`w-[263px] h-[37px] leading-22.5 text-center text-color-title mt-[14px] font-semibold text-18`}
-`;
-
-export const CardInfoDescribe = styled.p `
-  ${tw`w-[270px] h-[63px] leading-21 tracking-1.4 text-center text-color-default mt-[6px] font-normal text-14`}
-`;
-
-export const CardContactPro = styled.div `
-  ${tw`mt-[51px] mr-[1px] flex`}
-`;
-
-export const CardContactItem = styled.a `
+export const ContactItem = styled.a `
   ${tw`w-[49px] h-[49px] rounded-[50%] mx-[17px]`}
 `;
 
-export const CardContactImg = styled.img `
+export const ContactIcon = styled.img `
   ${tw`rounded-[50%] w-[49px] h-[49px] scale-[1.5]`}
 `;

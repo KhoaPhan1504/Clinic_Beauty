@@ -7,16 +7,16 @@ export const Card = styled.div `
 `;
 
 export const CardWrapper = styled.div `
-  ${tw`flex justify-center items-center w-[343px] h-[458px]`}
+  ${tw`flex justify-center items-center md:flex-wrap`}
 
 `;
 
 export const CardItem = styled.div `
-  ${tw`flex flex-col items-center mt-[6px] h-full`}
+  ${tw`flex flex-col items-center mt-[3px] h-full`}
 `;
 
 export const CardImage = styled.div `
-  ${tw`w-full pt-[57px] pl-[54px] mb-[6px]`}
+  ${tw`w-full pt-[57px] flex justify-center mb-[6px]`}
 `;
 
 export const CardImg = styled.img `
