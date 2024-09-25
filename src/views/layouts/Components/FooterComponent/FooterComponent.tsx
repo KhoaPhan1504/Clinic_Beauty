@@ -15,13 +15,13 @@ import {
   IconImg,
   IconLinkMenu,
 } from './Footer.style';
-import footer_logo from "../../../assets/images/home1/Logo_White.png";
-import fb_logo from '../../../assets/images/home1/facebook-f.png';
-import tw_logo from '../../../assets/images/home1/twitter (1).png';
-import lin_logo from '../../../assets/images/home1/linkedin-in.png';
-import you_logo from '../../../assets/images/home1/youtube.png';
-import insta_logo from '../../../assets/images/home1/instagram (1).png';
-import ScrollTopComponent from '../../../components/ScrollTop/ScrollTopComponent';
+import footer_logo from '../../../../assets/images/home1/Logo_White.png';
+import fb_logo from '../../../../assets/images/home1/facebook-f.png';
+import tw_logo from '../../../../assets/images/home1/twitter (1).png';
+import lin_logo from '../../../../assets/images/home1/linkedin-in.png';
+import you_logo from '../../../../assets/images/home1/youtube.png';
+import insta_logo from '../../../../assets/images/home1/instagram (1).png';
+import ScrollTopComponent from '../../../../components/ScrollTop/ScrollTopComponent';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 

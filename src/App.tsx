@@ -7,8 +7,8 @@ import Home2 from './views/pages/Home/Home2/Home2';
 const App:React.FC = () => {
   return (
     <div>
-      {/* <Home1 /> */}
-      <Home2 />
+      <Home1 />
+      {/* <Home2 /> */}
     </div>
   )
 }

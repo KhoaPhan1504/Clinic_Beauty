@@ -1,7 +1,7 @@
 import React from "react";
 import { MobileNavWrapper } from "./Navbar.style";
 import { HeaderContact, HeaderMenuChildren, MenuItem, MenuLink } from "../HeaderComponent/Header.style";
-import ButtonComponent from "../../../components/Button/ButtonComponent";
+import ButtonComponent from "../../../../components/Button/ButtonComponent";
 
 const NavbarComponent:React.FC = () => {
   return (

@@ -4,13 +4,13 @@ import {
 	InfoDescribe, InfoTip, 
 	InfoTitle, TitleDesc 
 } from './Core.style';
-import { coreData } from '../../../../data/Core1Data/Core1Data';
+import { coreData } from '../../../../../../data/Core1Data/Core1Data';
 import { 
 	CardDescribe, CardImage, 
-	CardImg, CardInfo, 
+	CardImg, CardInfo,
 	CardItem, CardName, 
 	CardWrapper 
-} from '../../../../components/Card/Card.style';
+} from '../../../../../../components/Card/Card.style';
 
 interface CoreProps {
   id: number;

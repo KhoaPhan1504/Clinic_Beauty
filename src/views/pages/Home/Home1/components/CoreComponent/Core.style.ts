@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 import styled from "styled-components";
-import { Card } from "../../../../components/Card/Card.style";
+import { Card } from "../../../../../../components/Card/Card.style";
 
 export const Core = styled.div `
   ${tw`w-screen max-w-1140 h-[732px] rounded-[42px] text-center`}

@@ -6,7 +6,7 @@ import {
   SliderWrapperImage, 
   SliderWrapperText,
 } from './Slider.style';
-import Slider_Image from '../../../../assets/images/home1/Slider.svg';
+import Slider_Image from '../../../../../../assets/images/home1/Slider.svg';
 
 const SliderComponent:React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from "styled-components";
 import tw from "twin.macro";
-import { Images } from '../../../data/ComponentData/Images';
+import { Images } from '../../../../data/ComponentData/Images';
 
 export const Footer = styled.div `
   ${tw`w-full h-[705.34px] overflow-hidden md:mt-[470px] xl:mt-[50px] x:mt-[11px]`}

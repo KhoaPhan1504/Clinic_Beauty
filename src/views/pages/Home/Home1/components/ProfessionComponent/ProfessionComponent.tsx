@@ -11,7 +11,7 @@ import {
   ProInfoTip, ProInfoTitle, 
   ProItem, ProItemRow, ProItemWrapper 
 } from './Profession.style';
-import { proData } from '../../../../data/ProfessionData/ProfessionData';
+import { proData } from '../../../../../../data/ProfessionData/ProfessionData';
 
 interface ProProps {
   id: number;

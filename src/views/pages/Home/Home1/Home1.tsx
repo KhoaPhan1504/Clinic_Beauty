@@ -1,22 +1,20 @@
-import HeaderComponent from '../../../components/HeaderComponent/HeaderComponent';
-import FooterComponent from '../../../components/FooterComponent/FooterComponent';
-import SliderComponent from '../../../layouts/Components/SliderComponent/SliderComponent';
-import CoreComponent from '../../../layouts/Components/CoreComponent/CoreComponent';
-import AboutComponent from '../../../layouts/Components/AboutComponent/AboutComponent';
-import ProfessionComponent from '../../../layouts/Components/ProfessionComponent/ProfessionComponent';
-import ContactComponent from '../../../layouts/Components/ContactComponent/ContactComponent';
+import LayoutComponent from "../../../layouts/Components/Layout1Component";
+import AboutComponent from "./components/AboutComponent/AboutComponent";
+import ContactComponent from "./components/ContactComponent/ContactComponent";
+import CoreComponent from "./components/CoreComponent/CoreComponent";
+import ProfessionComponent from "./components/ProfessionComponent/ProfessionComponent";
+import SliderComponent from "./components/SliderComponent/SliderComponent";
+
 
 const Home1 = () => {
   return (
-    <>
-      <HeaderComponent />   
+    <LayoutComponent>
       <SliderComponent />
       <CoreComponent />
       <AboutComponent />
       <ProfessionComponent />
       <ContactComponent />
-      <FooterComponent />
-    </>
+    </LayoutComponent>
   )
 }
 

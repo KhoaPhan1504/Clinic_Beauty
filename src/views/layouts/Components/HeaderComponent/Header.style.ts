@@ -55,11 +55,13 @@ export const MenuItem = styled.li `
   }
 `;
 
-export const MenuLink = styled.a `
-  ${tw`not-italic font-light text-16 tracking-wide text-[#8B8B8B] px-[16px]`}
+export const MenuLink = styled.a<{ color?: string; activeColor?: string}> `
+  ${tw`not-italic font-light text-16 tracking-wide px-[16px]`}
+  color: ${({ color }) => color || '#8B8B8B'};
 
   &.active {
-    ${tw`font-semibold text-color-title`}
+    ${tw`font-semibold`}
+    color: ${({ activeColor }) => activeColor || '#FF5733'}; 
   }
 
   &:hover {
