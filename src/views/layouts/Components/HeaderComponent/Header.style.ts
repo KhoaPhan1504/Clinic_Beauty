@@ -2,16 +2,16 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  ${tw`relative w-screen px-[20px] x:(flex justify-center)`}
+  ${tw`relative w-screen x:(flex justify-center)`}
 `;
 
 export const HeaderWrapper = styled.div `
-  ${tw`flex h-[63px] mt-[50px] md:justify-center 2xl:(ml-0 justify-center)`}
+  ${tw`flex w-[1140px] h-[63px] mt-[40px] md:justify-center 2xl:(ml-0 justify-center)`}
 `;
 
 //Image - Logo
 export const WrapperImage = styled.div `
-  ${tw`mt-[-9px] md:mr-[230px] lg:mr-[450px] xl:mr-[-34px] x:mr-0`}
+  ${tw`md:mr-[230px] lg:mr-[450px] xl:mr-[-34px] x:mr-0`}
 `;
 
 export const WrapperImageStyle = styled.img ` 
@@ -20,7 +20,11 @@ export const WrapperImageStyle = styled.img `
 
 //Menu
 export const HeaderMore = styled.div `
-  ${tw`w-auto h-full flex justify-between items-center pb-[21px] max-[1140px]:hidden sm:ml-[10px] md:ml-[20px] lg:ml-[50px] xl:ml-[171px]`}
+  ${tw`w-auto h-full flex justify-between items-center max-[1140px]:hidden sm:ml-[10px] md:ml-[20px] lg:ml-[50px] xl:ml-[168px]`}
+
+  &:hover {
+    ${tw`xl:ml-[165px]`}
+  }
 `;
 
 export const HeaderMenu = styled.div `
@@ -52,7 +56,7 @@ export const MenuItem = styled.li `
 
   &:nth-child(5) {
     ${tw`mr-[35px]`}
-  }
+  } 
 `;
 
 export const MenuLink = styled.a<{ color?: string; activeColor?: string}> `
@@ -71,5 +75,5 @@ export const MenuLink = styled.a<{ color?: string; activeColor?: string}> `
 
 // Button
 export const HeaderContact = styled.div `
-  ${tw`bg-color-pink rounded-full`}
+  ${tw`w-[158px] h-[52px] bg-color-pink rounded-full`}
 `;

@@ -8,7 +8,7 @@ export const Slider = styled.div `
 `;
 
 export const SliderWrapper = styled.div `
-  ${tw`items-center w-screen m-auto pt-[185px] h-full bg-no-repeat`}
+  ${tw`items-center w-screen m-auto pt-[194px] h-full bg-no-repeat`}
   background-image: url(${Images.sliderBG});
 `;
 

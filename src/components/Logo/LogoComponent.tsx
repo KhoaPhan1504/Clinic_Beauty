@@ -8,7 +8,7 @@ interface LogoProps {
 
 const LogoComponent:React.FC<LogoProps> = ({ linkLogo, altLogo }) => {
   return (
-    <LogoImage src={linkLogo} alt={altLogo} />
+    <LogoImage className='ml-[-2px]' src={linkLogo} alt={altLogo} />
   )
 }
 
