@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 import styled from "styled-components";
-import { Card, CardItem, CardWrapper } from "../../../../../../components/Card/Card.style";
+import { Card, CardWrapper } from "../../../../../../components/Card/Card.style";
 
 export const Profession = styled.div `
   ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
