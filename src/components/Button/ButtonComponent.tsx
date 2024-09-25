@@ -7,14 +7,11 @@ interface ButtonComponentProps {
   className?: string;
 }
 
-const ButtonComponent: React.FC<ButtonComponentProps> = ({ textButton, className = '' }) => {
-  return (
-    <Button
-      className={className}
-    >
-      {textButton}
-    </Button>
-  )
-}
+const ButtonComponent: React.FC<ButtonComponentProps> = ({
+  textButton,
+  className = '',
+}) => {
+  return <Button className={className}>{textButton}</Button>;
+};
 
 export default ButtonComponent;

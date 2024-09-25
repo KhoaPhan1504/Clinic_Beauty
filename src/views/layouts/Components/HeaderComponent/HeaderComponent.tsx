@@ -1,8 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { 
-  Header, HeaderWrapper, WrapperImage,
-  HeaderMore,HeaderMenu, HeaderMenuChildren,
-  MenuItem, MenuLink,
+import {
+  Header,
+  HeaderWrapper,
+  WrapperImage,
+  HeaderMore,
+  HeaderMenu,
+  HeaderMenuChildren,
+  MenuItem,
+  MenuLink,
   HeaderContact,
 } from './Header.style';
 import ButtonComponent from '../../../../components/Button/ButtonComponent';
@@ -18,14 +23,14 @@ interface HeaderComponentProps {
   altLogo?: string;
 }
 
-const HeaderComponent: React.FC<HeaderComponentProps> = ({ 
-  menuColor = '#8B8B8B', 
+const HeaderComponent: React.FC<HeaderComponentProps> = ({
+  menuColor = '#8B8B8B',
   activeMenuColor = '#091156',
   logo,
-  altLogo = 'Beautice - Clinic & Beauty'
+  altLogo = 'Beautice - Clinic & Beauty',
 }) => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
-  const [menuOpen, setMenuOpen] = useState<boolean>(false); 
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -35,7 +40,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
   };
 
   const handleResize = () => {
-    if(window.innerWidth <= 1140) {
+    if (window.innerWidth <= 1140) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -49,7 +54,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
 
   useEffect(() => {
     handleResize();
-    window.addEventListener('resize' , handleResize);
+    window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -70,7 +75,11 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
         {isMobile ? (
           <>
             <MobileMenuButton onClick={toggleMenu}>
-              {menuOpen ? <NavbarIcon icon={faBars} /> : <NavbarIcon icon={faBars}/>}
+              {menuOpen ? (
+                <NavbarIcon icon={faBars} />
+              ) : (
+                <NavbarIcon icon={faBars} />
+              )}
             </MobileMenuButton>
             {menuOpen && (
               <div ref={menuRef}>
@@ -82,24 +91,49 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
           <HeaderMore>
             <HeaderMenu>
               <HeaderMenuChildren>
-                <MenuItem className="_menuItem"><MenuLink className="active" href="#" color={menuColor} activeColor={activeMenuColor}>Home +</MenuLink></MenuItem>
-                <MenuItem className="_menuItem"><MenuLink href="#" color={menuColor}>About</MenuLink></MenuItem>
-                <MenuItem className="_menuItem"><MenuLink href="#" color={menuColor}>Service</MenuLink></MenuItem>
-                <MenuItem className="_menuItem"><MenuLink href="#" color={menuColor}>Gallery</MenuLink></MenuItem>
-                <MenuItem className="_menuItem"><MenuLink href="#" color={menuColor}>Blog</MenuLink></MenuItem>
+                <MenuItem className="_menuItem">
+                  <MenuLink
+                    className="active"
+                    href="#"
+                    color={menuColor}
+                    activeColor={activeMenuColor}
+                  >
+                    Home +
+                  </MenuLink>
+                </MenuItem>
+                <MenuItem className="_menuItem">
+                  <MenuLink href="#" color={menuColor}>
+                    About
+                  </MenuLink>
+                </MenuItem>
+                <MenuItem className="_menuItem">
+                  <MenuLink href="#" color={menuColor}>
+                    Service
+                  </MenuLink>
+                </MenuItem>
+                <MenuItem className="_menuItem">
+                  <MenuLink href="#" color={menuColor}>
+                    Gallery
+                  </MenuLink>
+                </MenuItem>
+                <MenuItem className="_menuItem">
+                  <MenuLink href="#" color={menuColor}>
+                    Blog
+                  </MenuLink>
+                </MenuItem>
               </HeaderMenuChildren>
             </HeaderMenu>
             <HeaderContact>
               <ButtonComponent
-                textButton='Contact' 
-                className='w-[158px] h-[52px]'
+                textButton="Contact"
+                className="h-[52px] w-[158px]"
               />
             </HeaderContact>
           </HeaderMore>
         )}
       </HeaderWrapper>
     </Header>
-  )
-}
+  );
+};
 
 export default HeaderComponent;

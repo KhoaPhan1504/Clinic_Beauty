@@ -6,10 +6,10 @@ import AboutBG from '../../assets/images/home1/Background Bubble.png';
 import Slider2BG from '../../assets/images/home2/Background Slider2.png';
 
 export const Images = {
-  footer1Background : Footer_1_BG,
-  footer2Background : Footer_2_BG,
-  contactBG : ContactBG,
+  footer1Background: Footer_1_BG,
+  footer2Background: Footer_2_BG,
+  contactBG: ContactBG,
   sliderBG: SliderBG,
-  aboutBG : AboutBG,
-  slider2BG: Slider2BG
-}
+  aboutBG: AboutBG,
+  slider2BG: Slider2BG,
+};

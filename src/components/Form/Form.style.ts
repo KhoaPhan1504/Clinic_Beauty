@@ -1,20 +1,20 @@
-import styled from "styled-components";
-import tw from "twin.macro";
-import ButtonComponent from "../Button/ButtonComponent";
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import ButtonComponent from '../Button/ButtonComponent';
 
-export const FormGroup = styled.div `
+export const FormGroup = styled.div`
   ${tw`w-[520px] my-[38px] mx-auto md:text-center x:text-left`}
 `;
 
-export const ContactRowname = styled.div `
+export const ContactRowname = styled.div`
   ${tw`w-[520px] flex justify-between m-0`}
 `;
 
-export const ContactColInput = styled.div `
+export const ContactColInput = styled.div`
   ${tw`w-[242.21px] h-[61.58px]`}
 `;
 
-export const FormControl = styled.input `
+export const FormControl = styled.input`
   ${tw`text-16 leading-24 rounded-[15px] bg-color-white text-color-text-input tracking-widest w-full`}
   border: 1px solid #D9DDFE;
 
@@ -35,7 +35,7 @@ export const FormControl = styled.input `
   }
 `;
 
-export const TextArea = styled.textarea `
+export const TextArea = styled.textarea`
   ${tw`resize-none leading-24 h-[239.47px] bg-color-white text-color-text-input tracking-widest w-full pt-[26px] rounded-[15px]`}
   border: 1px solid #D9DDFE;
 
@@ -48,7 +48,7 @@ export const TextArea = styled.textarea `
   }
 `;
 
-export const FormButton = styled(ButtonComponent) `
+export const FormButton = styled(ButtonComponent)`
   ${tw`w-[248px] h-[58px] mt-[12px]`}
   padding: 0 1px 3px 4px;
 `;
