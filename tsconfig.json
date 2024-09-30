@@ -1,4 +1,11 @@
 {
+  "compilerOptions": {
+    "baseUrl": "./src",  // Thư mục gốc chứa các file TypeScript
+    "paths": {
+      "@layouts/*": ["layouts/*"],
+      "@components/*": ["components/*"]
+    }
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
