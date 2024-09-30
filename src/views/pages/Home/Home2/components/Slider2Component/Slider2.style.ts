@@ -10,15 +10,15 @@ export const Slider = styled.div`
 `;
 
 export const SliderWrapper = styled.div`
-  ${tw`flex h-[918px] md:(flex-col pt-[200px]) xl:(flex-row pt-[308px]) 2xl:(h-[1270px] justify-center pt-[500px])`}
+  ${tw`flex h-[918px] sm:(flex-col pt-[200px]) xl:(flex-row pt-[308px]) 2xl:(h-[1270px] justify-center pt-[500px])`}
 `;
 
 export const SliderWrapperText = styled.div`
-  ${tw`md:(flex pl-0 justify-center) xl:(pl-[150px]) 2xl:(pl-0)`}
+  ${tw`sm:(flex pl-0 justify-center) xl:(pl-[150px]) 2xl:(pl-0)`}
 `;
 
 export const SliderMainText = styled.div`
-  ${tw`md:(flex flex-col text-center items-center) xl:(text-left items-start)`}
+  ${tw`sm:(flex flex-col text-center items-center) xl:(text-left items-start)`}
 `;
 
 export const SliderTitle = styled(Title)`
@@ -39,7 +39,7 @@ export const SliderButton = styled(ButtonComponent)`
 
 export const SliderWrapperButton = styled.div`
   ${tw`flex h-auto w-auto items-center justify-center`}
-  ${tw`md:(ml-0 mb-0 mt-[80px]) xl:(ml-[200px] mb-[300px] mt-0) x:mb-[315px] 2xl:mb-[560px]`}
+  ${tw`sm:(ml-0 mb-0 mt-[80px]) xl:(ml-[200px] mb-[300px] mt-0) x:mb-[315px] 2xl:mb-[560px]`}
 `;
 
 export const SliderButtonImage = styled.img`
