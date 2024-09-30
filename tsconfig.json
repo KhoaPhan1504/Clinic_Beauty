@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./src",  // Thư mục gốc chứa các file TypeScript
     "paths": {
-      "@/*": ["src/*"]
+      "@layouts/*": ["layouts/*"],
+      "@components/*": ["/components/*"]
     }
   },
   "files": [],

@@ -1,6 +1,7 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import ButtonComponent from '../../../../../../components/Button/ButtonComponent';
+import { Describe, Tip, Title } from '../../../../../../components/Content/Text.style';
 
 export const About = styled.div`
   ${tw`h-auto w-auto`}
@@ -22,17 +23,17 @@ export const AboutWrapperText = styled.div`
   ${tw`md:(pt-[70px] pl-0 flex flex-col items-center) x:(pl-[168px] pt-0 items-start)`}
 `;
 
-export const AboutTip = styled.p`
-  ${tw`w-[73px] h-[20px] font-semibold text-16 leading-20 text-color-pink`}
+export const AboutTip = styled(Tip)`
+  ${tw`w-[73px] h-[20px]`}
 `;
 
-export const AboutTitle = styled.h1`
-  ${tw`w-[460px] h-[91px] font-semibold text-36 leading-45 text-color-title mt-[12px]`}
+export const AboutTitle = styled(Title)`
+  ${tw`w-[460px] h-[91px] mt-[12px]`}
   ${tw`md:text-center x:text-left`}
 `;
 
-export const AboutDescribe = styled.p`
-  ${tw`w-[483px] h-[133px] font-normal text-16 leading-24 tracking-widest text-color-default mt-[10px]`}
+export const AboutDescribe = styled(Describe)`
+  ${tw`w-[483px] h-[133px] mt-[10px]`}
   ${tw`md:text-center x:text-left`}
 `;
 

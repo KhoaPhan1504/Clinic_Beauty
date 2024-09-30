@@ -1,7 +1,7 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import ButtonComponent from '../../../../../../components/Button/ButtonComponent';
-import { Describe, Tip, Title } from '../../../../../../components/Content/TextComponent';
+import { Describe, Tip, Title } from '../../../../../../components/Content/Text.style';
 
 export const About = styled.div`
   ${tw`w-screen h-auto bg-transparent md:mt-[420px] lg:mt-0 xl:mt-0`}

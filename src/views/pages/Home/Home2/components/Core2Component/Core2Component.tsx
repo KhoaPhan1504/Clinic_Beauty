@@ -11,15 +11,15 @@ import {
   CoreWrapperCard,
   CoreWrapperText,
   IconLearMore,
+  Card2Image,
+  Card2Wrapper
 } from './Core2.style';
 import {
   CardDescribe,
-  CardImage,
   CardImg,
   CardInfo,
   CardItem,
   CardName,
-  CardWrapper,
 } from '../../../../../../components/Card/Card.style';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import { core2Data } from '../../../../../../data/Core2Data/Core2Data';
@@ -51,13 +51,13 @@ const Core2Component: React.FC = () => {
           <CoreItem>
             {cores.map((core) => (
               <CoreItemCard key={core.id} data-id={core.id}>
-                <CardWrapper>
-                  <CardItem>
-                    <CardImage>
-                      <CardImg src={core.coreImage} alt={core.coreInfoName} />
-                    </CardImage>
-                    <CardInfo>
-                      <CardName>{core.coreInfoName}</CardName>
+                <Card2Wrapper>
+                  <CardItem className='items-start mt-0'>
+                    <Card2Image>
+                      <CardImg className='rounded-none' src={core.coreImage} alt={core.coreInfoName} />
+                    </Card2Image>
+                    <CardInfo className='items-start text-start'>
+                      <CardName className='text-start'>{core.coreInfoName}</CardName>
                       <CardDescribe>{core.coreInfoDescribe}</CardDescribe>
                     </CardInfo>
                     <CoreLearnMore>
@@ -65,7 +65,7 @@ const Core2Component: React.FC = () => {
                       <IconLearMore icon={faAngleDoubleRight} />
                     </CoreLearnMore>
                   </CardItem>
-                </CardWrapper>
+                </Card2Wrapper>
               </CoreItemCard>
             ))}
           </CoreItem>

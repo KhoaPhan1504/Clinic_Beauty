@@ -4,7 +4,7 @@ import {
   Card,
   CardWrapper,
 } from '../../../../../../components/Card/Card.style';
-import { Describe, Tip, Title } from '../../../../../../components/Content/TextComponent';
+import { Describe, RoleTitle, Tip, Title } from '../../../../../../components/Content/Text.style';
 
 export const Profession = styled.div`
   ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
@@ -86,8 +86,8 @@ export const CardWrapperPro = styled(CardWrapper)`
   }
 `;
 
-export const CardRole = styled.span`
-  ${tw`w-[117px] h-[20px] leading-20 text-center text-color-pink font-semibold text-16 mb-[10px]`}
+export const CardRole = styled(RoleTitle)`
+  ${tw`w-[117px] h-[20px] text-center mb-[10px]`}
 `;
 
 export const CardContactWrapper = styled.div`

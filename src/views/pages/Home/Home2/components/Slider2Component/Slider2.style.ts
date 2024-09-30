@@ -2,9 +2,10 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import ButtonComponent from '../../../../../../components/Button/ButtonComponent';
 import { Images } from '../../../../../../data/ComponentData/Images';
+import { Describe, Title } from '../../../../../../components/Content/Text.style';
 
 export const Slider = styled.div`
-  ${tw`h-full w-full mt-[-113px] m-auto bg-no-repeat 2xl:bg-cover`}
+  ${tw`h-full w-full mt-[-103px] m-auto bg-no-repeat 2xl:bg-cover`}
   background-image: url(${Images.slider2BG});
 `;
 
@@ -20,13 +21,13 @@ export const SliderMainText = styled.div`
   ${tw`md:(flex flex-col text-center items-center) xl:(text-left items-start)`}
 `;
 
-export const SliderTitle = styled.h1`
-  ${tw`w-[502px] h-[133px] font-semibold text-48 leading-60 text-color-white`}
+export const SliderTitle = styled(Title)`
+  ${tw`w-[502px] h-[133px] text-48 leading-60 text-color-white`}
   ${tw`2xl:(w-[600px] h-[159px] font-semibold text-50)`}
 `;
 
-export const SliderDescribe = styled.p`
-  ${tw`w-[501px] h-[78px] font-medium text-16 leading-24 tracking-widest text-color-describe-2`}
+export const SliderDescribe = styled(Describe)`
+  ${tw`w-[501px] h-[78px] font-medium text-color-describe-2`}
   ${tw`2xl:(w-[600px] h-[94px] font-semibold text-18 leading-27)`}
 `;
 
