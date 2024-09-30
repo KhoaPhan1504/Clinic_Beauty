@@ -7,7 +7,7 @@ interface LogoProps {
 }
 
 const LogoComponent: React.FC<LogoProps> = ({ linkLogo, altLogo }) => {
-  return <LogoImage className="ml-[-2px]" src={linkLogo} alt={altLogo} />;
+  return <LogoImage src={linkLogo} alt={altLogo} />;
 };
 
 export default LogoComponent;

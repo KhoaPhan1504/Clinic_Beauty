@@ -1,6 +1,7 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import ButtonComponent from '../../../../../../components/Button/ButtonComponent';
+import { Describe, Tip, Title } from '../../../../../../components/Content/TextComponent';
 
 export const About = styled.div`
   ${tw`w-screen h-auto bg-transparent md:mt-[420px] lg:mt-0 xl:mt-0`}
@@ -27,16 +28,16 @@ export const AboutTitleDesc = styled.div`
   ${tw`w-[664px] h-[292px] flex flex-col items-start md:(ml-0 items-center) xl:(ml-[150px] items-start)`}
 `;
 
-export const AboutTip = styled.span`
-  ${tw`font-semibold text-16 w-[73px] h-[20px] leading-20 text-color-pink`}
+export const AboutTip = styled(Tip)`
+  ${tw`w-[73px] h-[20px]`}
 `;
 
-export const AboutTitle = styled.h2`
-  ${tw`font-semibold text-36 max-w-[664px] h-[52px] leading-45 text-color-title mt-[12px]`}
+export const AboutTitle = styled(Title)`
+  ${tw`max-w-[664px] h-[52px] mt-[12px]`}
 `;
 
-export const AboutDescribe = styled.p`
-  ${tw`font-normal text-16 h-[196px] leading-24 tracking-widest text-color-default mt-[19px] md:w-[483px] lg:w-full xl:w-[483px]`}
+export const AboutDescribe = styled(Describe)`
+  ${tw`h-[196px] mt-[19px] md:w-[483px] lg:w-full xl:w-[483px]`}
 `;
 
 export const AboutBtnGroup = styled.div`

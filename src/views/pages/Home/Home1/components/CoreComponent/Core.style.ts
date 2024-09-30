@@ -4,6 +4,7 @@ import {
   Card,
   CardWrapper,
 } from '../../../../../../components/Card/Card.style';
+import { Describe, Tip, Title } from '../../../../../../components/Content/TextComponent';
 
 export const Core = styled.div`
   ${tw`w-screen max-w-1140 h-[732px] rounded-[42px] text-center`}
@@ -20,17 +21,17 @@ export const TitleDesc = styled.div`
   ${tw`md:(max-w-[700px] text-center) lg:(max-w-[600px]) xl:(max-w-[848px])`}
 `;
 
-export const InfoTip = styled.span`
-  ${tw`w-auto h-[20px] leading-20 text-center text-color-pink font-semibold text-16`}
+export const InfoTip = styled(Tip)`
+  ${tw`w-auto h-[20px] text-center`}
 `;
 
-export const InfoTitle = styled.h2`
-  ${tw`max-w-[417px] h-[97px] leading-[45px] text-center pt-[12px] text-color-title font-semibold text-36`}
+export const InfoTitle = styled(Title)`
+  ${tw`max-w-[417px] h-[97px] pt-[12px]`}
   ${tw`md:(leading-[40px]) lg:(leading-[42px]) xl:(leading-[44px])`}
 `;
 
-export const InfoDescribe = styled.p`
-  ${tw`w-full h-[51px] leading-24 tracking-widest text-center pt-6 text-color-default font-normal text-16`}
+export const InfoDescribe = styled(Describe)`
+  ${tw`w-full h-[51px] text-center pt-6 font-normal`}
   ${tw`md:(max-w-[700px]) lg:(max-w-[600px]) xl:(max-w-[848px])`}
 `;
 

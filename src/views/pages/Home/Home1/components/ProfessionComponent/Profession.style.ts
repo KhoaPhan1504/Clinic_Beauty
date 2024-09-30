@@ -4,6 +4,7 @@ import {
   Card,
   CardWrapper,
 } from '../../../../../../components/Card/Card.style';
+import { Describe, Tip, Title } from '../../../../../../components/Content/TextComponent';
 
 export const Profession = styled.div`
   ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
@@ -17,17 +18,17 @@ export const ProfessionDesc = styled.div`
   ${tw`flex justify-center items-center flex-col max-w-[848px] h-[148px] px-[20px] py-[1px]`}
 `;
 
-export const ProInfoTip = styled.span`
-  ${tw`text-color-pink leading-20 w-[160px] h-[20px] pt-[3px] font-semibold text-16`}
+export const ProInfoTip = styled(Tip)`
+  ${tw`w-[160px] h-[20px] pt-[3px]`}
 `;
 
-export const ProInfoTitle = styled.h2`
-  ${tw`h-[53px] my-[15px] text-center leading-45 text-color-title font-semibold text-36`}
+export const ProInfoTitle = styled(Title)`
+  ${tw`h-[53px] my-[15px] text-center`}
   ${tw`md:(w-auto) xl:w-[732px]`}
 `;
 
-export const ProInfoDescribe = styled.p`
-  ${tw`h-[51px] text-center text-color-default tracking-widest leading-24 mt-[2px] font-normal text-16`}
+export const ProInfoDescribe = styled(Describe)`
+  ${tw`h-[51px] text-center mt-[2px] `}
   ${tw`md:(w-auto) xl:w-[848px]`}
 `;
 

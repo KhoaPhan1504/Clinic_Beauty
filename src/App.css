@@ -10,6 +10,13 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%
+}
+
 body {
   overflow-x: hidden;
   box-sizing: border-box;
@@ -29,7 +36,7 @@ a:hover {
   text-decoration: none;
 }
 
-ul {
+ol, ul {
   padding: 0;
   list-style: none;
 }

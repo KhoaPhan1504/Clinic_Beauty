@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { Describe, Tip, Title } from '../../../../../../components/Content/TextComponent';
 
 export const Contact = styled.div`
   ${tw`w-auto h-[1072px] md:mt-[220vh] xl:mt-0`}
@@ -46,16 +47,16 @@ export const ContactTitleDesc = styled.div`
   ${tw`flex flex-col md:(text-center items-center) x:(text-left items-start)`}
 `;
 
-export const ContactTip = styled.span`
-  ${tw`font-semibold text-16 w-[90px] h-[20px] leading-20 mb-[11px] text-color-pink`}
+export const ContactTip = styled(Tip)`
+  ${tw`w-[90px] h-[20px] mb-[11px]`}
 `;
 
-export const ContactTitle = styled.h2`
-  ${tw`font-semibold text-36 w-[404px] h-[97px] leading-45 mb-[13px] text-color-title`}
+export const ContactTitle = styled(Title)`
+  ${tw`w-[404px] h-[97px] mb-[13px]`}
 `;
 
-export const ContactDescribe = styled.p`
-  ${tw`font-normal text-16 w-[497px] h-[28px] leading-24 tracking-widest text-color-default`}
+export const ContactDescribe = styled(Describe)`
+  ${tw`w-[497px] h-[28px]`}
 `;
 
 export const ContactMainFormItem = styled.div`

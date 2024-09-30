@@ -2,6 +2,7 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import ButtonComponent from '../../../../../../components/Button/ButtonComponent';
 import { Images } from '../../../../../../data/ComponentData/Images';
+import { Describe, Title } from '../../../../../../components/Content/TextComponent';
 
 export const Slider = styled.div`
   ${tw`h-auto w-full mt-[-113px] x:(flex justify-center flex-col)`}
@@ -24,12 +25,12 @@ export const SliderMainChild = styled.div`
   ${tw`pl-[189px] pb-[27px] max-[1280px]:(pl-[70px])`}
 `;
 
-export const SliderMainTitle = styled.h1`
-  ${tw`font-semibold text-48 leading-[60px] w-[430px] h-[128px] text-color-title`}
+export const SliderMainTitle = styled(Title)`
+  ${tw`text-48 leading-[60px] w-[430px] h-[128px]`}
 `;
 
-export const SliderMainDescribe = styled.p`
-  ${tw`font-medium text-16 tracking-widest w-[474px] h-[54px] text-color-title`}
+export const SliderMainDescribe = styled(Describe)`
+  ${tw`font-medium w-[474px] h-[54px] text-color-title`}
 `;
 
 export const SliderButton = styled.div`
