@@ -15,24 +15,24 @@ export const statsData: StatsProps[] = [
     id: 1,
     imageIcon: Handshake,
     count: '100%',
-    nameIcon: 'trusted clinic'
+    nameIcon: 'trusted clinic',
   },
   {
     id: 2,
     imageIcon: Brotherhood,
     count: '99%',
-    nameIcon: 'customer love'
+    nameIcon: 'customer love',
   },
   {
     id: 3,
     imageIcon: Earth,
     count: '75+',
-    nameIcon: 'asian branch'
+    nameIcon: 'asian branch',
   },
   {
     id: 4,
     imageIcon: Doctor,
     count: '1.200+',
-    nameIcon: 'licensed worker'
-  }
-]
+    nameIcon: 'licensed worker',
+  },
+];

@@ -2,7 +2,10 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import ButtonComponent from '../../../../../../components/Button/ButtonComponent';
 import { Images } from '../../../../../../data/ComponentData/Images';
-import { Describe, Title } from '../../../../../../components/Content/Text.style';
+import {
+  Describe,
+  Title,
+} from '../../../../../../components/Content/Text.style';
 
 export const Slider = styled.div`
   ${tw`h-auto w-full mt-[-113px] x:(flex justify-center flex-col)`}

@@ -6,6 +6,7 @@ import AboutBG from '../../assets/images/home1/Background Bubble.png';
 import Slider2BG from '../../assets/images/home2/Background Slider2.png';
 import Core2BG from '../../assets/images/home2/Wave_Line_Left.png';
 import WhyChoose from '../../assets/images/home2/Why choosing us.png';
+import BlogBG from '../../assets/images/home2/Background Wave.png';
 
 export const Images = {
   footer1Background: Footer_1_BG,
@@ -15,5 +16,6 @@ export const Images = {
   aboutBG: AboutBG,
   slider2BG: Slider2BG,
   core2BG: Core2BG,
-  whyChoose: WhyChoose
+  whyChoose: WhyChoose,
+  blogBG: BlogBG,
 };

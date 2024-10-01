@@ -4,7 +4,11 @@ import {
   Card,
   CardWrapper,
 } from '../../../../../../components/Card/Card.style';
-import { Describe, Tip, Title } from '../../../../../../components/Content/Text.style';
+import {
+  Describe,
+  Tip,
+  Title,
+} from '../../../../../../components/Content/Text.style';
 
 export const Core = styled.div`
   ${tw`w-screen max-w-1140 h-[732px] rounded-[42px] text-center`}

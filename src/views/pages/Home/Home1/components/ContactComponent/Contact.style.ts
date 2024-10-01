@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Describe, Tip, Title } from '../../../../../../components/Content/Text.style';
+import {
+  Describe,
+  Tip,
+  Title,
+} from '../../../../../../components/Content/Text.style';
 
 export const Contact = styled.div`
   ${tw`w-auto h-[1072px] md:mt-[220vh] xl:mt-0`}

@@ -1,7 +1,7 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 
-const Button = styled.button`
+export const Button = styled.button`
   ${tw`font-semibold text-16 cursor-pointer 
   bg-color-pink text-color-white tracking-widest 
   rounded-full transition-all border-none 
@@ -15,5 +15,3 @@ const Button = styled.button`
     ${tw`translate-y-1`}
   }
 `;
-
-export default Button;

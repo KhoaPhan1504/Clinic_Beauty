@@ -1,15 +1,24 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Card, CardDescribe, CardImage, CardInfo, CardItem, CardName, CardWrapper } from '../../../../../../components/Card/Card.style';
-import { Describe, LearnMore, Tip, Title } from '../../../../../../components/Content/Text.style';
+import {
+  Card,
+  CardDescribe,
+  CardImage,
+  CardInfo,
+  CardItem,
+  CardName,
+  CardWrapper,
+} from '../../../../../../components/Card/Card.style';
+import {
+  Describe,
+  LearnMore,
+  Tip,
+  Title,
+} from '../../../../../../components/Content/Text.style';
 
 export const Core = styled.div`
-  ${tw`relative h-full w-full mt-[158px]`}
-`;
-
-export const CoreBackground = styled.img`
-  ${tw`absolute top-[333px]`}
+  ${tw`h-full w-full mt-[158px]`}
 `;
 
 export const CoreWrapper = styled.div`
@@ -47,29 +56,29 @@ export const CoreItemCard = styled(Card)`
   box-shadow: none !important;
 `;
 
-export const Card2Wrapper = styled(CardWrapper) `
+export const Card2Wrapper = styled(CardWrapper)`
   ${tw`h-auto`}
 `;
 
-export const Card2Item = styled(CardItem) `
+export const Card2Item = styled(CardItem)`
   ${tw`items-start mt-0`}
 `;
 
-export const Card2Image = styled(CardImage) `
+export const Card2Image = styled(CardImage)`
   ${tw`w-auto flex justify-start mt-0 pt-0`}
 `;
 
-export const Card2Info = styled(CardInfo) `
+export const Card2Info = styled(CardInfo)`
   ${tw`w-auto mt-0 pt-[14px] items-start text-start`}
 `;
 
-export const Card2Name = styled(CardName) `
+export const Card2Name = styled(CardName)`
   ${tw`text-start w-auto`}
-`; 
+`;
 
-export const Card2Describe = styled(CardDescribe) `
+export const Card2Describe = styled(CardDescribe)`
   ${tw`mt-0 w-[189px] h-[63px] mt-[-1px]`}
-`; 
+`;
 
 export const CoreLearnMore = styled(LearnMore)`
   ${tw`flex justify-start mt-[16px]`}

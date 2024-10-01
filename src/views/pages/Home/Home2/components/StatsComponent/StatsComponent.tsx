@@ -1,5 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { ContentDescribe,  ContentIcon,  ContentTitle,CountIcon,DescribeIcon,GroupIcon,ImageIcon,WhyChoose, WhyChooseWrapper, WrapperContainer, WrapperContent, WrapperIcon } from './Stats.style';
+import {
+  ContentDescribe,
+  ContentIcon,
+  ContentTitle,
+  CountIcon,
+  DescribeIcon,
+  GroupIcon,
+  ImageIcon,
+  WhyChoose,
+  WhyChooseWrapper,
+  WrapperContainer,
+  WrapperContent,
+  WrapperIcon,
+} from './Stats.style';
 import { statsData } from '../../../../../../data/StatsData/StatsData';
 
 interface StatsProps {
@@ -9,19 +22,22 @@ interface StatsProps {
   nameIcon: string;
 }
 
-const StatsComponent:React.FC = () => {
+const StatsComponent: React.FC = () => {
   const [stats, setStats] = useState<StatsProps[]>([]);
 
   useEffect(() => {
-    setStats(statsData)
-  }, [])
+    setStats(statsData);
+  }, []);
 
   return (
     <WhyChoose>
       <WhyChooseWrapper>
         <WrapperContent>
           <ContentTitle>Why choosing us?</ContentTitle>
-          <ContentDescribe>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</ContentDescribe>
+          <ContentDescribe>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis.
+          </ContentDescribe>
         </WrapperContent>
         <WrapperIcon>
           <WrapperContainer>
@@ -38,7 +54,7 @@ const StatsComponent:React.FC = () => {
         </WrapperIcon>
       </WhyChooseWrapper>
     </WhyChoose>
-  )
-}
+  );
+};
 
 export default StatsComponent;

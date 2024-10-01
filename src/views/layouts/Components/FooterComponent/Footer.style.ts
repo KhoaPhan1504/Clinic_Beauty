@@ -4,7 +4,7 @@ import tw from 'twin.macro';
 import { Images } from '../../../../data/ComponentData/Images';
 
 export const Footer = styled.div`
-  ${tw`w-full h-[705.34px] overflow-hidden md:mt-[470px] xl:mt-[50px] x:mt-[11px]`}
+  ${tw`w-full h-[705.34px] overflow-hidden sm:mt-[162px] md:mt-[470px] xl:mt-[50px] x:mt-[11px]`}
 `;
 
 export const FooterWrapper = styled.div`
@@ -27,7 +27,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterColumn = styled.div`
-  ${tw`flex md:flex-col xl:flex-row`}
+  ${tw`flex sm:(flex-col pt-[31px] pl-[66px]) md:(pl-0 pt-0) xl:flex-row`}
 `;
 
 export const FooterCol = styled.div`
@@ -107,11 +107,11 @@ export const IconLinkMenu = styled(FontAwesomeIcon)`
 `;
 
 export const FooterBottom = styled.div`
-  ${tw`mt-[80px] flex md:(mt-0 flex-col) lg:flex-row xl:mt-[90px] x:mt-[80px]`}
+  ${tw`mt-[80px] flex sm:(mt-0 flex-col justify-center items-center) md:(justify-start items-start) lg:flex-row xl:mt-[90px] x:mt-[80px]`}
 `;
 
 export const FooterInternet = styled.div`
-  ${tw`w-[305px] h-[27.84px] flex md:justify-center`}
+  ${tw`w-[305px] h-[27.84px] flex sm:justify-center`}
 `;
 
 export const FooterGroupIcon = styled.div`
