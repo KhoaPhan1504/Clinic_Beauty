@@ -27,7 +27,8 @@ export default {
       'color-bgr-footer' : ' #0D165C',
       'footer-text': '#D7DBFF',
       'color-describe-2': 'rgba(216, 220, 255, 1)',
-      'color-rgb-white': 'rgba(255, 255, 255, 1)'
+      'color-rgb-white': 'rgba(255, 255, 255, 1)',
+      'color-tip-other': 'rgba(171, 180, 255, 1)'
     },
     maxWidth: {
       '1140': '1140px'

@@ -11,7 +11,11 @@ const Home1 = () => {
       <SliderComponent />
       <CoreComponent />
       <AboutComponent />
-      <ProfessionComponent />
+      <ProfessionComponent
+        tipText="Professional Teams"
+        titleText="The Professional expert"
+        describeText="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam."
+      />
       <ContactComponent />
     </Layout1Component>
   );

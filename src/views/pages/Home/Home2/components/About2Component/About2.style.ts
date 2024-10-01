@@ -27,16 +27,16 @@ export const AboutWrapperText = styled.div`
   ${tw`sm:(pt-[70px] pl-0 flex flex-col items-center) x:(pl-[168px] pt-0 items-start)`}
 `;
 
-export const AboutTip = styled(Tip)`
-  ${tw`w-[73px] h-[20px]`}
+export const TipText = styled(Tip)`
+  ${tw`w-[88px] h-[20px]`}
 `;
 
-export const AboutTitle = styled(Title)`
+export const TitleText = styled(Title)`
   ${tw`w-[460px] h-[91px] mt-[12px]`}
   ${tw`sm:text-center x:text-left`}
 `;
 
-export const AboutDescribe = styled(Describe)`
+export const DescribeText = styled(Describe)`
   ${tw`w-[483px] h-[133px] mt-[10px]`}
   ${tw`sm:text-center x:text-left`}
 `;

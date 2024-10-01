@@ -12,11 +12,14 @@ import {
 } from '../../../../../../components/Content/Text.style';
 
 export const Profession = styled.div`
-  ${tw`h-[861px] md:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
+  ${tw`h-[861px] sm:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
 `;
 
+export const ProfessionBG = styled.img`
+  ${tw`absolute -z-10`}
+`;
 export const ProfessionWrapper = styled.div`
-  ${tw`flex items-center flex-col max-w-1140 h-full md:ml-0 xl:ml-[68px] x:ml-[147px] 2xl:(ml-0)`}
+  ${tw`flex items-center flex-col max-w-1140 h-full sm:ml-0 xl:ml-[68px] x:ml-[147px] 2xl:(ml-0)`}
 `;
 
 export const ProfessionDesc = styled.div`
@@ -29,12 +32,12 @@ export const ProInfoTip = styled(Tip)`
 
 export const ProInfoTitle = styled(Title)`
   ${tw`h-[53px] my-[15px] text-center`}
-  ${tw`md:(w-auto) xl:w-[732px]`}
+  ${tw`sm:(w-auto) xl:w-[732px]`}
 `;
 
 export const ProInfoDescribe = styled(Describe)`
   ${tw`h-[51px] text-center mt-[2px] `}
-  ${tw`md:(w-auto) xl:w-[848px]`}
+  ${tw`sm:(w-auto) xl:w-[848px]`}
 `;
 
 export const ProItem = styled.div`
@@ -42,7 +45,7 @@ export const ProItem = styled.div`
 `;
 
 export const ProItemWrapper = styled.div`
-  ${tw`flex gap-1 transition-all md:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
+  ${tw`flex gap-1 transition-all sm:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
   perspective: 1000px;
 `;
 
@@ -65,7 +68,7 @@ export const ProItemRow = styled.div`
 `;
 
 export const ProfessionItemCard = styled(Card)`
-  ${tw`md:(w-[500px] h-[570px]) xl:(w-[424px] h-[626px]) x:(mt-0 pt-[33px]) `}
+  ${tw`sm:(w-[500px] h-[570px]) xl:(w-[424px] h-[626px]) x:(mt-0 pt-[33px]) `}
   border-radius: 42px;
   box-shadow: none;
   transition: all 0.3s;
@@ -75,7 +78,7 @@ export const CardWrapperPro = styled(CardWrapper)`
   ${tw`w-[424px] h-[626px]`}
 
   &[data-id="1"] {
-    ${tw`md:ml-0 xl:ml-[44px]`}
+    ${tw`sm:ml-0 xl:ml-[44px]`}
 
     &:hover {
       ${tw`ml-0`}
@@ -83,7 +86,7 @@ export const CardWrapperPro = styled(CardWrapper)`
   }
 
   &[data-id='3'] {
-    ${tw`md:mr-0 xl:mr-[40px]`}
+    ${tw`sm:mr-0 xl:mr-[40px]`}
 
     &:hover {
       ${tw`mr-0`}

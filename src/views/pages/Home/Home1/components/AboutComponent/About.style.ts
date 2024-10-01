@@ -11,11 +11,6 @@ export const About = styled.div`
   ${tw`w-screen h-auto bg-transparent md:mt-[420px] lg:mt-0 xl:mt-0`}
 `;
 
-export const AboutBackground = styled.img`
-  ${tw`absolute -z-10 right-0  md:translate-y-0 xl:translate-y-[-220px]`}
-  content: '';
-`;
-
 export const AboutWrapper = styled.div`
   ${tw`flex items-center max-w-[1440px] m-auto md:(pt-[110px]) xl:pt-[134px]`}
 `;

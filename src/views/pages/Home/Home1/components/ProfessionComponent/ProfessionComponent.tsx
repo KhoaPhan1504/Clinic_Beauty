@@ -15,6 +15,7 @@ import {
   ProItemRow,
   ProItemWrapper,
   CardWrapperPro,
+  ProfessionBG,
 } from './Profession.style';
 import { proData } from '../../../../../../data/ProfessionData/ProfessionData';
 import {
@@ -37,7 +38,23 @@ interface ProProps {
   Instagram: string;
 }
 
-const ProfessionComponent: React.FC = () => {
+interface ProfessionComponentProps {
+  bgSrc?: string;
+  tipText: string;
+  titleText: string;
+  describeText: string;
+  classNameBG?: string;
+  className?: string;
+}
+
+const ProfessionComponent: React.FC<ProfessionComponentProps> = ({
+  bgSrc,
+  tipText,
+  titleText,
+  describeText,
+  classNameBG,
+  className,
+}) => {
   const [pros, setPros] = useState<ProProps[]>([]);
 
   const [activeCard, setActiveCard] = useState<number>(2);
@@ -55,14 +72,13 @@ const ProfessionComponent: React.FC = () => {
   }, []);
 
   return (
-    <Profession>
+    <Profession className={className}>
+      <ProfessionBG src={bgSrc} className={classNameBG} />
       <ProfessionWrapper>
         <ProfessionDesc>
-          <ProInfoTip>Professional Teams</ProInfoTip>
-          <ProInfoTitle>The Professional expert</ProInfoTitle>
-          <ProInfoDescribe>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
-          </ProInfoDescribe>
+          <ProInfoTip>{tipText}</ProInfoTip>
+          <ProInfoTitle>{titleText}</ProInfoTitle>
+          <ProInfoDescribe>{describeText}</ProInfoDescribe>
         </ProfessionDesc>
         <ProItem>
           <ProItemWrapper>
