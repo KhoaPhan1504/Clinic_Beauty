@@ -5,7 +5,6 @@ import ImageAbout from '../../../assets/images/about/About 1.png';
 import ProfessionComponent from '../Home/Home1/components/ProfessionComponent/ProfessionComponent';
 import Profession from '../../../assets/images/about/Bubble_BG_Right.png';
 import SloganComponent from './components/SloganComponent/SloganComponent';
-import Slogan from '../../../assets/images/about/Slogan.png';
 import VisionComponent from './components/VisionComponent/VisionComponent';
 import MissionComponent from './components/MissionComponent/MissionComponent';
 import ClientComponent from './components/ClientComponent/ClientComponent';
@@ -28,12 +27,7 @@ const About: React.FC = () => {
         describeText="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam."
         className="mt-[133px]"
       />
-      <SloganComponent
-        tipText="Business Slogan"
-        titleText="Best responsibility and service for our customers"
-        describeText="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis"
-        background={Slogan}
-      />
+      <SloganComponent />
       <VisionComponent />
       <MissionComponent />
       <ClientComponent />

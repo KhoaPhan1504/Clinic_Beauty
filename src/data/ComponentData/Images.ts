@@ -12,6 +12,15 @@ import LogoAbout2 from '../../assets/images/about/LOGO2.png';
 import LogoAbout3 from '../../assets/images/about/LOGO3.png';
 import LogoAbout4 from '../../assets/images/about/LOGO4.png';
 import LogoAbout5 from '../../assets/images/about/LOGO5.png';
+import Service1 from '../../assets/images/service/Service_1.png';
+import Service2 from '../../assets/images/service/Service_2.png';
+import Service3 from '../../assets/images/service/Service_3.png';
+import Service4 from '../../assets/images/service/Service_4.png';
+import SvInfor1 from '../../assets/images/service/Animation1.png';
+import SvInfor2 from '../../assets/images/service/Animation2.png';
+import SvInfor3 from '../../assets/images/service/Animation3.png';
+import SloganService from '../../assets/images/service/BG_Slogan.png';
+import PlayService from '../../assets/images/service/Play_Service.png';
 
 export const Images = {
   footer1Background: Footer_1_BG,
@@ -31,4 +40,19 @@ export const Icon = {
   logoAbout3: LogoAbout3,
   logoAbout4: LogoAbout4,
   logoAbout5: LogoAbout5,
+};
+
+export const SvImage = {
+  serviceImg1: Service1,
+  serviceImg2: Service2,
+  serviceImg3: Service3,
+  serviceImg4: Service4,
+  sloganService: SloganService,
+  playService: PlayService,
+};
+
+export const SvInfor = {
+  SvInfor1: SvInfor1,
+  SvInfor2: SvInfor2,
+  SvInfor3: SvInfor3,
 };

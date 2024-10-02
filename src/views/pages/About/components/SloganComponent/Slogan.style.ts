@@ -6,14 +6,11 @@ import {
   Title,
 } from '../../../../../components/Content/Text.style';
 import SloganMask from '../../../../../assets/images/about/Background Mask.png';
+import SloganImage from '../../../../../assets/images/about/Slogan.png';
 
-interface SloganProps {
-  background?: string;
-}
-
-export const Slogan = styled.div<SloganProps>`
+export const Slogan = styled.div`
   ${tw`relative w-auto h-[529px] bg-center bg-no-repeat sm:mt-[730px] xl:mt-[155px] 2xl:bg-cover`}
-  background-image: url(${(props) => props.background});
+  background-image: url(${SloganImage});
 
   &::before {
     content: '';
@@ -40,16 +37,4 @@ export const TitleText = styled(Title)`
 
 export const DescribeText = styled(Describe)`
   ${tw`h-[56px] text-color-default mt-[13px] sm:(w-auto px-[5px]) xl:w-[680px]`}
-`;
-
-export const SloganWrapperButton = styled.div`
-  ${tw``}
-`;
-
-export const SloganButtonImage = styled.img`
-  ${tw``}
-`;
-
-export const SloganButtonText = styled.p`
-  ${tw``}
 `;

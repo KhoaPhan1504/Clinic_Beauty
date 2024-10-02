@@ -2,18 +2,20 @@ import React from 'react';
 import {
   DescribeText,
   Slogan,
+  SloganButtonImage,
+  SloganButtonText,
   SloganWrapper,
+  SloganWrapperButton,
   SloganWrapperText,
-  TipText,
   TitleText,
-} from './Slogan.style';
+} from './SloganSv.style';
+import Play_Icon from '../../../../../assets/images/service/Play_Service.png';
 
-const SloganComponent: React.FC = () => {
+const SloganSvComponent: React.FC = () => {
   return (
     <Slogan>
       <SloganWrapper>
         <SloganWrapperText>
-          <TipText>Business Slogan</TipText>
           <TitleText>
             Best responsibility and service for our customers
           </TitleText>
@@ -22,9 +24,13 @@ const SloganComponent: React.FC = () => {
             purus sit amet luctus venenatis
           </DescribeText>
         </SloganWrapperText>
+        <SloganWrapperButton>
+          <SloganButtonImage src={Play_Icon} />
+          <SloganButtonText>Treatments Videos</SloganButtonText>
+        </SloganWrapperButton>
       </SloganWrapper>
     </Slogan>
   );
 };
 
-export default SloganComponent;
+export default SloganSvComponent;

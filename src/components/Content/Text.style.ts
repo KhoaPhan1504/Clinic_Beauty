@@ -20,3 +20,7 @@ export const LearnMore = styled.a`
 export const RoleTitle = styled.span`
   ${tw`font-semibold text-16 leading-20 text-color-pink`}
 `;
+
+export const AppointmentTextLink = styled.a`
+  ${tw`font-semibold text-16 leading-24 tracking-widest text-color-title`}
+`;
