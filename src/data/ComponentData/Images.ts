@@ -7,6 +7,11 @@ import Slider2BG from '../../assets/images/home2/Background Slider2.png';
 import Core2BG from '../../assets/images/home2/Wave_Line_Left.png';
 import WhyChoose from '../../assets/images/home2/Why choosing us.png';
 import BlogBG from '../../assets/images/home2/Background Wave.png';
+import LogoAbout1 from '../../assets/images/about/LOGO1.png';
+import LogoAbout2 from '../../assets/images/about/LOGO2.png';
+import LogoAbout3 from '../../assets/images/about/LOGO3.png';
+import LogoAbout4 from '../../assets/images/about/LOGO4.png';
+import LogoAbout5 from '../../assets/images/about/LOGO5.png';
 
 export const Images = {
   footer1Background: Footer_1_BG,
@@ -18,4 +23,12 @@ export const Images = {
   core2BG: Core2BG,
   whyChoose: WhyChoose,
   blogBG: BlogBG,
+};
+
+export const Icon = {
+  logoAbout1: LogoAbout1,
+  logoAbout2: LogoAbout2,
+  logoAbout3: LogoAbout3,
+  logoAbout4: LogoAbout4,
+  logoAbout5: LogoAbout5,
 };
