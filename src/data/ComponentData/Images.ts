@@ -58,3 +58,5 @@ export const SvInfor = {
   SvInfor2: SvInfor2,
   SvInfor3: SvInfor3,
 };
+
+export const Testimonial = {};

@@ -1,55 +1,52 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import {
-  Card,
-  CardWrapper,
-} from '../../../../../../components/Card/Card.style';
+import { Card, CardWrapper } from '../../../../../components/Card/Card.style';
 import {
   Describe,
   RoleTitle,
   Tip,
   Title,
-} from '../../../../../../components/Content/Text.style';
+} from '../../../../../components/Content/Text.style';
 
-export const Profession = styled.div`
-  ${tw`h-[861px] sm:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
+export const Our = styled.div`
+  ${tw`h-auto sm:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[130px]) x:mt-[123px] 2xl:(ml-0 flex justify-center)`}
 `;
 
-export const ProfessionBG = styled.img`
-  ${tw`absolute -z-10`}
+export const OurBG = styled.img`
+  ${tw`absolute -z-10 sm:(-z-1)`}
 `;
-export const ProfessionWrapper = styled.div`
+export const OurWrapper = styled.div`
   ${tw`flex items-center flex-col max-w-1140 h-full sm:ml-0 xl:ml-[68px] x:ml-[147px] 2xl:(ml-0)`}
 `;
 
-export const ProfessionDesc = styled.div`
+export const OurDesc = styled.div`
   ${tw`flex justify-center items-center flex-col max-w-[848px] h-[148px] px-[20px] py-[1px]`}
 `;
 
-export const ProInfoTip = styled(Tip)`
+export const OurInfoTip = styled(Tip)`
   ${tw`w-[160px] h-[20px] pt-[3px]`}
 `;
 
-export const ProInfoTitle = styled(Title)`
+export const OurInfoTitle = styled(Title)`
   ${tw`h-[53px] my-[15px] text-center`}
-  ${tw`sm:(w-auto) xl:w-[732px]`}
+  ${tw`sm:(w-auto) xl:w-[732px] x:pr-[81px]`}
 `;
 
-export const ProInfoDescribe = styled(Describe)`
-  ${tw`h-[51px] text-center mt-[2px] `}
-  ${tw`sm:(w-auto) xl:w-[848px]`}
+export const OurInfoDescribe = styled(Describe)`
+  ${tw`h-[51px] text-center mt-[9px]`}
+  ${tw`sm:(w-auto) xl:w-[848px] x:pr-[80px]`}
 `;
 
-export const ProItem = styled.div`
-  ${tw`flex justify-center items-center w-full mt-[89px]`}
+export const OurItem = styled.div`
+  ${tw`flex justify-center items-center w-full sm:mt-[20px] x:mt-[75px]`}
 `;
 
-export const ProItemWrapper = styled.div`
-  ${tw`flex gap-1 transition-all sm:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
+export const OurItemWrapper = styled.div`
+  ${tw`h-auto flex gap-1 transition-all sm:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
   perspective: 1000px;
 `;
 
-export const ProItemRow = styled.div`
+export const OurItemRow = styled.div`
   ${tw`flex-1 transition-all bg-transparent relative rounded-[42px]`}
   transform-style: preserve-3d;
   transition:
@@ -69,14 +66,14 @@ export const ProItemRow = styled.div`
   }
 `;
 
-export const ProfessionItemCard = styled(Card)`
+export const OurItemCard = styled(Card)`
   ${tw`sm:(w-[500px] h-[570px]) xl:(w-[424px] h-[626px]) x:(mt-0 pt-[33px]) `}
   border-radius: 42px;
   box-shadow: none;
   transition: all 0.3s;
 `;
 
-export const CardWrapperPro = styled(CardWrapper)`
+export const CardWrapperOur = styled(CardWrapper)`
   ${tw`w-[424px] h-[626px]`}
 
   &[data-id="1"] {
