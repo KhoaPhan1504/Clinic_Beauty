@@ -10,6 +10,10 @@ export const Service = styled.div`
   ${tw`h-full w-full mt-[125px]`}
 `;
 
+export const ServiceBG = styled.img`
+  ${tw`absolute -z-10 -translate-y-[32px]`}
+`;
+
 export const ServiceWrapper = styled.div`
   ${tw`h-auto w-auto`}
 `;

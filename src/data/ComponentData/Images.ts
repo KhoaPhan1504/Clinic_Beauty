@@ -21,6 +21,7 @@ import SvInfor2 from '../../assets/images/service/Animation2.png';
 import SvInfor3 from '../../assets/images/service/Animation3.png';
 import SloganService from '../../assets/images/service/BG_Slogan.png';
 import PlayService from '../../assets/images/service/Play_Service.png';
+import ServiceBG from '../../assets/images/service/Bubble BG.png';
 
 export const Images = {
   footer1Background: Footer_1_BG,
@@ -49,6 +50,7 @@ export const SvImage = {
   serviceImg4: Service4,
   sloganService: SloganService,
   playService: PlayService,
+  serviceBG: ServiceBG,
 };
 
 export const SvInfor = {

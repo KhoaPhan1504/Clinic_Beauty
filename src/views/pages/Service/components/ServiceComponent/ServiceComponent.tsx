@@ -2,6 +2,7 @@ import React from 'react';
 import {
   DescribeText,
   Service,
+  ServiceBG,
   ServiceImage,
   ServiceWrapper,
   ServiceWrapperImage,
@@ -15,6 +16,7 @@ import { SvImage } from '../../../../../data/ComponentData/Images';
 const ServiceComponent: React.FC = () => {
   return (
     <Service>
+      <ServiceBG src={SvImage.serviceBG} />
       <ServiceWrapper>
         <ServiceWrapperText>
           <TipText>Our Services</TipText>
