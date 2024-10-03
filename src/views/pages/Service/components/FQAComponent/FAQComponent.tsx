@@ -30,12 +30,8 @@ const FQAComponent: React.FC = () => {
           <Underline />
         </HeadingFAQ>
         {faqs.map((faq) => (
-          <FAQList key={faq.id}>
-            <FAQItem
-              title={faq.ask}
-              defaultOpen={faq.id === 1}
-              data-id={faq.id}
-            >
+          <FAQList key={faq.id} data-id={faq.id}>
+            <FAQItem title={faq.ask} defaultOpen={faq.id === 1}>
               {({ ref }) => (
                 <FAQContent ref={ref}>
                   <span>{faq.q1}</span>

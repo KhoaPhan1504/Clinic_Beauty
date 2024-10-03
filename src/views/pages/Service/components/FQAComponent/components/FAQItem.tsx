@@ -20,10 +20,6 @@ export interface FAQItemProps {
 
 const FAQItemWrapper = styled.div`
   ${tw`flex w-full flex-col`}
-
-  &[data-id="2"] {
-    ${tw`mt-[22px]`}
-  }
 `;
 
 const FAQItemHeader = styled.div<{ isOpen: boolean }>`
