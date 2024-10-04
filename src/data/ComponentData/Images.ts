@@ -22,6 +22,9 @@ import SvInfor3 from '../../assets/images/service/Animation3.png';
 import SloganService from '../../assets/images/service/BG_Slogan.png';
 import PlayService from '../../assets/images/service/Play_Service.png';
 import ServiceBG from '../../assets/images/service/Bubble BG.png';
+import testimonialBG from '../../assets/images/team/Element Background.png';
+import arrowLeft from '../../assets/images/team/arrow-left.png';
+import arrowRight from '../../assets/images/team/arrow-right.png';
 
 export const Images = {
   footer1Background: Footer_1_BG,
@@ -59,4 +62,8 @@ export const SvInfor = {
   SvInfor3: SvInfor3,
 };
 
-export const Testimonial = {};
+export const Testimonial = {
+  background: testimonialBG,
+  arrowLeft: arrowLeft,
+  arrowRight: arrowRight,
+};

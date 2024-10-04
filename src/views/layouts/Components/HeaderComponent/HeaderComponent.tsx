@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-// import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import {
   Header,
   HeaderWrapper,
@@ -10,6 +10,8 @@ import {
   MenuItem,
   MenuLink,
   HeaderContact,
+  DropdownMenu,
+  DropdownItem,
 } from './Header.style';
 import ButtonComponent from '../../../../components/Button/ButtonComponent';
 import NavbarComponent from '../NavbarComponent/NavbarComponent';
@@ -32,11 +34,13 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
 }) => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
       setMenuOpen(false);
+      setDropdownOpen(false);
     }
   };
 
@@ -51,6 +55,10 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!dropdownOpen);
   };
 
   useEffect(() => {
@@ -71,7 +79,9 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
     <Header>
       <HeaderWrapper>
         <WrapperImage>
-          <LogoComponent linkLogo={logo} altLogo={altLogo} />
+          <NavLink to="/">
+            <LogoComponent linkLogo={logo} altLogo={altLogo} />
+          </NavLink>
         </WrapperImage>
         {isMobile ? (
           <>
@@ -92,8 +102,14 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
           <HeaderMore>
             <HeaderMenu>
               <HeaderMenuChildren>
-                <MenuItem className="_menuItem">
+                <MenuItem
+                  className="_menuItem"
+                  onMouseEnter={handleDropdownToggle}
+                  onMouseLeave={() => setDropdownOpen(false)}
+                >
                   <MenuLink
+                    as={NavLink}
+                    to="/"
                     className="active"
                     href="#"
                     color={menuColor}
@@ -101,24 +117,50 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
                   >
                     Home +
                   </MenuLink>
+                  {dropdownOpen && (
+                    <DropdownMenu>
+                      <DropdownItem>
+                        <NavLink to="/">Home</NavLink>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavLink to="/home2">Home 2</NavLink>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavLink to="/team">Team</NavLink>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavLink to="/contact">Contact</NavLink>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  )}
                 </MenuItem>
                 <MenuItem className="_menuItem">
-                  <MenuLink href="#" color={menuColor}>
+                  <MenuLink as={NavLink} to="/about" href="#" color={menuColor}>
                     About
                   </MenuLink>
                 </MenuItem>
                 <MenuItem className="_menuItem">
-                  <MenuLink href="#" color={menuColor}>
+                  <MenuLink
+                    as={NavLink}
+                    to="/service"
+                    href="#"
+                    color={menuColor}
+                  >
                     Service
                   </MenuLink>
                 </MenuItem>
                 <MenuItem className="_menuItem">
-                  <MenuLink href="#" color={menuColor}>
+                  <MenuLink
+                    as={NavLink}
+                    to="/gallery"
+                    href="#"
+                    color={menuColor}
+                  >
                     Gallery
                   </MenuLink>
                 </MenuItem>
                 <MenuItem className="_menuItem">
-                  <MenuLink href="#" color={menuColor}>
+                  <MenuLink as={NavLink} to="/blog" href="#" color={menuColor}>
                     Blog
                   </MenuLink>
                 </MenuItem>

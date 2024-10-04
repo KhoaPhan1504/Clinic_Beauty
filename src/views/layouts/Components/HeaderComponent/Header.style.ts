@@ -77,3 +77,15 @@ export const MenuLink = styled.a<{ color?: string; activeColor?: string }>`
 export const HeaderContact = styled.div`
   ${tw`w-[158px] h-[52px] bg-color-pink rounded-full`}
 `;
+
+// Dropdown Menu
+export const DropdownMenu = styled.div`
+  ${tw`absolute w-[200px] hidden mt-2 bg-color-white shadow-lg`}
+  ${MenuItem}:hover & {
+    ${tw`block`}
+  }
+`;
+
+export const DropdownItem = styled.div`
+  ${tw`px-4 py-2 text-color-title hover:bg-color-default`}
+`;

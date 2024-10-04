@@ -1,10 +1,11 @@
 import React from 'react';
-import Layout1Component from '../../layouts/components/Layout1Component/Layout1Component';
 // import ProfessionComponent from '../Home/Home1/components/ProfessionComponent/ProfessionComponent';
 import TeamBG from '../../../assets/images/team/Bubble BG.png';
 import OurComponent from './components/OurComponent/OurComponent';
 import AssistanceComponent from './components/AssistanceComponent/AssistanceComponent';
 import SloganComponent from './components/SloganComponent/SloganComponent';
+import TestimonialComponent from './components/TestimonialComponent/TestimonialComponent';
+import Layout1Component from '../../layouts/Layout1Component';
 
 const Team: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const Team: React.FC = () => {
       />
       <AssistanceComponent />
       <SloganComponent />
+      <TestimonialComponent />
     </Layout1Component>
   );
 };
