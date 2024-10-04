@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Container,
   DescribeText,
   Gallery,
   GalleryDesc,
@@ -14,6 +13,7 @@ import {
   TitleText,
 } from './Gallery.style';
 import { gallery } from '../../../../../data/GalleryData/GalleryData';
+import Container from '../../../../../components/Container/Container';
 
 const GalleryComponent: React.FC = () => {
   const images: string[][] = [

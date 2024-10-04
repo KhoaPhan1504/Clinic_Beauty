@@ -1,10 +1,10 @@
 import React from 'react';
-import HeaderComponent from './../HeaderComponent/HeaderComponent';
-import FooterComponent from './../FooterComponent/FooterComponent';
-import Logo_Header_White from '../../../../assets/images/home1/Logo_White.png';
+import HeaderComponent from '../layouts/components/HeaderComponent/HeaderComponent';
+import FooterComponent from '../layouts/components/FooterComponent/FooterComponent';
+import Logo_Header_White from '../../assets/images/home1/Logo_White.png';
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const Layout2Component: React.FC<LayoutProps> = ({ children }) => {

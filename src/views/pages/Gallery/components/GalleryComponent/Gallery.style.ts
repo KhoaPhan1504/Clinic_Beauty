@@ -10,10 +10,6 @@ export const Gallery = styled.section`
   ${tw`mt-[126px] px-[150px] 2xl:px-[400px]`}
 `;
 
-export const Container = styled.div`
-  ${tw`container`}
-`;
-
 export const GalleryWrapperText = styled.div`
   ${tw`flex flex-col items-center justify-between pr-[20px] text-center x:(items-start flex-row text-start)`}
 `;

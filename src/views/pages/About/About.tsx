@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout1Component from '../../layouts/components/Layout1Component/Layout1Component';
 import AboutComponent from './components/AboutComponent/AboutComponent';
 import ImageAbout from '../../../assets/images/about/About 1.png';
 import ProfessionComponent from '../Home/Home1/components/ProfessionComponent/ProfessionComponent';
@@ -8,6 +7,7 @@ import SloganComponent from './components/SloganComponent/SloganComponent';
 import VisionComponent from './components/VisionComponent/VisionComponent';
 import MissionComponent from './components/MissionComponent/MissionComponent';
 import ClientComponent from './components/ClientComponent/ClientComponent';
+import Layout1Component from '../../layouts/Layout1Component';
 
 const About: React.FC = () => {
   return (

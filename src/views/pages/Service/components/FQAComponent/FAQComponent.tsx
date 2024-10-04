@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FAQ, FAQList, HeadingFAQ, Underline } from './FAQ.style';
-import Container from './components/Container';
+import Container from '../../../../../components/Container/Container';
 import HeadingTitle from './components/HeadingTitle';
 import FAQItem from './components/FAQItem';
 import FAQContent from './components/FAQContent';

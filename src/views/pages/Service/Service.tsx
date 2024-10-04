@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout1Component from '../../layouts/components/Layout1Component/Layout1Component';
+import Layout1Component from '../../layouts/Layout1Component';
 import ServiceComponent from './components/ServiceComponent/ServiceComponent';
 import { SvInfor } from '../../../data/ComponentData/Images';
 import TreatementComponent from './components/TreatementComponent/TreatementComponent';

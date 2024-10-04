@@ -1,4 +1,4 @@
-import Layout1Component from '../../../layouts/components/Layout1Component/Layout1Component';
+import Layout1Component from '../../../layouts/Layout1Component';
 import AboutComponent from './components/AboutComponent/AboutComponent';
 import ContactComponent from './components/ContactComponent/ContactComponent';
 import CoreComponent from './components/CoreComponent/CoreComponent';
