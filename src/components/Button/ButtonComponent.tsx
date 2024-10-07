@@ -14,12 +14,12 @@ const ButtonComponent: React.FC<ButtonComponentProps> = ({
 }) => {
   return (
     <Button className={className}>
+      {textButton}
       {typeof icon === 'string' ? (
         <img src={icon} alt="icon" className="icon" />
       ) : (
         icon
       )}
-      {textButton}
     </Button>
   );
 };

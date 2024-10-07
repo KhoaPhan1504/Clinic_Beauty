@@ -4,6 +4,7 @@ import Home1 from '../views/pages/Home/Home1/Home1';
 import Home2 from '../views/pages/Home/Home2/Home2';
 import Service from '../views/pages/Service/Service';
 import Team from '../views/pages/Team/Team';
+import Blog from '../views/pages/Blog/Blog';
 import NotFound from '../views/pages/Errors/NotFound';
 
 export const routes = [
@@ -30,6 +31,10 @@ export const routes = [
   {
     path: '/team',
     page: Team,
+  },
+  {
+    path: '/blog',
+    page: Blog,
   },
   {
     path: '*',
