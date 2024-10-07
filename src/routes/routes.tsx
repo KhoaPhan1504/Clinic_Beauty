@@ -6,6 +6,7 @@ import Service from '../views/pages/Service/Service';
 import Team from '../views/pages/Team/Team';
 import Blog from '../views/pages/Blog/Blog';
 import NotFound from '../views/pages/Errors/NotFound';
+import Contact from '../views/pages/Contact/Contact';
 
 export const routes = [
   {
@@ -35,6 +36,10 @@ export const routes = [
   {
     path: '/blog',
     page: Blog,
+  },
+  {
+    path: '/contact',
+    page: Contact,
   },
   {
     path: '*',

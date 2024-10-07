@@ -24,7 +24,7 @@ import {
   FormControl,
   FormGroup,
   TextArea,
-} from '../../../../../../components/Form/Form.style';
+} from '../../../../../components/Form/Form.style';
 
 interface ContactProps {
   bgSr?: string;

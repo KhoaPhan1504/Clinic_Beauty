@@ -25,6 +25,7 @@ import ServiceBG from '../../assets/images/service/Bubble BG.png';
 import testimonialBG from '../../assets/images/team/Element Background.png';
 import arrowLeft from '../../assets/images/team/arrow-left.png';
 import arrowRight from '../../assets/images/team/arrow-right.png';
+import contactImg from '../../assets/images/home1/Contact.png';
 
 export const Images = {
   footer1Background: Footer_1_BG,
@@ -36,6 +37,7 @@ export const Images = {
   core2BG: Core2BG,
   whyChoose: WhyChoose,
   blogBG: BlogBG,
+  contactImg: contactImg,
 };
 
 export const Icon = {
