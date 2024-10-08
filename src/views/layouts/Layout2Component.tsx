@@ -1,7 +1,7 @@
 import React from 'react';
-import HeaderComponent from '../layouts/components/HeaderComponent/HeaderComponent';
-import FooterComponent from '../layouts/components/FooterComponent/FooterComponent';
 import Logo_Header_White from '../../assets/images/home1/Logo_White.png';
+import HeaderComponent from './components/HeaderComponent/HeaderComponent';
+import FooterComponent from './components/FooterComponent/FooterComponent';
 
 interface LayoutProps {
   children?: React.ReactNode;
