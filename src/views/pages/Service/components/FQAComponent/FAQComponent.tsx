@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { RefObject, useEffect, useState } from 'react';
 import { FAQ, FAQList, HeadingFAQ, Underline } from './FAQ.style';
 import Container from '../../../../../components/Container/Container';
 import HeadingTitle from './components/HeadingTitle';
@@ -33,7 +33,7 @@ const FQAComponent: React.FC = () => {
           <FAQList key={faq.id} data-id={faq.id}>
             <FAQItem title={faq.ask} defaultOpen={faq.id === 1}>
               {({ ref }) => (
-                <FAQContent ref={ref}>
+                <FAQContent ref={ref as RefObject<HTMLParagraphElement>}>
                   <span>{faq.q1}</span>
                   <span>{faq.q2}</span>
                 </FAQContent>
