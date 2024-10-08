@@ -8,28 +8,28 @@ import {
 } from '../../../../../../components/Content/Text.style';
 
 export const About = styled.div`
-  ${tw`w-screen h-auto bg-transparent md:mt-[420px] lg:mt-0 xl:mt-0`}
+  ${tw`w-screen h-auto bg-transparent sm:mt-[420px] lg:mt-0 xl:mt-0`}
 `;
 
 export const AboutBackground = styled.img`
-  ${tw`absolute -z-10 right-0  md:translate-y-0 xl:translate-y-[-220px]`}
+  ${tw`absolute -z-10 right-0  sm:translate-y-0 xl:translate-y-[-220px]`}
   content: '';
 `;
 
 export const AboutWrapper = styled.div`
-  ${tw`flex items-center max-w-[1440px] m-auto md:(pt-[110px]) xl:pt-[134px]`}
+  ${tw`flex items-center max-w-[1440px] m-auto sm:(pt-[110px]) xl:pt-[134px]`}
 `;
 
 export const AboutContainer = styled.div`
-  ${tw`flex w-full h-auto  md:(flex-col text-center) xl:(flex-row text-start)`}
+  ${tw`flex w-full h-auto  sm:(flex-col text-center) xl:(flex-row text-start)`}
 `;
 
 export const AboutContainerText = styled.div`
-  ${tw`md:(w-full flex justify-center) xl:(justify-start)`}
+  ${tw`sm:(w-full flex justify-center) xl:(justify-start)`}
 `;
 
 export const AboutTitleDesc = styled.div`
-  ${tw`w-[664px] h-[292px] flex flex-col items-start md:(ml-0 items-center) xl:(ml-[150px] items-start)`}
+  ${tw`w-[664px] h-[292px] flex flex-col items-start sm:(ml-0 items-center) xl:(ml-[150px] items-start)`}
 `;
 
 export const AboutTip = styled(Tip)`
@@ -41,7 +41,7 @@ export const AboutTitle = styled(Title)`
 `;
 
 export const AboutDescribe = styled(Describe)`
-  ${tw`h-[196px] mt-[19px] md:w-[483px] lg:w-full xl:w-[483px]`}
+  ${tw`h-[196px] mt-[19px] sm:w-[483px] lg:w-full xl:w-[483px]`}
 `;
 
 export const AboutBtnGroup = styled.div`
@@ -73,7 +73,7 @@ export const AboutWatchText = styled.span`
 `;
 
 export const AboutContainerImage = styled.div`
-  ${tw`w-full h-full pt-[44px] pl-[72px] rounded-[50px] md:(mt-[120px] flex justify-center pl-0) xl:(m-0 pr-[148px])`}
+  ${tw`w-full h-full pt-[44px] pl-[72px] rounded-[50px] sm:(mt-[120px] flex justify-center pl-0) xl:(m-0 pr-[148px])`}
 `;
 
 export const AboutImg = styled.img``;

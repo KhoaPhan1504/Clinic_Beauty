@@ -7,11 +7,11 @@ import {
 } from '../../../../../../components/Content/Text.style';
 
 export const Contact = styled.div`
-  ${tw`w-auto h-[1072px] md:mt-[220vh] xl:mt-0`}
+  ${tw`w-auto h-[1072px] sm:mt-[220vh] xl:mt-[220px] x:mt-0`}
 `;
 
 export const ContactBackground = styled.img`
-  ${tw`absolute -z-10 left-0  md:translate-y-0 xl:translate-y-[-59px]`}
+  ${tw`absolute -z-10 left-0  sm:translate-y-0 xl:translate-y-[-59px]`}
   content: '';
 `;
 
@@ -20,15 +20,15 @@ export const ContactWrapper = styled.div`
 `;
 
 export const ContactMain = styled.div`
-  ${tw`flex w-full h-full md:flex-col xl:(flex-row pr-[110px]) x:(pr-0 flex-col)`}
+  ${tw`flex w-full h-full sm:flex-col xl:(pr-[110px]) x:(pr-0 flex-col)`}
 `;
 
 export const ContactFormInfo = styled.div`
-  ${tw`pl-[53.5%]`}
+  ${tw`sm:pl-0 xl:pl-[53.5%]`}
 `;
 
 export const ContactTitleDesc = styled.div`
-  ${tw`flex flex-col md:(text-center items-center) x:(text-left items-start)`}
+  ${tw`flex flex-col sm:(text-center items-center) x:(text-left items-start)`}
 `;
 
 export const ContactTip = styled(Tip)`
@@ -40,7 +40,7 @@ export const ContactTitle = styled(Title)`
 `;
 
 export const WrapperDescribe = styled.div`
-  ${tw``}
+  ${tw`flex justify-center`}
 `;
 
 export const ContactDescribe = styled(Describe)`
@@ -48,11 +48,11 @@ export const ContactDescribe = styled(Describe)`
 `;
 
 export const ContactFormContainer = styled.div`
-  ${tw`h-auto w-auto flex`}
+  ${tw`h-auto w-auto flex sm:flex-col xl:flex-row`}
 `;
 
 export const ContactImageWrapper = styled.div`
-  ${tw`md:(w-full) lg:(w-full flex justify-center) x:(w-2/4 flex-none)`}
+  ${tw`sm:(w-full) lg:(w-full flex justify-center) x:(w-2/4 flex-none)`}
 `;
 
 export const ContactImage = styled.div`
@@ -60,7 +60,7 @@ export const ContactImage = styled.div`
 `;
 
 export const ContactImageItem = styled.img`
-  ${tw`w-[519px] h-[402px] mt-[14px] md:(flex justify-center) lg:ml-0 x:(ml-[100px] mt-[80px])`}
+  ${tw`w-[519px] h-[402px] mt-[14px] sm:(flex justify-center) lg:ml-0 x:(ml-[100px] mt-[80px])`}
 `;
 
 export const ContactMainForm = styled.div`
@@ -68,11 +68,11 @@ export const ContactMainForm = styled.div`
 `;
 
 export const ContactFormWrapper = styled.div`
-  ${tw`md:(ml-0) x:(ml-[50px])`}
+  ${tw`sm:(ml-0) x:(ml-[50px])`}
 `;
 
 export const ContactMainFormItem = styled.div`
-  ${tw`w-full h-auto mt-[43px] md:justify-center x:justify-start`}
+  ${tw`w-full h-auto mt-[43px] sm:justify-center x:justify-start`}
 
   input, textarea {
     color: #091156;

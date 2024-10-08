@@ -12,7 +12,7 @@ import {
 
 export const Core = styled.div`
   ${tw`w-screen max-w-1140 h-[732px] rounded-[42px] text-center`}
-  ${tw`md:(mx-auto mt-[120px])`}
+  ${tw`sm:(mx-auto mt-[120px])`}
   ${tw`lg:(mt-[110px] ) xl:(mt-[132px])`}
 `;
 
@@ -22,7 +22,7 @@ export const CoreWrapper = styled.div`
 
 export const TitleDesc = styled.div`
   ${tw`w-full flex flex-col items-center`}
-  ${tw`md:(max-w-[700px] text-center) lg:(max-w-[600px]) xl:(max-w-[848px])`}
+  ${tw`sm:(max-w-[700px] text-center) lg:(max-w-[600px]) xl:(max-w-[848px])`}
 `;
 
 export const InfoTip = styled(Tip)`
@@ -31,12 +31,12 @@ export const InfoTip = styled(Tip)`
 
 export const InfoTitle = styled(Title)`
   ${tw`max-w-[417px] h-[97px] pt-[12px]`}
-  ${tw`md:(leading-[40px]) lg:(leading-[42px]) xl:(leading-[44px])`}
+  ${tw`sm:(leading-[40px]) lg:(leading-[42px]) xl:(leading-[44px])`}
 `;
 
 export const InfoDescribe = styled(Describe)`
   ${tw`w-full h-[51px] text-center pt-6 font-normal`}
-  ${tw`md:(max-w-[700px]) lg:(max-w-[600px]) xl:(max-w-[848px])`}
+  ${tw`sm:(max-w-[700px]) lg:(max-w-[600px]) xl:(max-w-[848px])`}
 `;
 
 export const CoreItem = styled.div`
@@ -45,7 +45,7 @@ export const CoreItem = styled.div`
 
 export const CoreCol = styled.div`
   ${tw`flex justify-between items-center w-full my-[20px]`}
-  ${tw`md:(flex-wrap justify-center gap-[10px]) lg:() xl:justify-between`}
+  ${tw`sm:(flex-wrap justify-center gap-[10px]) lg:() xl:justify-between`}
 `;
 
 export const CoreItemCard = styled(Card)`
@@ -65,9 +65,9 @@ export const CoreItemCard = styled(Card)`
     ${tw`xl:ml-[37px]`}
   }
 
-  ${tw`md:(w-[300px] h-[400px]) lg:(w-[320px] h-[420px]) xl:(w-[340px] h-[458px]) x:( w-[343px] h-[458px])`}
+  ${tw`sm:(w-[300px] h-[400px]) lg:(w-[320px] h-[420px]) xl:(w-[340px] h-[458px]) x:( w-[343px] h-[458px])`}
 `;
 
 export const CardWrapperCore = styled(CardWrapper)`
-  ${tw`w-[343px] h-[458px]`}
+  ${tw`h-[458px] sm:w-auto md:w-[343px]`}
 `;

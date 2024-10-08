@@ -17,11 +17,11 @@ export const SliderWrapper = styled.div`
 `;
 
 export const SliderContainer = styled.div`
-  ${tw`flex mt-[76px] items-center 2xl:justify-center md:(flex-col h-auto) xl:(flex-row h-full) `}
+  ${tw`flex mt-[76px] items-center 2xl:justify-center sm:(flex-col h-auto) xl:(flex-row h-full) `}
 `;
 
 export const SliderWrapperText = styled.div`
-  ${tw`flex justify-center items-center flex-col h-full w-[700px]`}
+  ${tw`flex justify-center items-center flex-col h-full sm:w-auto md:w-[700px]`}
 `;
 
 export const SliderMainChild = styled.div`
@@ -45,7 +45,7 @@ export const Button = styled(ButtonComponent)`
 `;
 
 export const SliderWrapperImage = styled.div`
-  ${tw`xl:(w-[60%] pb-[7px] pr-[132px]) md:(flex justify-center) 2xl:(w-[45%] pr-0)`}
+  ${tw`xl:(w-[60%] pb-[7px] pr-[132px]) sm:(flex justify-center) 2xl:(w-[45%] pr-0)`}
 `;
 
 export const SliderImage = styled.img`

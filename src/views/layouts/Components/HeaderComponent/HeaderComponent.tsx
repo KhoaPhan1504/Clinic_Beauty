@@ -12,6 +12,7 @@ import {
   HeaderContact,
   DropdownMenu,
   DropdownItem,
+  Item,
 } from './Header.style';
 import ButtonComponent from '../../../../components/Button/ButtonComponent';
 import NavbarComponent from '../NavbarComponent/NavbarComponent';
@@ -36,9 +37,15 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+    const menuContains = menuRef.current?.contains(event.target as Node);
+    const dropdownContains = dropdownRef.current?.contains(
+      event.target as Node,
+    );
+
+    if (!menuContains && !dropdownContains) {
       setMenuOpen(false);
       setDropdownOpen(false);
     }
@@ -79,9 +86,9 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
     <Header>
       <HeaderWrapper>
         <WrapperImage>
-          <NavLink to="/">
+          <Item to="/">
             <LogoComponent linkLogo={logo} altLogo={altLogo} />
-          </NavLink>
+          </Item>
         </WrapperImage>
         {isMobile ? (
           <>
@@ -102,14 +109,8 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
           <HeaderMore>
             <HeaderMenu>
               <HeaderMenuChildren>
-                <MenuItem
-                  className="_menuItem"
-                  onMouseEnter={handleDropdownToggle}
-                  onMouseLeave={() => setDropdownOpen(false)}
-                >
+                <MenuItem className="_menuItem" onClick={handleDropdownToggle}>
                   <MenuLink
-                    as={NavLink}
-                    to="/"
                     className="active"
                     href="#"
                     color={menuColor}
@@ -118,18 +119,20 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
                     Home +
                   </MenuLink>
                   {dropdownOpen && (
-                    <DropdownMenu>
+                    <DropdownMenu ref={dropdownRef} isOpen={dropdownOpen}>
                       <DropdownItem>
-                        <NavLink to="/">Home</NavLink>
+                        <Item to="/" className="hover:text-color-white">
+                          Home
+                        </Item>
                       </DropdownItem>
                       <DropdownItem>
-                        <NavLink to="/home2">Home 2</NavLink>
+                        <Item to="/home2">Home 2</Item>
                       </DropdownItem>
                       <DropdownItem>
-                        <NavLink to="/team">Team</NavLink>
+                        <Item to="/team">Team</Item>
                       </DropdownItem>
                       <DropdownItem>
-                        <NavLink to="/contact">Contact</NavLink>
+                        <Item to="/contact">Contact</Item>
                       </DropdownItem>
                     </DropdownMenu>
                   )}

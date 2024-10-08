@@ -1,17 +1,18 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Header = styled.header`
-  ${tw`relative w-screen x:(flex justify-center)`}
+  ${tw`relative w-full  sm:(flex justify-center)`}
 `;
 
 export const HeaderWrapper = styled.div`
-  ${tw`flex w-[1140px] h-[63px] mt-[40px] sm:(w-auto justify-center) 2xl:(w-[1140px] ml-0 justify-center)`}
+  ${tw`flex mt-[41px] h-[63px] max-w-[1188px] gap-[174px] pr-[3px]`}
 `;
 
 //Image - Logo
 export const WrapperImage = styled.div`
-  ${tw`md:mr-[230px] lg:mr-[450px] xl:mr-[-34px] x:mr-0`}
+  ${tw``}
 `;
 
 export const WrapperImageStyle = styled.img`
@@ -20,19 +21,19 @@ export const WrapperImageStyle = styled.img`
 
 //Menu
 export const HeaderMore = styled.div`
-  ${tw`w-auto h-full flex justify-between items-center max-[1140px]:hidden sm:ml-[10px] md:ml-[20px] lg:ml-[50px] xl:ml-[168px]`}
+  ${tw`flex justify-between items-center`}
 
   &:hover {
-    ${tw`xl:ml-[165px]`}
+    ${tw``}
   }
 `;
 
 export const HeaderMenu = styled.div`
-  ${tw`max-[1140px]:hidden`}
+  ${tw`max-[1140px]:hidden h-full flex items-center pb-[4px]`}
 `;
 
 export const HeaderMenuChildren = styled.div`
-  ${tw`flex m-0 pl-[4px] max-[1140px]:flex-col`}
+  ${tw``}
 `;
 
 export const MenuItem = styled.li`
@@ -60,7 +61,7 @@ export const MenuItem = styled.li`
 `;
 
 export const MenuLink = styled.a<{ color?: string; activeColor?: string }>`
-  ${tw`not-italic font-light text-16 tracking-wide px-[16px]`}
+  ${tw`not-italic font-light text-16 tracking-wide px-[16px] flex items-center justify-center h-full`}
   color: ${({ color }) => color || '#8B8B8B'};
 
   &.active {
@@ -79,13 +80,15 @@ export const HeaderContact = styled.div`
 `;
 
 // Dropdown Menu
-export const DropdownMenu = styled.div`
-  ${tw`absolute w-[200px] hidden mt-2 bg-color-white shadow-lg`}
-  ${MenuItem}:hover & {
-    ${tw`block`}
-  }
+export const DropdownMenu = styled.div<{ isOpen: boolean }>`
+  ${tw`absolute w-[170px] bg-color-white shadow-lg rounded-[25px]`}
+  ${({ isOpen }) => (isOpen ? tw`block` : tw`hidden`)}
 `;
 
 export const DropdownItem = styled.div`
-  ${tw`px-4 py-2 text-color-title hover:bg-color-default`}
+  ${tw`h-[50px] w-full flex rounded-[25px] justify-center text-color-title hover:(bg-color-pink text-color-white rounded-[25px])`}
+`;
+
+export const Item = styled(NavLink)`
+  ${tw`w-full flex justify-center items-center hover:(font-semibold)`}
 `;
