@@ -7,7 +7,7 @@ import {
 } from '../../../../../components/Content/Text.style';
 
 export const Section = styled.section`
-  ${tw`mt-[113px] pb-[55px] flex justify-center mb-[71px]`}
+  ${tw`mt-[81px] pb-[55px] flex justify-center mb-[71px]`}
 `;
 
 export const ContentContainer = styled.div`
@@ -23,48 +23,39 @@ export const TitleText = styled(Title)`
 `;
 
 export const DescribeText = styled(Describe)`
-  ${tw`mt-[12px]`}
+  ${tw`mt-[12px] sm:px-[10px] x:px-0`}
 `;
 
 export const InfoCardsContainer = styled.div`
-  ${tw`mt-[94px] flex flex-wrap justify-center gap-[1]`}
-  transform-style: preserve-3d;
-  transition:
-    transform 0.3s,
-    box-shadow 0.3;
+  ${tw`mt-[94px] flex flex-wrap justify-center sm:gap-[60px] xl:gap-0 x:gap-[1]`}
+`;
 
-  &.active {
-    ${tw`bg-color-white`}
-    box-shadow: 0px 25px 50px 25px rgba(246, 247, 255, 1);
-    z-index: 10;
+export const InfoCard = styled.div<{ isActive: boolean }>`
+  ${tw`flex flex-col items-center text-center transition-all duration-700 ease-in-out cursor-pointer relative rounded-[42px] pt-[79.5px]`}
+  ${tw`h-[40px] sm:h-[402px] w-full sm:w-[424px] xl:w-[420px] hover:shadow-[0px_25px_50px_25px_#F6F7FF]`}
+  ${({ isActive }) =>
+    isActive
+      ? tw`bg-color-white shadow-[0px_25px_50px_25px_rgba(246, 247, 255, 1)] z-10`
+      : tw`bg-transparent shadow-none`}
+
+  &:hover {
+    ${tw`bg-color-white shadow-[0px_25px_50px_25px_rgba(246, 247, 255, 1)]`}
   }
 
   &:not(.active) {
-    ${tw`xl:bg-transparent shadow-none`}
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
-`;
-
-export const InfoCard = styled.div`
-  ${tw`flex h-[402px] w-full flex-col items-center rounded-[42px] pt-[79.5px] text-center transition-all duration-700 hover:w-full hover:shadow-[0px_25px_50px_25px_#F6F7FF] `}
-  ${tw`sm:w-[424px] sm:hover:w-[424px] xl:w-[420px] `}
-
-  &.shadow-active {
-    ${tw`shadow-[0px_25px_50px_25px_rgba(0,0,0,0.2)]`}
+    ${tw`sm:(bg-color-white shadow-[0px_25px_50px_25px_rgba(246, 247, 255, 1)]) xl:(bg-transparent shadow-none)`}/* background-color: transparent !important; */
+    /* box-shadow: none !important; */
   }
 
   &[data-id='1'] {
     ${tw`sm:pl-0 xl:pl-[72px]`}
-
     &:hover {
       ${tw`pl-0`}
     }
   }
 
   &[data-id='3'] {
-    ${tw`sm:pr-0 xl:pr-[70px]`}
-
+    ${tw`sm:pr-0 xl:pr-[72px]`}
     &:hover {
       ${tw`pr-0`}
     }

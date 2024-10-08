@@ -54,6 +54,7 @@ const InfoComponent: React.FC = () => {
             <InfoCard
               key={info.id}
               data-id={info.id}
+              isActive={info.id === activeCard}
               onMouseEnter={() => handleMouseEnter(info.id)}
               onMouseLeave={handleMouseLeave}
               className={info.id === activeCard ? 'active' : ''}
