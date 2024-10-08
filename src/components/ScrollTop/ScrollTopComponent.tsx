@@ -4,12 +4,26 @@ import scroll_logo from '../../assets/images/home1/ToTop Button.png';
 
 const ScrollTopComponent: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isNearFooter, setIsNearFooter] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    const scrollY = window.pageYOffset;
+    const footerElement = document.querySelector('footer');
+
+    if (scrollY > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
+    }
+
+    if (footerElement) {
+      const footerPosition =
+        footerElement.getBoundingClientRect().top + window.scrollY;
+      if (window.innerHeight + scrollY >= footerPosition - 100) {
+        setIsNearFooter(true);
+      } else {
+        setIsNearFooter(false);
+      }
     }
   };
 
@@ -31,7 +45,11 @@ const ScrollTopComponent: React.FC = () => {
   return (
     <FooterScroll
       onClick={scrollToTop}
-      style={{ display: isVisible ? 'block' : 'none' }}
+      style={{
+        display: isVisible ? 'block' : 'none',
+        position: isNearFooter ? 'relative' : 'fixed',
+        bottom: isNearFooter ? '157px' : '158px',
+      }}
     >
       <img src={scroll_logo} alt="Scroll To Top" />
     </FooterScroll>
