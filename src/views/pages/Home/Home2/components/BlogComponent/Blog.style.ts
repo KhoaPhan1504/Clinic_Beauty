@@ -19,7 +19,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Blog = styled.div`
-  ${tw`h-full w-full mt-[112px]`}
+  ${tw`h-full w-full mt-[111px]`}
 `;
 
 export const BlogWrapper = styled.div`
@@ -71,7 +71,7 @@ export const CardBlogImg = styled(CardImg)`
 `;
 
 export const BlogInfo = styled(CardInfo)`
-  ${tw`w-auto items-start text-start ml-[39px] mt-[47px]`}
+  ${tw`w-auto items-start text-start ml-[39px] mt-[46px]`}
 `;
 
 export const BlogName = styled(CardName)`
