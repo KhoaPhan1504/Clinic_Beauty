@@ -119,7 +119,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
         ) : (
           <HeaderMore>
             <HeaderMenu>
-              <HeaderMenuChildren isOpen={dropdownOpen}>
+              <HeaderMenuChildren isOpen={menuOpen}>
                 <MenuItem className="_menuItem" onClick={handleDropdownToggle}>
                   <MenuLink
                     className="active"
