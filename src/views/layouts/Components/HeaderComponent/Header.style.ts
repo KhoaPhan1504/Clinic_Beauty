@@ -81,7 +81,7 @@ export const HeaderContact = styled.div`
 
 // Dropdown Menu
 export const DropdownMenu = styled.div<{ isOpen: boolean }>`
-  ${tw`absolute w-[170px] bg-color-white shadow-lg rounded-[25px]`}
+  ${tw`absolute top-[120px] w-[170px] bg-color-white shadow-lg rounded-[25px] z-40`}
   ${({ isOpen }) => (isOpen ? tw`block` : tw`hidden`)}
 `;
 

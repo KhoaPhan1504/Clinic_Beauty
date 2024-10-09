@@ -4,7 +4,7 @@ import { ImageBlog } from '../../../../../data/BlogPage/blogData';
 import { Title } from '../../../../../components/Content/Text.style';
 
 export const BlogTitle = styled.div`
-  ${tw`relative flex items-center w-auto h-[285px] bg-center bg-no-repeat sm:mt-[130px] xl:mt-[37px] 2xl:(bg-cover justify-center)`}
+  ${tw`relative z-1 flex items-center w-auto h-[285px] bg-center bg-no-repeat sm:mt-[130px] xl:mt-[37px] 2xl:(bg-cover justify-center)`}
   background-image: url(${ImageBlog.BG});
 
   &::before {
