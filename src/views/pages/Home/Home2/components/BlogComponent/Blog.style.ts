@@ -75,7 +75,7 @@ export const BlogInfo = styled(CardInfo)`
 `;
 
 export const BlogName = styled(CardName)`
-  ${tw`text-start w-[288px] h-[58px] leading-22.5`}
+  ${tw`text-start w-[288px] h-[58px] leading-22.5 mt-[4px]`}
 `;
 
 export const BlogDescribeCard = styled(CardDescribe)`

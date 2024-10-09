@@ -48,7 +48,7 @@ const StatsComponent: React.FC = () => {
           />
           <StatsCard
             icon={statImages.earth}
-            title="75"
+            title="75+"
             desc="asian branch"
             className="translate-x-[2px]"
           />

@@ -40,7 +40,7 @@ export const ContactTitle = styled(Title)`
 `;
 
 export const WrapperDescribe = styled.div`
-  ${tw`flex justify-center`}
+  ${tw`flex sm:justify-center x:justify-start`}
 `;
 
 export const ContactDescribe = styled(Describe)`

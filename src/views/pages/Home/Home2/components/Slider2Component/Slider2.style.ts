@@ -8,12 +8,12 @@ import {
 } from '../../../../../../components/Content/Text.style';
 
 export const Slider = styled.div`
-  ${tw`h-full w-full mt-[-103px] m-auto bg-no-repeat 2xl:bg-cover`}
+  ${tw`h-full w-full mt-[-104px] m-auto bg-no-repeat 2xl:bg-cover`}
   background-image: url(${Images.slider2BG});
 `;
 
 export const SliderWrapper = styled.div`
-  ${tw`flex h-[918px] sm:(flex-col pt-[200px]) xl:(flex-row pt-[306px]) 2xl:(h-[1270px] justify-center pt-[500px])`}
+  ${tw`flex h-[918px] sm:(flex-col pt-[200px]) xl:(flex-row pt-[307px]) 2xl:(h-[1270px] justify-center pt-[500px])`}
 `;
 
 export const SliderWrapperText = styled.div`

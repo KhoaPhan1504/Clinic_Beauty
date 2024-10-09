@@ -17,7 +17,7 @@ export const SliderWrapper = styled.div`
 `;
 
 export const SliderContainer = styled.div`
-  ${tw`flex mt-[76px] items-center 2xl:justify-center sm:(flex-col h-auto) xl:(flex-row h-full) `}
+  ${tw`flex mt-[75px] items-center 2xl:justify-center sm:(flex-col h-auto) xl:(flex-row h-full) `}
 `;
 
 export const SliderWrapperText = styled.div`
