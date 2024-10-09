@@ -1,36 +1,82 @@
-import React from 'react';
-import { MobileNavWrapper } from './Navbar.style';
+import React, { useState, useRef, useEffect } from 'react';
+import { MobileNavBody, MobileNavWrapper } from './Navbar.style';
 import {
   HeaderContact,
-  HeaderMenuChildren,
   MenuItem,
   MenuLink,
 } from '../HeaderComponent/Header.style';
 import ButtonComponent from '../../../../components/Button/ButtonComponent';
+import { NavLink } from 'react-router-dom';
 
 const NavbarComponent: React.FC = () => {
+  const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <MobileNavWrapper>
-        <HeaderMenuChildren>
+        <MobileNavBody>
           <MenuItem>
-            <MenuLink className="active" href="#">
+            <MenuLink onClick={handleDropdownToggle} className="active">
               Home +
             </MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="#">About</MenuLink>
+            <MenuLink as={NavLink} to="/home2" href="#">
+              Home 2
+            </MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="#">Service</MenuLink>
+            <MenuLink as={NavLink} to="/team" href="#">
+              Team
+            </MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="#">Gallery</MenuLink>
+            <MenuLink as={NavLink} to="/contact" href="#">
+              Contact
+            </MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="#">Blog</MenuLink>
+            <MenuLink as={NavLink} to="/about" href="#">
+              About
+            </MenuLink>
           </MenuItem>
-        </HeaderMenuChildren>
+          <MenuItem>
+            <MenuLink as={NavLink} to="/service" href="#">
+              Service
+            </MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink as={NavLink} to="/gallery" href="#">
+              Gallery
+            </MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink as={NavLink} to="/blog" href="#">
+              Blog
+            </MenuLink>
+          </MenuItem>
+        </MobileNavBody>
         <HeaderContact>
           <ButtonComponent
             textButton="Contact"

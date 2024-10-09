@@ -16,7 +16,11 @@ import {
 } from './Header.style';
 import ButtonComponent from '../../../../components/Button/ButtonComponent';
 import NavbarComponent from '../NavbarComponent/NavbarComponent';
-import { MobileMenuButton, NavbarIcon } from '../NavbarComponent/Navbar.style';
+import {
+  MobileMenuButton,
+  MobileNavWrapper,
+  NavbarIcon,
+} from '../NavbarComponent/Navbar.style';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import LogoComponent from '../../../../components/Logo/LogoComponent';
 
@@ -35,6 +39,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
 }) => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [isOverlay, setIsOverlay] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -48,6 +53,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
     if (!menuContains && !dropdownContains) {
       setMenuOpen(false);
       setDropdownOpen(false);
+      setIsOverlay(false);
     }
   };
 
@@ -57,11 +63,13 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
     } else {
       setIsMobile(false);
       setMenuOpen(false);
+      setIsOverlay(false);
     }
   };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setIsOverlay(!isOverlay);
   };
 
   const handleDropdownToggle = () => {
@@ -100,15 +108,18 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
               )}
             </MobileMenuButton>
             {menuOpen && (
-              <div ref={menuRef}>
-                <NavbarComponent />
-              </div>
+              <MobileNavWrapper ref={menuRef}>
+                <NavbarComponent
+                  data-aos="fade-left"
+                  data-aos-duration={1000}
+                />
+              </MobileNavWrapper>
             )}
           </>
         ) : (
           <HeaderMore>
             <HeaderMenu>
-              <HeaderMenuChildren>
+              <HeaderMenuChildren isOpen={dropdownOpen}>
                 <MenuItem className="_menuItem" onClick={handleDropdownToggle}>
                   <MenuLink
                     className="active"

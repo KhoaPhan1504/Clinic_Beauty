@@ -32,8 +32,8 @@ export const HeaderMenu = styled.div`
   ${tw`max-[1140px]:hidden h-full flex items-center pb-[4px]`}
 `;
 
-export const HeaderMenuChildren = styled.div`
-  ${tw``}
+export const HeaderMenuChildren = styled.div<{ isOpen: boolean }>`
+  ${({ isOpen }) => isOpen && tw`flex flex-col`}
 `;
 
 export const MenuItem = styled.li`

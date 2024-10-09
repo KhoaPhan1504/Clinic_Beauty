@@ -14,6 +14,7 @@ export default {
       poppins: ['Poppins', 'sans-serif']
     },
     colors: {
+      'color-black': "#000000",
       'color-pink': ' #FF64AE',
       'color-white': '#FFFFFF',
       'hover-btn': '#091156',
