@@ -3,7 +3,7 @@
     "baseUrl": "./src",  // Thư mục gốc chứa các file TypeScript
     "paths": {
       "@layouts/*": ["layouts/*"],
-      "@components/*": ["/components/*"]
+      "@components/*": ["components/*"]
     }
   },
   "files": [],
