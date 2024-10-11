@@ -11,7 +11,7 @@ export const TestimonialImage = styled.img`
 `;
 
 export const TestimonialContent = styled.p`
-  ${tw`max-w-[544px] text-14 leading-21 tracking-widest text-color-default mt-[44px]`}
+  ${tw`max-w-[544px] text-14 leading-21 tracking-widest text-color-default mt-[45px]`}
 `;
 
 export const StarContainer = styled.div`

@@ -7,9 +7,8 @@ import {
   useRef,
   useState,
 } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import clsx from 'clsx';
+import angleUp from '../../../../../../assets/images/service/angle-up.png';
 
 export interface FAQItemProps {
   title: string;
@@ -31,7 +30,7 @@ const FAQItemTitle = styled.h4`
   ${tw`font-semibold leading-24 tracking-widest text-color-title`}
 `;
 
-const FAQItemIcon = styled(FontAwesomeIcon)<{ isOpen: boolean }>`
+const FAQItemIcon = styled.img<{ isOpen: boolean }>`
   ${tw`transition-transform duration-500`}
   ${({ isOpen }) => (isOpen ? tw`rotate-0` : tw`translate-y-[-1px] rotate-180`)}
 `;
@@ -76,7 +75,7 @@ const FAQItem = ({ title, defaultOpen, children, className }: FAQItemProps) => {
     <FAQItemWrapper className={clsx(className)}>
       <FAQItemHeader isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
         <FAQItemTitle>{title}</FAQItemTitle>
-        <FAQItemIcon icon={faAngleUp} isOpen={isOpen} />
+        <FAQItemIcon src={angleUp} isOpen={isOpen} />
       </FAQItemHeader>
       <FAQItemDivider isOpen={isOpen} />
       <FAQItemContent isOpen={isOpen} contentHeight={contentHeight}>

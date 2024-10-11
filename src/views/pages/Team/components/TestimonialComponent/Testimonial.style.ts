@@ -7,7 +7,7 @@ import {
 } from '../../../../../components/Content/Text.style';
 
 export const TestimonialSection = styled.section`
-  ${tw`relative pb-[16px] pt-[117px] w-full flex justify-center mb-[71px]`}
+  ${tw`relative pb-[16px] pt-[118px] w-full flex justify-center mb-[74px]`}
 `;
 
 export const BackgroundImage = styled.img`
@@ -35,7 +35,7 @@ export const TestimonialSlider = styled.div`
 `;
 
 export const ArrowButtonContainer = styled.div`
-  ${tw`absolute top-[132px] hidden h-[27px] w-[778px] justify-between min-[900px]:flex`}
+  ${tw`absolute top-[134px] hidden h-[27px] w-[778px] justify-between min-[900px]:flex`}
 `;
 
 export const ArrowButton = styled.img<{ disabled: boolean }>`
@@ -48,7 +48,7 @@ export const TestimonialListContainer = styled.div`
 `;
 
 export const TestimonialList = styled.div<{ gap: number; left: number }>`
-  ${tw`absolute bottom-0 top-0 flex touch-pan-x snap-x snap-mandatory overflow-x-hidden transition-[left] duration-1000`}
+  ${tw`absolute bottom-0 flex touch-pan-x snap-x snap-mandatory overflow-x-hidden transition-[left] duration-1000`}
   gap: ${({ gap }) => `${gap}px`};
   left: ${({ left }) => `${left}px`};
 `;

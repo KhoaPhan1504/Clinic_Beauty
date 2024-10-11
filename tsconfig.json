@@ -3,7 +3,8 @@
     "baseUrl": "./src",  // Thư mục gốc chứa các file TypeScript
     "paths": {
       "@layouts/*": ["layouts/*"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
     }
   },
   "files": [],

@@ -6,7 +6,6 @@ import { RootStateType } from '../../../../../services/reducers';
 import {
   next,
   prev,
-  reset,
   setSlideWidth,
 } from '../../../../../services/store/slide/slide.slice';
 import {
@@ -61,11 +60,11 @@ const TestimonialComponent: React.FC = () => {
     ];
 
     const handleNext = () => {
-      if (currentPage === slideNumber) return dispatch(next());
+      if (currentPage !== slideNumber) return dispatch(next());
     };
 
     const handlePrev = () => {
-      if (currentPage === 1) return dispatch(prev());
+      if (currentPage !== 1) return dispatch(prev());
     };
 
     if (nextBtn && prevBtn && list && prevBtnMobile && nextBtnMobile) {
@@ -76,27 +75,11 @@ const TestimonialComponent: React.FC = () => {
     }
   }, [currentPage, slideWidth, prevBtnRef, nextBtnRef, listRef]);
 
-  useEffect(() => {
-    let timerId: ReturnType<typeof setTimeout>;
-    if (currentPage - 1 !== slideNumber) {
-      timerId = setTimeout(() => {
-        dispatch(next());
-      }, 6000);
-    } else {
-      dispatch(reset());
-    }
-    return () => {
-      clearTimeout(timerId);
-    };
-  }, [currentPage]);
-
   document.body.onresize = () => {
     if (document.body.clientWidth < 600) {
       dispatch(setSlideWidth(document.body.clientWidth - 40));
-      dispatch(reset());
     } else if (slideWidth !== 550) {
       dispatch(setSlideWidth(550));
-      dispatch(reset());
     }
   };
 

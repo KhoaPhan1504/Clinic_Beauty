@@ -8,7 +8,7 @@ import {
 } from '../../../../../../components/Content/Text.style';
 
 export const Slider = styled.div`
-  ${tw`h-full w-full mt-[-104px] m-auto bg-no-repeat 2xl:bg-cover`}
+  ${tw`h-full w-full mt-[-63px] m-auto bg-no-repeat 2xl:bg-cover`}
   background-image: url(${Images.slider2BG});
 `;
 

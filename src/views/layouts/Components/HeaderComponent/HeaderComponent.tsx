@@ -22,20 +22,19 @@ import {
   NavbarIcon,
 } from '../NavbarComponent/Navbar.style';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
-import LogoComponent from '../../../../components/Logo/LogoComponent';
+import { ILogoProps, Logo } from '../../../../components/Logo/Logo';
+import plus from '../../../../assets/images/home1/plus.png';
 
 interface HeaderComponentProps {
   menuColor?: string;
   activeMenuColor?: string;
-  logo: string;
-  altLogo?: string;
+  logo?: ILogoProps;
 }
 
 const HeaderComponent: React.FC<HeaderComponentProps> = ({
   menuColor = '#8B8B8B',
   activeMenuColor = '#091156',
   logo,
-  altLogo = 'Beautice - Clinic & Beauty',
 }) => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -94,9 +93,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
     <Header>
       <HeaderWrapper>
         <WrapperImage>
-          <Item to="/">
-            <LogoComponent linkLogo={logo} altLogo={altLogo} />
-          </Item>
+          <Logo {...logo} />
         </WrapperImage>
         {isMobile ? (
           <>
@@ -122,12 +119,12 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
               <HeaderMenuChildren isOpen={menuOpen}>
                 <MenuItem className="_menuItem" onClick={handleDropdownToggle}>
                   <MenuLink
-                    className="active"
+                    className="active mr-[11px] font-semibold"
                     href="#"
                     color={menuColor}
                     activeColor={activeMenuColor}
                   >
-                    Home +
+                    Home <img className="" src={plus} />
                   </MenuLink>
                   {dropdownOpen && (
                     <DropdownMenu ref={dropdownRef} isOpen={dropdownOpen}>

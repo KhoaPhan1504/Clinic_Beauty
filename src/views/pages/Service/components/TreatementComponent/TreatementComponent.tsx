@@ -13,7 +13,7 @@ import {
   TipText,
   TitleText,
 } from './Treatement.style';
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import arrowRight from '../../../../../assets/images/service/angle-double-right.png';
 
 interface TreatementProps {
   imageSrc?: string;
@@ -41,7 +41,7 @@ const TreatementComponent: React.FC<TreatementProps> = ({
           </TreatementContainer>
           <TreatementRedirect>
             <Link>Make an Appointment</Link>
-            <IconTreatement icon={faAngleDoubleRight} />
+            <IconTreatement src={arrowRight} />
           </TreatementRedirect>
         </TreatementWrapperText>
         <TreatementWrapperImage>

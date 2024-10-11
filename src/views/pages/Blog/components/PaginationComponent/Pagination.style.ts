@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Container = styled.div`
-  ${tw`mt-[97px] pl-[52px] flex justify-center gap-[16px] mb-[56px]`}
+  ${tw`mt-[97px] pl-[52px] flex justify-center gap-[16px] mb-[57px]`}
 `;
 
 export const Circle = styled.div<{ isActive?: boolean }>`

@@ -9,7 +9,7 @@ import {
 } from '../../../../../components/Content/Text.style';
 
 export const Our = styled.div`
-  ${tw`h-auto sm:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[130px]) x:mt-[123px] 2xl:(ml-0 flex justify-center)`}
+  ${tw`h-auto sm:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[130px]) x:mt-[162px] 2xl:(ml-0 flex justify-center)`}
 `;
 
 export const OurBG = styled.img`

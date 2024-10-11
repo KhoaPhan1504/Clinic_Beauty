@@ -6,7 +6,6 @@ import {
   Tip,
   Title,
 } from '../../../../../components/Content/Text.style';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Treatement = styled.div`
   ${tw`h-auto w-auto`}
@@ -48,13 +47,13 @@ export const DescribeText = styled(Describe)`
 `;
 
 export const TreatementRedirect = styled.div`
-  ${tw`w-[249px] h-[25px] mt-[2px] text-center`}
+  ${tw`w-auto h-[25px] mt-[8px] text-center flex items-center`}
 `;
 
 export const Link = styled(AppointmentTextLink)`
   ${tw``}
 `;
 
-export const IconTreatement = styled(FontAwesomeIcon)`
-  ${tw`font-semibold ml-[10px] mt-[3px] text-color-pink text-[24px]`}
+export const IconTreatement = styled.img`
+  ${tw`font-semibold ml-[13px] text-color-pink text-[24px]`}
 `;

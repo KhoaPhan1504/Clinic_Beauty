@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo_Header_White from '../../assets/images/home1/Logo_White.png';
 import HeaderComponent from './components/HeaderComponent/HeaderComponent';
 import FooterComponent from './components/FooterComponent/FooterComponent';
 
@@ -11,7 +10,7 @@ const Layout2Component: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <HeaderComponent
-        logo={Logo_Header_White}
+        logo={{ font: 'medium', type: 'light', text: 'light' }}
         menuColor="#FFFFFF"
         activeMenuColor="#FFFFFF"
       />

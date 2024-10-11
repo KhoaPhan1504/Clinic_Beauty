@@ -31,7 +31,7 @@ export const CardTitle = styled.span`
 `;
 
 export const CardName = styled.h3`
-  ${tw`w-[263px] h-[37px] mt-[3px] mb-[4px] font-semibold text-18 text-center text-color-title`}
+  ${tw`w-[263px] h-[37px] mt-[1px] mb-[4px] font-semibold text-18 text-center text-color-title`}
 `;
 
 export const CardDescribe = styled.p`

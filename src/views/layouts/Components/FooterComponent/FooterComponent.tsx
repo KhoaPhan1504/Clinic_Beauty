@@ -20,7 +20,6 @@ import {
   FooterInfoLogo,
   FooterInfoPhone,
   FooterInternet,
-  FooterLogoImg,
   FooterMore,
   FooterMoreChildrenItems,
   FooterMoreInformation,
@@ -31,14 +30,14 @@ import {
   IconImg,
   IconLinkMenu,
 } from './Footer.style';
-import footer_logo from '../../../../assets/images/home1/Logo_White.png';
 import fb_logo from '../../../../assets/images/home1/facebook-f.png';
 import tw_logo from '../../../../assets/images/home1/twitter (1).png';
 import lin_logo from '../../../../assets/images/home1/linkedin-in.png';
 import you_logo from '../../../../assets/images/home1/youtube.png';
 import insta_logo from '../../../../assets/images/home1/instagram (1).png';
 import ScrollTopComponent from '../../../../components/ScrollTop/ScrollTopComponent';
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { Logo } from '../../../../components/Logo/Logo';
+import caretRight from '../../../../assets/images/home1/caretRight.png';
 
 const FooterComponent: React.FC = () => {
   return (
@@ -50,7 +49,7 @@ const FooterComponent: React.FC = () => {
               <FooterCol>
                 <FooterInfo>
                   <FooterInfoLogo>
-                    <FooterLogoImg src={footer_logo} alt="img" />
+                    <Logo type="light" text="light" />
                   </FooterInfoLogo>
                   <FooterInfoDescibes>
                     <FooterInfoDescibeWrap>
@@ -80,19 +79,19 @@ const FooterComponent: React.FC = () => {
                     <FooterMoreTitle>Pages</FooterMoreTitle>
                     <FooterMoreChildrenItems>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> Home
+                        <IconLinkMenu src={caretRight} /> Home
                       </FooterMoreItem>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> About
+                        <IconLinkMenu src={caretRight} /> About
                       </FooterMoreItem>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> Services
+                        <IconLinkMenu src={caretRight} /> Services
                       </FooterMoreItem>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> Gallery
+                        <IconLinkMenu src={caretRight} /> Gallery
                       </FooterMoreItem>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> Team
+                        <IconLinkMenu src={caretRight} /> Team
                       </FooterMoreItem>
                     </FooterMoreChildrenItems>
                   </FooterMorePage>
@@ -100,16 +99,16 @@ const FooterComponent: React.FC = () => {
                     <FooterMoreTitle>Informations</FooterMoreTitle>
                     <FooterMoreChildrenItems>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> Terms & conditions
+                        <IconLinkMenu src={caretRight} /> Terms & conditions
                       </FooterMoreItem>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> Privacy policy
+                        <IconLinkMenu src={caretRight} /> Privacy policy
                       </FooterMoreItem>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> Blog
+                        <IconLinkMenu src={caretRight} /> Blog
                       </FooterMoreItem>
                       <FooterMoreItem>
-                        <IconLinkMenu icon={faCaretRight} /> Contact
+                        <IconLinkMenu src={caretRight} /> Contact
                       </FooterMoreItem>
                     </FooterMoreChildrenItems>
                   </FooterMoreInformation>

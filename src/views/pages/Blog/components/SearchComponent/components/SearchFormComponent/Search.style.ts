@@ -6,7 +6,11 @@ export const SearchContainer = styled.div`
 `;
 
 export const SearchInput = styled.input`
-  ${tw`grow border-none pl-[31px] py-[20px] outline-none placeholder:(leading-24 font-normal text-16 tracking-widest text-color-default) `}
+  ${tw`grow border-none pl-[27px] py-[20px] outline-none`}
+
+  &::placeholder {
+    ${tw`placeholder:(leading-24 font-normal text-16 tracking-widest text-color-default)`}
+  }
 `;
 
 export const SearchButton = styled.div`

@@ -7,7 +7,7 @@ import {
 } from '../../../../../components/Content/Text.style';
 
 export const Gallery = styled.section`
-  ${tw`mt-[126px] px-[150px] 2xl:px-[400px]`}
+  ${tw`mt-[166px] px-[150px] 2xl:px-[400px]`}
 `;
 
 export const GalleryWrapperText = styled.div`

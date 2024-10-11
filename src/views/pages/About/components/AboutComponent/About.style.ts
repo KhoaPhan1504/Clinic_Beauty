@@ -6,7 +6,7 @@ import {
   Title,
 } from '../../../../../components/Content/Text.style';
 export const About = styled.div`
-  ${tw`mt-[128px] 2xl:(flex justify-center)`}
+  ${tw`mt-[167px] 2xl:(flex justify-center)`}
 `;
 
 export const AboutWrapper = styled.div`
@@ -26,7 +26,7 @@ export const TipText = styled(Tip)`
 `;
 
 export const TitleText = styled(Title)`
-  ${tw`h-[97px] mt-[9px] sm:(w-auto text-center) xl:(w-[732px] text-left)`}
+  ${tw`h-[97px] mt-[11px] sm:(w-auto text-center) xl:(w-[732px] text-left)`}
 `;
 
 export const DescribeText = styled(Describe)`

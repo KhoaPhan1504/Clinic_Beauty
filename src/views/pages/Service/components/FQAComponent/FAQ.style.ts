@@ -22,10 +22,10 @@ export const FAQList = styled.div`
   }
 
   &[data-id='3'] {
-    ${tw`mt-[30px]`}
+    ${tw`mt-[28px]`}
   }
 
   &[data-id='4'] {
-    ${tw`mt-[30px]`}
+    ${tw`mt-[28px]`}
   }
 `;

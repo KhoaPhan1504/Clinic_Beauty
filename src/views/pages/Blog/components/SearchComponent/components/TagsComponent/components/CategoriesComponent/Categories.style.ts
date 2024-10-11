@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Container = styled.div`
-  ${tw`rounded-[25px] p-[58px_28px_49px_53px] shadow-[-2px_4px_31px_9px_#F2F4FF] md:mt-[51px] x:mt-[80px]`}
+  ${tw`rounded-[25px] p-[58px_28px_49px_48px] shadow-[-2px_4px_31px_9px_#F2F4FF] md:mt-[51px] x:mt-[79px]`}
 `;
 
 export const Title = styled(Tip)`

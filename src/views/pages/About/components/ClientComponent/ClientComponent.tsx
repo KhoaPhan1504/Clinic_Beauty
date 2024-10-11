@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Client,
   ClientIcon,
+  ClientIconContainer,
   ClientWrapper,
   ClientWrapperIcon,
   ClientWrapperText,
@@ -23,11 +24,41 @@ const ClientComponent: React.FC = () => {
           </DescribeText>
         </ClientWrapperText>
         <ClientWrapperIcon>
-          <ClientIcon src={Icon.logoAbout1} alt="Logo Icon" />
-          <ClientIcon src={Icon.logoAbout2} alt="Logo Icon" />
-          <ClientIcon src={Icon.logoAbout3} alt="Logo Icon" />
-          <ClientIcon src={Icon.logoAbout4} alt="Logo Icon" />
-          <ClientIcon src={Icon.logoAbout5} alt="Logo Icon" />
+          <ClientIconContainer>
+            <ClientIcon
+              className="-translate-x-[113px] -translate-y-[1px]"
+              src={Icon.logoAbout1}
+              alt="Logo Icon"
+            />
+          </ClientIconContainer>
+          <ClientIconContainer>
+            <ClientIcon
+              className="-translate-x-[60px] -translate-y-[1.3px]"
+              src={Icon.logoAbout2}
+              alt="Logo Icon"
+            />
+          </ClientIconContainer>
+          <ClientIconContainer>
+            <ClientIcon
+              className="-translate-x-[3px] -translate-y-[1px]"
+              src={Icon.logoAbout3}
+              alt="Logo Icon"
+            />
+          </ClientIconContainer>
+          <ClientIconContainer>
+            <ClientIcon
+              className="-translate-y-[3px] translate-x-[55px]"
+              src={Icon.logoAbout4}
+              alt="Logo Icon"
+            />
+          </ClientIconContainer>
+          <ClientIconContainer>
+            <ClientIcon
+              className="-translate-y-[1px] translate-x-[114px]"
+              src={Icon.logoAbout5}
+              alt="Logo Icon"
+            />
+          </ClientIconContainer>
         </ClientWrapperIcon>
       </ClientWrapper>
     </Client>

@@ -8,7 +8,7 @@ import { FormControl } from '../../../../../../components/Form/Form.style';
 import ButtonComponent from '../../../../../../components/Button/ButtonComponent';
 
 export const Contact = styled.div`
-  ${tw`w-full h-[122px] flex justify-center mt-[172px] mb-[121px]`}
+  ${tw`w-full h-[122px] flex justify-center mt-[172px] mb-[122px]`}
 `;
 
 export const ContactWrapper = styled.div`

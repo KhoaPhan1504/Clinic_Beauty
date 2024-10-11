@@ -7,7 +7,7 @@ import {
 } from '../../../../../components/Content/Text.style';
 
 export const Service = styled.div`
-  ${tw`h-full w-full mt-[125px]`}
+  ${tw`h-full w-full mt-[167px]`}
 `;
 
 export const ServiceBG = styled.img`

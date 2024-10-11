@@ -32,10 +32,14 @@ export const DescribeText = styled(Describe)`
 `;
 
 export const ClientWrapperIcon = styled.div`
-  ${tw`flex mt-[93px]`}
-  ${tw`sm:(ml-0 flex-wrap w-auto justify-center gap-[21px]) x:(w-[962px] justify-between ml-[237px]) 2xl:(justify-center w-auto ml-0)`}
+  ${tw`flex mt-[93px] h-auto`}
+  ${tw`sm:(ml-0 flex-wrap) x:(w-full justify-center) 2xl:(justify-center w-auto ml-0)`}
+`;
+
+export const ClientIconContainer = styled.div`
+  ${tw`w-auto h-auto`}
 `;
 
 export const ClientIcon = styled.img`
-  ${tw``}
+  ${tw`w-auto h-full`}
 `;

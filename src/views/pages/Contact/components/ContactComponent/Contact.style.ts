@@ -7,7 +7,7 @@ import {
 } from '../../../../../components/Content/Text.style';
 
 export const Contact = styled.div`
-  ${tw`w-screen h-[1072px] sm:mt-[100px] xl:mt-0`}
+  ${tw`w-screen h-[1072px] sm:mt-[100px] xl:mt-[41px]`}
 `;
 
 export const ContactBackground = styled.img`

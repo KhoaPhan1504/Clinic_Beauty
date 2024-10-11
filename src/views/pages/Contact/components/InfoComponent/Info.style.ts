@@ -7,7 +7,7 @@ import {
 } from '../../../../../components/Content/Text.style';
 
 export const Section = styled.section`
-  ${tw`mt-[81px] pb-[55px] flex justify-center mb-[71px]`}
+  ${tw`mt-[81px] pb-[55px] flex justify-center mb-[73px]`}
 `;
 
 export const ContentContainer = styled.div`

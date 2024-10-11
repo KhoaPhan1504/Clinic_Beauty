@@ -13,7 +13,7 @@ import {
   TipText,
   TitleText,
 } from './ServiceInfo.style';
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import arrowRight from '../../../../../assets/images/service/angle-double-right.png';
 
 interface ServiceInfoProps {
   imageSrc?: string;
@@ -46,7 +46,7 @@ const ServiceInfoComponent: React.FC<ServiceInfoProps> = ({
           </ServiceInfoContainer>
           <ServiceInfoRedirect>
             <Link>Make an Appointment</Link>
-            <IconServiceInfo icon={faAngleDoubleRight} />
+            <IconServiceInfo src={arrowRight} />
           </ServiceInfoRedirect>
         </ServiceInfoWrapperText>
       </ServiceInfoWrapper>
