@@ -18,7 +18,7 @@ const FQAComponent: React.FC = () => {
 
   useEffect(() => {
     setFAQs(FAQData);
-  });
+  }, []);
 
   return (
     <FAQ>

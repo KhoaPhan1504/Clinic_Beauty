@@ -3,15 +3,19 @@ import tw from 'twin.macro';
 import ButtonComponent from '../Button/ButtonComponent';
 
 export const FormGroup = styled.div`
-  ${tw`w-[520px] my-[38px] mx-auto md:text-center x:text-left`}
+  ${tw`w-auto my-[38px] mx-auto md:(text-center w-[520px]) x:text-left`}
+
+  &.formBtn {
+    ${tw`flex justify-center x:justify-start`}
+  }
 `;
 
 export const ContactRowname = styled.div`
-  ${tw`w-[520px] flex justify-between m-0`}
+  ${tw`w-auto flex flex-col gap-[33px] justify-between m-0 sm:(flex-row)`}
 `;
 
 export const ContactColInput = styled.div`
-  ${tw`w-[242.21px] h-[61.58px]`}
+  ${tw`w-full h-[61.58px] sm:w-[242.21px]`}
 `;
 
 export const FormControl = styled.input`
@@ -27,7 +31,7 @@ export const FormControl = styled.input`
   }
 
   &.contact_name {
-    ${tw`w-[242.21px] h-[61.58px]`}
+    ${tw`w-full h-[61.58px] sm:w-[242.21px]`}
   }
 
   &.contact_input {

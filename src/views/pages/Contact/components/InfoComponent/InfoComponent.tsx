@@ -14,7 +14,7 @@ import {
 import { contactInfo } from '../../../../../data/Contact/contactData';
 import Container from '../../../../../components/Container/Container';
 
-interface Infoinfops {
+interface InfoProps {
   id: number;
   imgSrc?: string;
   imageAlt?: string;
@@ -25,7 +25,7 @@ interface Infoinfops {
 }
 
 const InfoComponent: React.FC = () => {
-  const [infos, setInfo] = useState<Infoinfops[]>([]);
+  const [infos, setInfo] = useState<InfoProps[]>([]);
   const [activeCard, setActiveCard] = useState<number>(2);
 
   const handleMouseEnter = (id: number) => {
@@ -38,7 +38,8 @@ const InfoComponent: React.FC = () => {
 
   useEffect(() => {
     setInfo(contactInfo);
-  });
+  }, []);
+
   return (
     <Section>
       <Container>

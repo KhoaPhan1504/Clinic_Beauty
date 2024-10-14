@@ -6,9 +6,10 @@ import {
   Tip,
   Title,
 } from '../../../../../../components/Content/Text.style';
+import Container from '@mui/material/Container';
 
 export const About = styled.div`
-  ${tw`w-screen h-auto bg-transparent sm:mt-[420px] lg:mt-0 xl:mt-0`}
+  ${tw`w-auto h-auto bg-transparent mt-[40px] sm:mt-0`}
 `;
 
 export const AboutBackground = styled.img`
@@ -16,12 +17,13 @@ export const AboutBackground = styled.img`
   content: '';
 `;
 
-export const AboutWrapper = styled.div`
-  ${tw`flex items-center max-w-[1440px] m-auto sm:(pt-[110px]) xl:pt-[134px]`}
+export const AboutWrapper = styled(Container)`
+  max-width: 1188px !important;
+  ${tw`flex items-center m-auto sm:(pt-[110px]) xl:pt-[133px]`}
 `;
 
 export const AboutContainer = styled.div`
-  ${tw`flex w-full h-auto  sm:(flex-col text-center) xl:(flex-row text-start)`}
+  ${tw`flex flex-col w-full h-auto  sm:(text-center) xl:(flex-row text-start)`}
 `;
 
 export const AboutContainerText = styled.div`
@@ -29,7 +31,8 @@ export const AboutContainerText = styled.div`
 `;
 
 export const AboutTitleDesc = styled.div`
-  ${tw`w-[664px] h-[292px] flex flex-col items-start sm:(ml-0 items-center) xl:(ml-[150px] items-start)`}
+  ${tw`w-auto h-auto flex flex-col items-center text-center`}
+  ${tw`xl:(items-start text-start w-[664px] h-[292px])`}
 `;
 
 export const AboutTip = styled(Tip)`
@@ -37,15 +40,15 @@ export const AboutTip = styled(Tip)`
 `;
 
 export const AboutTitle = styled(Title)`
-  ${tw`max-w-[664px] h-[52px] mt-[12px]`}
+  ${tw`w-auto h-[52px] mt-[12px]`}
 `;
 
 export const AboutDescribe = styled(Describe)`
-  ${tw`h-[196px] mt-[19px] sm:w-[483px] lg:w-full xl:w-[483px]`}
+  ${tw`w-auto h-[196px] mt-[70px] xl:(w-[483px] mt-[19px])`}
 `;
 
 export const AboutBtnGroup = styled.div`
-  ${tw`mt-[52px] flex`}
+  ${tw`mt-[120px] gap-[40px] flex flex-col justify-center sm:(flex-row gap-0) xl:mt-[52px]`}
 `;
 
 export const AboutBtnLeft = styled.div``;
@@ -55,7 +58,7 @@ export const BtnLearnMore = styled(ButtonComponent)`
 `;
 
 export const AboutBtnRight = styled.div`
-  ${tw`flex justify-center items-center h-full ml-[44px]`}
+  ${tw`flex justify-center items-center h-full sm:ml-[44px]`}
 `;
 
 export const AboutWatch = styled.button`
@@ -73,7 +76,7 @@ export const AboutWatchText = styled.span`
 `;
 
 export const AboutContainerImage = styled.div`
-  ${tw`w-full h-full pt-[44px] pl-[72px] rounded-[50px] sm:(mt-[120px] flex justify-center pl-0) xl:(m-0 pr-[148px])`}
+  ${tw`w-full h-full pt-[44px] rounded-[50px] sm:(mt-[120px] flex justify-center) xl:(m-0)`}
 `;
 
 export const AboutImg = styled.img``;

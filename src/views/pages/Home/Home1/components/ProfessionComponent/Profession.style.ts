@@ -10,20 +10,23 @@ import {
   Tip,
   Title,
 } from '../../../../../../components/Content/Text.style';
+import Container from '@mui/material/Container';
 
 export const Profession = styled.div`
-  ${tw`h-[861px] sm:(w-auto ml-0 mt-[150px]) lg:md:(w-auto mt-[150px]) xl:(w-full ml-[3px] mt-[300px]) x:mt-[144px] 2xl:(ml-0 flex justify-center)`}
+  ${tw`h-auto w-full mt-[120px] xl:(h-[861px] mt-[144px]) `}
 `;
 
 export const ProfessionBG = styled.img`
   ${tw`absolute -z-10`}
 `;
-export const ProfessionWrapper = styled.div`
-  ${tw`flex items-center flex-col max-w-1140 h-full sm:ml-0 xl:ml-[68px] x:ml-[147px] 2xl:(ml-0)`}
+
+export const ProfessionWrapper = styled(Container)`
+  max-width: 1188px !important;
+  ${tw`m-auto `}
 `;
 
 export const ProfessionDesc = styled.div`
-  ${tw`flex justify-center items-center flex-col max-w-[848px] h-[148px] px-[20px] py-[1px]`}
+  ${tw`flex justify-center items-center flex-col h-[148px] px-[20px] py-[1px]`}
 `;
 
 export const ProInfoTip = styled(Tip)`
@@ -36,8 +39,8 @@ export const ProInfoTitle = styled(Title)`
 `;
 
 export const ProInfoDescribe = styled(Describe)`
-  ${tw`h-[51px] text-center mt-[2px] `}
-  ${tw`sm:(w-auto) xl:w-[848px]`}
+  ${tw`h-[51px] text-center w-auto mt-[30px]`}
+  ${tw`sm:mt-[2px] xl:w-[848px]`}
 `;
 
 export const ProItem = styled.div`
@@ -45,7 +48,7 @@ export const ProItem = styled.div`
 `;
 
 export const ProItemWrapper = styled.div`
-  ${tw`flex gap-1 transition-all sm:(flex-wrap flex-col) lg:(flex-wrap flex-col justify-center) xl:(flex-nowrap flex-row justify-between)`}
+  ${tw`flex flex-col gap-1 transition-all sm:(flex-wrap) lg:(flex-wrap justify-center) xl:(flex-nowrap flex-row justify-between)`}
   perspective: 1000px;
 `;
 
@@ -63,21 +66,21 @@ export const ProItemRow = styled.div`
   }
 
   &:not(.active) {
+    ${tw`bg-color-white shadow-[0px_25px_50px_25px_rgba(246, 247, 255, 1)]`}
     ${tw`xl:bg-transparent shadow-none`}
-    background-color: transparent !important;
-    box-shadow: none !important;
   }
 `;
 
 export const ProfessionItemCard = styled(Card)`
-  ${tw`sm:(w-[500px] h-[570px]) xl:(w-[424px] h-[626px]) x:(mt-0 pt-[33px]) `}
+  ${tw`mt-0 w-[340px] h-[528px] `}
+  ${tw`sm:(w-[500px] h-[570px] mt-[74px]) xl:(w-[424px] h-[626px]) x:(mt-0 pt-[33px]) `}
   border-radius: 42px;
   box-shadow: none;
   transition: all 0.3s;
 `;
 
 export const CardWrapperPro = styled(CardWrapper)`
-  ${tw`w-[424px] h-[626px]`}
+  ${tw`w-full h-full`}
 
   &[data-id="1"] {
     ${tw`sm:ml-0 xl:ml-[44px]`}

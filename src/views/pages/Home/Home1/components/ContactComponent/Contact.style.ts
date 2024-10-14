@@ -5,9 +5,10 @@ import {
   Tip,
   Title,
 } from '../../../../../../components/Content/Text.style';
+import Container from '@mui/material/Container';
 
 export const Contact = styled.div`
-  ${tw`w-auto h-[1072px] sm:mt-[220vh] xl:mt-[220px] x:mt-0`}
+  ${tw`w-full h-auto x:h-[1072px]`}
 `;
 
 export const ContactBackground = styled.img`
@@ -15,52 +16,49 @@ export const ContactBackground = styled.img`
   content: '';
 `;
 
-export const ContactWrapper = styled.div`
-  ${tw`flex items-center max-w-[1440px] m-auto h-full xl:(justify-center) x:pt-[149px]`}
+export const ContactWrapper = styled(Container)`
+  max-width: 1188px !important;
+  ${tw`flex items-center m-auto h-auto`}
 `;
 
 export const ContactMain = styled.div`
-  ${tw`flex w-full h-full sm:flex-col xl:(pr-[110px]) x:(pr-0 flex-col)`}
+  ${tw`flex flex-col w-full h-full pt-[147px]`}
 `;
 
 export const ContactFormInfo = styled.div`
-  ${tw`sm:pl-0 xl:pl-[53.5%]`}
+  ${tw`pl-0 xl:pl-[54.4%]`}
 `;
 
 export const ContactTitleDesc = styled.div`
-  ${tw`flex flex-col sm:(text-center items-center) x:(text-left items-start)`}
+  ${tw`flex flex-col text-center items-center x:(text-left items-start)`}
 `;
 
 export const ContactTip = styled(Tip)`
-  ${tw`w-[90px] h-[20px] mb-[11px]`}
+  ${tw`w-auto h-[20px] mb-[12px] x:w-[90px]`}
 `;
 
 export const ContactTitle = styled(Title)`
-  ${tw`w-[404px] h-[97px] mb-[13px]`}
+  ${tw`w-auto h-[97px] mb-[13px] x:w-[404px]`}
 `;
 
 export const WrapperDescribe = styled.div`
-  ${tw`flex sm:justify-center x:justify-start`}
+  ${tw`w-auto flex justify-center x:justify-start`}
 `;
 
 export const ContactDescribe = styled(Describe)`
-  ${tw`w-[497px] h-[28px]`}
+  ${tw`w-auto h-[28px] x:w-[497px]`}
 `;
 
 export const ContactFormContainer = styled.div`
-  ${tw`h-auto w-auto flex sm:flex-col xl:flex-row`}
+  ${tw`h-auto w-auto flex flex-col xl:flex-row`}
 `;
 
 export const ContactImageWrapper = styled.div`
-  ${tw`sm:(w-full) lg:(w-full flex justify-center) x:(w-2/4 flex-none)`}
-`;
-
-export const ContactImage = styled.div`
-  ${tw``}
+  ${tw`w-full flex justify-center  x:(w-2/4 flex-none)`}
 `;
 
 export const ContactImageItem = styled.img`
-  ${tw`w-[519px] h-[402px] mt-[14px] sm:(flex justify-center) lg:ml-0 x:(ml-[100px] mt-[80px])`}
+  ${tw`w-1/2 mt-[80px] mr-[48px] sm:(w-auto h-[402px])`}
 `;
 
 export const ContactMainForm = styled.div`

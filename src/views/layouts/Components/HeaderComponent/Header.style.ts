@@ -1,13 +1,15 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import Container from '@mui/material/Container';
 
 export const Header = styled.header`
-  ${tw`relative w-full  sm:(flex justify-center)`}
+  ${tw`relative top-[41px] w-full  sm:(flex justify-center) xl:px-[24px]`}
 `;
 
-export const HeaderWrapper = styled.div`
-  ${tw`flex mt-[41px] h-[63px] max-w-[1188px] gap-[174px] pr-[3px]`}
+export const HeaderWrapper = styled(Container)`
+  max-width: 1188px !important;
+  ${tw`flex h-[63px] m-auto gap-[174px] justify-between`}
 `;
 
 //Image - Logo
@@ -29,7 +31,7 @@ export const HeaderMore = styled.div`
 `;
 
 export const HeaderMenu = styled.div`
-  ${tw`max-[1140px]:hidden h-full flex items-center pb-[4px]`}
+  ${tw`max-[1140px]:hidden h-full flex items-center`}
 `;
 
 export const HeaderMenuChildren = styled.div<{ isOpen: boolean }>`
@@ -44,7 +46,7 @@ export const MenuItem = styled.li`
   }
 
   &:nth-child(2) {
-    ${tw`mr-[9px]`}
+    ${tw`mr-[9px] mb-[2px]`}
   }
 
   &:nth-child(3) {
@@ -65,7 +67,7 @@ export const MenuLink = styled.a<{ color?: string; activeColor?: string }>`
   color: ${({ color }) => color || '#8B8B8B'};
 
   &.active {
-    ${tw`font-semibold`}
+    ${tw``}
     color: ${({ activeColor }) => activeColor || '#FF5733'};
   }
 
@@ -76,12 +78,12 @@ export const MenuLink = styled.a<{ color?: string; activeColor?: string }>`
 
 // Button
 export const HeaderContact = styled.div`
-  ${tw`w-[158px] h-[52px] bg-color-pink rounded-full`}
+  ${tw`w-[158px] h-[52px] bg-color-pink rounded-full flex mb-[3px]`}
 `;
 
 // Dropdown Menu
 export const DropdownMenu = styled.div<{ isOpen: boolean }>`
-  ${tw`absolute top-[120px] w-[170px] bg-color-white shadow-lg rounded-[25px] z-40`}
+  ${tw`absolute top-[50px] w-[170px] bg-color-white shadow-lg rounded-[25px] z-40`}
   ${({ isOpen }) => (isOpen ? tw`block` : tw`hidden`)}
 `;
 

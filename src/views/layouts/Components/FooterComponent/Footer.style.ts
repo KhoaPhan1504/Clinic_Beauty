@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import { Images } from '../../../../data/ComponentData/Images';
+import Container from '@mui/material/Container';
 
 export const Footer = styled.div`
-  ${tw`w-full h-[705.34px] overflow-hidden sm:mt-[162px] md:mt-[470px] xl:mt-[50px] x:mt-[11px]`}
+  ${tw`w-full h-[705.34px] overflow-hidden bg-cover mt-[11px]`}
 `;
 
 export const FooterWrapper = styled.div`
@@ -22,24 +22,25 @@ export const FooterContainerFluid = styled.div`
   background-image: url(${Images.footer1Background});
 `;
 
-export const FooterContainer = styled.div`
-  ${tw`w-full md:(mt-[43px] ml-[80px]) xl:mt-[190px] x:(mt-[226px] pl-[150px]) x:pl-[70px]`}
+export const FooterContainer = styled(Container)`
+  max-width: 1188px !important;
+  ${tw`flex flex-col justify-center m-auto mt-[10px] h-auto sm:mt-[225px]`}
 `;
 
 export const FooterColumn = styled.div`
-  ${tw`flex sm:(flex-col pt-[31px] pl-[66px]) md:(pl-0 pt-0) xl:flex-row`}
+  ${tw`flex flex-col xl:flex-row`}
 `;
 
 export const FooterCol = styled.div`
-  ${tw`flex items-start mb-[50px]`}
+  ${tw`flex items-start mb-[50px] w-full`}
 `;
 
 export const FooterInfo = styled.div`
-  ${tw`mt-[15px]`}
+  ${tw`mt-[15px] w-full`}
 `;
 
 export const FooterInfoLogo = styled.div`
-  ${tw``}
+  ${tw`w-full flex justify-center sm:justify-start`}
 `;
 
 export const FooterLogoImg = styled.img`
@@ -47,23 +48,23 @@ export const FooterLogoImg = styled.img`
 `;
 
 export const FooterInfoDescibes = styled.div`
-  ${tw`mt-[33px] ml-[31px] text-color-border text-16 tracking-widest`}
+  ${tw`mt-[33px] text-center sm:(ml-[31px] text-left) text-color-border text-16 tracking-widest`}
 `;
 
 export const FooterInfoDescibeWrap = styled.p`
-  ${tw`leading-24 tracking-widest w-[461px] h-[21px] text-16 font-normal`}
+  ${tw`leading-24 tracking-widest w-auto h-[21px] text-16 font-normal sm:w-[461px]`}
 `;
 
 export const FooterInfoDescibe = styled.strong`
-  ${tw`leading-24 tracking-widest w-[461px] h-[21px] text-16 font-bold`}
+  ${tw`leading-24 tracking-widest w-auto h-[21px] text-16 font-bold sm:w-[461px]`}
 `;
 
 export const FooterInfoAddress = styled.div`
-  ${tw`italic leading-21 tracking-1.4 text-footer-text w-[287px] h-[24px] mt-[2px] ml-[1px] text-14 font-medium`}
+  ${tw`italic leading-21 tracking-1.4 text-footer-text mt-[22px] w-[287px] h-[24px] sm:mt-[2px] ml-[1px] text-14 font-medium`}
 `;
 
 export const FooterInfoContact = styled.div`
-  ${tw`mt-[-1px]`}
+  ${tw`mt-[18px] flex  sm:mt-[-2px]`}
 `;
 
 export const FooterInfoPhone = styled.span`
@@ -79,7 +80,7 @@ export const FooterInfoEmailItem = styled.a`
 `;
 
 export const FooterMore = styled.div`
-  ${tw`flex justify-around w-[730px] text-color-border tracking-widest leading-27 md:pl-0 xl:pl-[120px] x:pl-[130px]`}
+  ${tw`flex justify-around w-[730px] text-color-border tracking-widest leading-27 md:pl-0 xl:pl-[120px] x:pl-[129px]`}
 `;
 
 export const FooterMorePage = styled.div`
@@ -99,11 +100,11 @@ export const FooterMoreChildrenItems = styled.ul`
 `;
 
 export const FooterMoreItem = styled.li`
-  ${tw`text-16 my-[11px] transition-[0.5s] cursor-pointer leading-24 tracking-widest font-normal`}
+  ${tw`flex items-center text-16 my-[11px] transition-[0.5s] cursor-pointer leading-24 tracking-widest font-normal`}
 `;
 
-export const IconLinkMenu = styled(FontAwesomeIcon)`
-  ${tw`mr-[6px]`}
+export const IconLinkMenu = styled.img`
+  ${tw`mr-[7px] w-auto h-full`}
 `;
 
 export const FooterBottom = styled.div`

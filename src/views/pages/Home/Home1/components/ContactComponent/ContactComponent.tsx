@@ -104,7 +104,7 @@ const ContactComponent: React.FC<ContactProps> = ({
                       placeholder="Your inquiry here"
                     />
                   </FormGroup>
-                  <FormGroup>
+                  <FormGroup className="formBtn">
                     <FormButton textButton="Send Message" />
                   </FormGroup>
                 </ContactMainFormItem>
