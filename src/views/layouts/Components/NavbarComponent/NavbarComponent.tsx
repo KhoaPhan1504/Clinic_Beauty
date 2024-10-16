@@ -37,8 +37,8 @@ const NavbarComponent: React.FC = () => {
       <MobileNavWrapper>
         <MobileNavBody>
           <MenuItem>
-            <MenuLink onClick={handleDropdownToggle} className="active">
-              Home +
+            <MenuLink as={NavLink} to='/home' onClick={handleDropdownToggle} className="active">
+              Home 
             </MenuLink>
           </MenuItem>
           <MenuItem>
